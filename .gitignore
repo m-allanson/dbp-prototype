@@ -1,0 +1,12 @@
+# Logs
+logs
+*.log
+
+# Directories
+node_modules/
+
+# Compiled assets
+static/*.js
+
+# Other
+.eslintcache
