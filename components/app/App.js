@@ -1,18 +1,19 @@
 import React from 'react'
-// import { Component } from 'react'
+import Header from '../header/Header.js'
 
-export default class App extends React.Component {
-  constructor () {
-    super()
-    this.state = { n: 0 }
-  }
-  render () {
-    return <div>
-      <h1>clicked {this.state.n} times</h1>
-      <button onClick={this.handleClick.bind(this)}>click me!</button>
-    </div>
-  }
-  handleClick () {
-    this.setState({ n: this.state.n + 1 })
-  }
+const divStyle = {
+  backgroundColor: '#D0E9F2',
+  height: '100%'
 }
+
+const h1Style = {
+  padding: '10px',
+  margin: '0'
+}
+
+export default () => (
+  <div style={divStyle}>
+    <Header />
+    <h1 style={h1Style}>Hello, world!</h1>
+  </div>
+)
