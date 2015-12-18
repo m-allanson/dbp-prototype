@@ -1,0 +1,38 @@
+._components_app_App__App {
+  height: 100%;
+  transition: background-color 0.5s linear;
+}
+
+._components_app_App__App-home {
+  background-color: #D0E9F2;
+}
+
+._components_app_App__App-projects {
+  background-color: yellow;
+}
+
+._components_app_App__App-about {
+  background-color: green;
+}
+
+._components_app_App__App-shop {
+  background-color: blue;
+}
+
+._components_app_App__App-projects {
+  background-color: orange;
+}
+
+._components_app_App__App-title {
+  padding: 10px;
+  margin: 0;
+}
+._components_header_Header__Header {
+  background-color: #1C1C1A;
+  padding: 10px;
+  text-align: center;
+}
+
+._components_header_Header__Headerh1 {
+  color: #D0E9F2
+}

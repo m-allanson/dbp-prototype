@@ -1,0 +1,34 @@
+.App {
+  height: 100%;
+  transition: background-color 0.5s linear;
+}
+
+.App-home {
+  composes: App;
+  background-color: #D0E9F2;
+}
+
+.App-projects {
+  composes: App;
+  background-color: yellow;
+}
+
+.App-about {
+  composes: App;
+  background-color: green;
+}
+
+.App-shop {
+  composes: App;
+  background-color: blue;
+}
+
+.App-projects {
+  composes: App;
+  background-color: orange;
+}
+
+.App-title {
+  padding: 10px;
+  margin: 0;
+}

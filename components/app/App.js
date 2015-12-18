@@ -1,22 +1,18 @@
 import React from 'react'
 import Header from '../header/Header.js'
+import CSSModules from 'react-css-modules';
+import styles from './App.css';
 
-const divStyle = {
-  backgroundColor: '#D0E9F2',
-  height: '100%'
-}
-
-const h1Style = {
-  padding: '10px',
-  margin: '0'
-}
-
-export default ({
+const App = ({
   children
-}) => (
-  <div style={divStyle}>
+}) => {
+  const className = styles[children.props.route.testClass] || styles.App
+  return (
+  <div className={className}>
     <Header />
-    <h1 style={h1Style}>Hello, world!</h1>
+    <h1>Hello, world!</h1>
     { children }
   </div>
-)
+)}
+
+export default CSSModules(App, styles);

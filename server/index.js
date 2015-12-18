@@ -1,3 +1,4 @@
-// Load babel's require hook before running the app
+// Load require hooks before running the app
 require('babel-core/register')
+require('css-modules-require-hook');
 require('./app.js')
