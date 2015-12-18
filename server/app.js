@@ -1,8 +1,9 @@
 import express from 'express'
 import React from 'react'
-import ReactDOMServer from 'react-dom/server'
+import { renderToString } from 'react-dom/server'
+import { match, RoutingContext } from 'react-router';
 import hbs from 'express-handlebars'
-import App from '../components/app/App'
+import routes from '../routes/routes'
 
 const {
   NODE_ENV,
@@ -17,9 +18,18 @@ app.set('views', `${__dirname}/views`)
 app.use('/static', express.static('static', {maxAge: 0}))
 app.locals.settings['x-powered-by'] = false
 
-app.get('/', (req, res) => {
-  res.render('layout', {
-    reactHtml: ReactDOMServer.renderToString(<App />)
+app.get('*', (req, res) => {
+  match({ routes, location: req.url }, (err, redirectLocation, props) => {
+    if (err) {
+      res.status(500).send(err.message);
+    } else if (redirectLocation) {
+      res.redirect(302, redirectLocation.pathname + redirectLocation.search);
+    } else if (props) {
+      const markup = renderToString(<RoutingContext {...props} />);
+      res.render('layout', { markup })
+    } else {
+      res.sendStatus(404);
+    }
   })
 })
 

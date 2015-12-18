@@ -11,9 +11,12 @@ const h1Style = {
   margin: '0'
 }
 
-export default () => (
+export default ({
+  children
+}) => (
   <div style={divStyle}>
     <Header />
     <h1 style={h1Style}>Hello, world!</h1>
+    { children }
   </div>
 )

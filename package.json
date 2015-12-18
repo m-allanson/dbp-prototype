@@ -23,8 +23,10 @@
     "browserify": "^12.0.1",
     "express": "^4.13.3",
     "express-handlebars": "^2.0.1",
+    "history": "1.13.0",
     "react": "^0.14.3",
-    "react-dom": "^0.14.3"
+    "react-dom": "^0.14.3",
+    "react-router": "^1.0.2"
   },
   "devDependencies": {
     "babel-eslint": "^4.1.6",

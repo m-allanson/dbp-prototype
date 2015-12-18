@@ -2,7 +2,11 @@ require('babel-polyfill')
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from '../components/app/App'
+import { Router } from 'react-router'
+import routes from '../routes/routes';
+import createBrowserHistory from 'history/lib/createBrowserHistory'
 
-var app = document.getElementById('root')
-ReactDOM.render(<App />, app)
+ReactDOM.render(
+  <Router routes={routes} history={createBrowserHistory()} />,
+  document.getElementById('app')
+)
