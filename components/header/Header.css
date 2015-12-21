@@ -1,9 +1,33 @@
-.Header {
+.root {
   background-color: #1C1C1A;
   padding: 10px;
   text-align: center;
 }
 
-.Headerh1 {
-  color: #D0E9F2
+/*#F8DFDF*/
+
+.logo {
+  transition: fill 0.5s linear;
 }
+
+.section-home {
+  composes: logo;
+  fill: #D0E9F2;
+}
+
+.section-projects {
+  fill: #FFF4E0;
+}
+
+.section-about {
+ fill: #D0E9F2;
+}
+
+.section-shop {
+  fill: #F8DFDF;
+}
+
+.section-hindsight {
+  fill: #FFF4E0;
+}
+/* #DEE2F1 */

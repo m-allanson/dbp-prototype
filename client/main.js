@@ -3,7 +3,7 @@ require('babel-polyfill')
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Router } from 'react-router'
-import routes from '../routes/routes';
+import routes from '../routes/routes'
 import createBrowserHistory from 'history/lib/createBrowserHistory'
 
 ReactDOM.render(

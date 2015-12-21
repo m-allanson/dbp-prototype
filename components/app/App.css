@@ -1,34 +1,37 @@
-.App {
+.root {
   height: 100%;
   transition: background-color 0.5s linear;
 }
 
-.App-home {
-  composes: App;
+.title {
+  padding: 10px;
+  margin: 0;
+}
+
+/* section backgrounds
+  ========================================================================== */
+
+.section-home {
+  composes: root;
   background-color: #D0E9F2;
 }
 
-.App-projects {
-  composes: App;
-  background-color: yellow;
+.section-projects {
+  composes: root;
+  background-color: #FFF4E0;
 }
 
-.App-about {
-  composes: App;
-  background-color: green;
+.section-about {
+  composes: root;
+  background-color: #D0E9F2;
 }
 
-.App-shop {
-  composes: App;
-  background-color: blue;
+.section-shop {
+  composes: root;
+  background-color: #F8DFDF;
 }
 
-.App-projects {
-  composes: App;
-  background-color: orange;
-}
-
-.App-title {
-  padding: 10px;
-  margin: 0;
+.section-hindsight {
+  composes: root;
+  background-color: #FFF4E0;
 }

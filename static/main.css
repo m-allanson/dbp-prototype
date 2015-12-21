@@ -1,38 +1,64 @@
-._components_app_App__App {
+._components_app_App__root {
   height: 100%;
   transition: background-color 0.5s linear;
 }
 
-._components_app_App__App-home {
-  background-color: #D0E9F2;
-}
-
-._components_app_App__App-projects {
-  background-color: yellow;
-}
-
-._components_app_App__App-about {
-  background-color: green;
-}
-
-._components_app_App__App-shop {
-  background-color: blue;
-}
-
-._components_app_App__App-projects {
-  background-color: orange;
-}
-
-._components_app_App__App-title {
+._components_app_App__title {
   padding: 10px;
   margin: 0;
 }
-._components_header_Header__Header {
+
+/* section backgrounds
+  ========================================================================== */
+
+._components_app_App__section-home {
+  background-color: #D0E9F2;
+}
+
+._components_app_App__section-projects {
+  background-color: #FFF4E0;
+}
+
+._components_app_App__section-about {
+  background-color: #D0E9F2;
+}
+
+._components_app_App__section-shop {
+  background-color: #F8DFDF;
+}
+
+._components_app_App__section-hindsight {
+  background-color: #FFF4E0;
+}
+._components_header_Header__root {
   background-color: #1C1C1A;
   padding: 10px;
   text-align: center;
 }
 
-._components_header_Header__Headerh1 {
-  color: #D0E9F2
+/*#F8DFDF*/
+
+._components_header_Header__logo {
+  transition: fill 0.5s linear;
 }
+
+._components_header_Header__section-home {
+  fill: #D0E9F2;
+}
+
+._components_header_Header__section-projects {
+  fill: #FFF4E0;
+}
+
+._components_header_Header__section-about {
+ fill: #D0E9F2;
+}
+
+._components_header_Header__section-shop {
+  fill: #F8DFDF;
+}
+
+._components_header_Header__section-hindsight {
+  fill: #FFF4E0;
+}
+/* #DEE2F1 */

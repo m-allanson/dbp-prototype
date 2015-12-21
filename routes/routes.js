@@ -12,27 +12,27 @@ export default {
     {
       path: '/',
       component: Home,
-      testClass: 'App-home'
+      routeClass: 'section-home'
     },
     {
       path: '/projects',
       component: Projects,
-      testClass: 'App-projects'
+      routeClass: 'section-projects'
     },
     {
       path: '/about',
       component: About,
-      testClass: 'App-about'
+      routeClass: 'section-about'
     },
     {
       path: '/shop',
       component: Shop,
-      testClass: 'App-shop'
+      routeClass: 'section-shop'
     },
     {
       path: '/hindsight',
       component: Hindsight,
-      testClass: 'App-hindsight'
+      routeClass: 'section-hindsight'
     }
   ]
 }
