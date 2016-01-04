@@ -1,18 +1,15 @@
 import React from 'react'
 import Header from '../header/Header.js'
-import CSSModules from 'react-css-modules'
-import styles from './App.css'
 
-const App = ({
+export default ({
   children
 }) => {
-  const className = styles[children.props.route.routeClass]
+  const routeName = children.props.route.routeName
+  const className = `App App--${routeName}`
   return (
   <div className={className}>
-    <Header routeClass={children.props.route.routeClass} />
+    <Header routeName={routeName} />
     <h1>Hello, world!</h1>
     { children }
   </div>
 )}
-
-export default CSSModules(App, styles);

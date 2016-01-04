@@ -12,27 +12,27 @@ export default {
     {
       path: '/',
       component: Home,
-      routeClass: 'section-home'
+      routeName: 'home'
     },
     {
       path: '/projects',
       component: Projects,
-      routeClass: 'section-projects'
+      routeName: 'projects'
     },
     {
       path: '/about',
       component: About,
-      routeClass: 'section-about'
+      routeName: 'about'
     },
     {
       path: '/shop',
       component: Shop,
-      routeClass: 'section-shop'
+      routeName: 'shop'
     },
     {
       path: '/hindsight',
       component: Hindsight,
-      routeClass: 'section-hindsight'
+      routeName: 'hindsight'
     }
   ]
 }

@@ -1,0 +1,18 @@
+{
+  "use": [
+    "postcss-reporter",
+    "postcss-import",
+    "postcss-custom-properties",
+    "postcss-custom-media",
+    "postcss-media-minmax",
+    "autoprefixer"
+  ],
+  "input": "css/main.css",
+  "output": "static/main.css",
+  "postcss-import": {
+    "glob": true
+  },
+  "autoprefixer": {
+      "browsers": "> 5%"
+  }
+}

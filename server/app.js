@@ -14,7 +14,7 @@ const app = express()
 
 app.engine('html', hbs({ extname: 'html' }))
 app.set('view engine', 'html')
-app.set('views', `${__dirname}/views`)
+app.set('views', `${__dirname}/`)
 app.use('/static', express.static('static', {maxAge: 0}))
 app.locals.settings['x-powered-by'] = false
 

@@ -1,33 +1,31 @@
-.root {
-  background-color: #1C1C1A;
+/** @define Header */
+
+.Header {
+  background-color: var(--color-black);
   padding: 10px;
   text-align: center;
 }
 
-/*#F8DFDF*/
-
-.logo {
+.Header-logo {
   transition: fill 0.5s linear;
 }
 
-.section-home {
-  composes: logo;
-  fill: #D0E9F2;
+.Header--home .Header-logo {
+  fill: hotpink;
 }
 
-.section-projects {
-  fill: #FFF4E0;
+.Header--projects .Header-logo {
+  fill: var(--color-projects-cream);
 }
 
-.section-about {
- fill: #D0E9F2;
+.Header--about .Header-logo {
+  fill: var(--color-about-blue);
 }
 
-.section-shop {
-  fill: #F8DFDF;
+.Header--shop .Header-logo {
+  fill: var(--color-shop-red);
 }
 
-.section-hindsight {
-  fill: #FFF4E0;
+.Header--hindsight .Header-logo {
+  fill: var(--color-hindsight-purple);
 }
-/* #DEE2F1 */

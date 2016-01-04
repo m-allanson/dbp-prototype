@@ -1,37 +1,31 @@
-.root {
+/** @define App */
+
+.App {
   height: 100%;
   transition: background-color 0.5s linear;
 }
 
-.title {
-  padding: 10px;
+.App-title {
   margin: 0;
+  padding: 10px;
 }
 
-/* section backgrounds
-  ========================================================================== */
-
-.section-home {
-  composes: root;
-  background-color: #D0E9F2;
+.App--home {
+  background-color: hotpink;
 }
 
-.section-projects {
-  composes: root;
-  background-color: #FFF4E0;
+.App--projects {
+  background-color: var(--color-projects-cream);
 }
 
-.section-about {
-  composes: root;
-  background-color: #D0E9F2;
+.App--about {
+  background-color: var(--color-about-blue);
 }
 
-.section-shop {
-  composes: root;
-  background-color: #F8DFDF;
+.App--shop {
+  background-color: var(--color-shop-red);
 }
 
-.section-hindsight {
-  composes: root;
-  background-color: #FFF4E0;
+.App--hindsight {
+  background-color: var(--color-hindsight-purple);
 }
