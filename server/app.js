@@ -1,7 +1,7 @@
 import express from 'express'
 import React from 'react'
 import { renderToString } from 'react-dom/server'
-import { match, RoutingContext } from 'react-router';
+import { match, RoutingContext } from 'react-router'
 import hbs from 'express-handlebars'
 import routes from '../routes/routes'
 
@@ -21,14 +21,14 @@ app.locals.settings['x-powered-by'] = false
 app.get('*', (req, res) => {
   match({ routes, location: req.url }, (err, redirectLocation, props) => {
     if (err) {
-      res.status(500).send(err.message);
+      res.status(500).send(err.message)
     } else if (redirectLocation) {
-      res.redirect(302, redirectLocation.pathname + redirectLocation.search);
+      res.redirect(302, redirectLocation.pathname + redirectLocation.search)
     } else if (props) {
-      const markup = renderToString(<RoutingContext {...props} />);
+      const markup = renderToString(<RoutingContext {...props} />)
       res.render('layout', { markup })
     } else {
-      res.sendStatus(404);
+      res.sendStatus(404)
     }
   })
 })

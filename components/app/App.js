@@ -7,9 +7,10 @@ export default ({
   const routeName = children.props.route.routeName
   const className = `App App--${routeName}`
   return (
-  <div className={className}>
-    <Header routeName={routeName} />
-    <h1>Hello, world!</h1>
-    { children }
-  </div>
-)}
+    <div className={className}>
+      <Header routeName={routeName} />
+      <h1>Hello, world!</h1>
+      { children }
+    </div>
+  )
+}
