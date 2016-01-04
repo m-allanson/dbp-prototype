@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from './Header.js'
+import Footer from './Footer.js'
 
 export default ({
   children
@@ -8,9 +9,15 @@ export default ({
   const className = `App App--${routeName}`
   return (
     <div className={className}>
-      <Header routeName={routeName} />
-      <h1>Hello, world!</h1>
-      { children }
+      <div className='App-header'>
+        <Header routeName={routeName} />
+      </div>
+      <div className='App-inner'>
+        { children }
+      </div>
+      <div className='App-footer'>
+        <Footer routeName={routeName} />
+      </div>
     </div>
   )
 }

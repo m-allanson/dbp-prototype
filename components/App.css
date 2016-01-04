@@ -1,14 +1,26 @@
-/** @define App */
+/** @define App
+ *
+ * 1. Sticky footer https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
+ */
 
 .App {
+  display: flex;
+  flex-direction: column;
   height: 100%;
-  transition: background-color 0.5s linear;
+  transition: background-color var(--transition-time) linear;
 }
 
-.App-title {
-  margin: 0;
-  padding: 10px;
+.App-header,
+.App-footer {
+  flex: none;
 }
+
+.App-inner {
+  flex: 1 0 auto; /* 1 */
+}
+
+/* Colour modifiers
+  ========================================================================== */
 
 .App--home {
   background-color: hotpink;

@@ -7,7 +7,7 @@
 }
 
 .Header-logo {
-  transition: fill 0.5s linear;
+  transition: fill var(--transition-time) linear;
 }
 
 .Header--home .Header-logo {

@@ -1,0 +1,39 @@
+/** @define Footer */
+
+.Footer {
+  background-color: var(--color-black);
+  padding: 10px;
+  text-align: center;
+}
+
+/* Colour modifiers
+  ========================================================================== */
+
+.Footer--home {
+  color: hotpink;
+}
+
+.Footer--projects {
+  color: var(--color-projects-cream);
+}
+
+.Footer--about {
+  color: var(--color-about-blue);
+}
+
+.Footer--shop {
+  color: var(--color-shop-red);
+}
+
+.Footer--hindsight {
+  color: var(--color-hindsight-purple);
+}
+
+/* Titles
+  ========================================================================== */
+
+.Footer-title,
+.Footer-subtitle {
+  color: inherit;
+  transition: color var(--transition-time) linear;
+}

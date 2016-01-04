@@ -478,18 +478,35 @@ html {
 /* Components
    ========================================================================== */
 
-/** @define App */
+/** @define App
+ *
+ * 1. Sticky footer https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
+ */
 
 .App {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
   height: 100%;
   -webkit-transition: background-color 0.5s linear;
   transition: background-color 0.5s linear;
 }
 
-.App-title {
-  margin: 0;
-  padding: 10px;
+.App-header,
+.App-footer {
+  -webkit-box-flex: 0;
+          flex: none;
 }
+
+.App-inner {
+  -webkit-box-flex: 1;
+          flex: 1 0 auto; /* 1 */
+}
+
+/* Colour modifiers
+  ========================================================================== */
 
 .App--home {
   background-color: hotpink;
@@ -509,6 +526,47 @@ html {
 
 .App--hindsight {
   background-color: #dee2f1;
+}
+
+/** @define Footer */
+
+.Footer {
+  background-color: #1c1c1a;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Colour modifiers
+  ========================================================================== */
+
+.Footer--home {
+  color: hotpink;
+}
+
+.Footer--projects {
+  color: #fff4e0;
+}
+
+.Footer--about {
+  color: #d0e9f2;
+}
+
+.Footer--shop {
+  color: #ffecec;
+}
+
+.Footer--hindsight {
+  color: #dee2f1;
+}
+
+/* Titles
+  ========================================================================== */
+
+.Footer-title,
+.Footer-subtitle {
+  color: inherit;
+  -webkit-transition: color 0.5s linear;
+  transition: color 0.5s linear;
 }
 
 /** @define Header */
