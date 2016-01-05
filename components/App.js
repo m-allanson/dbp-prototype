@@ -7,6 +7,7 @@ export default ({
 }) => {
   const routeName = children.props.route.routeName
   const className = `App App--${routeName}`
+  const footer = routeName === 'home' ? null : <Footer routeName={routeName} />
   return (
     <div className={className}>
       <div className='App-header'>
@@ -16,7 +17,7 @@ export default ({
         { children }
       </div>
       <div className='App-footer'>
-        <Footer routeName={routeName} />
+        { footer }
       </div>
     </div>
   )
