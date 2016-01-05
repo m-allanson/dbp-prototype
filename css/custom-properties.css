@@ -12,8 +12,12 @@
 
   /* Typography */
 
-  --font-family-regular: Helvetica, Arial, sans-serif;
-  --font-weight-regular: 400;
+  --font-family-serif: "PlantinMTPro-Light", Georgia, Times, serif;
+  --font-family-sans-book: "P22UndergroundBook", Verdana, Geneva, sans-serif;
+  --font-family-sans-demibold: "P22UndergroundDemiBold", Verdana, Geneva, sans-serif;
+  --font-family-sans-thin: "P22UndergroundThin", Verdana, Geneva, sans-serif;
+
+  --font-weight-normal: 400;
 
   /* Dimensions */
 

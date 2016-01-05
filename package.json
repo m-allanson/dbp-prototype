@@ -17,6 +17,10 @@
     "watch:css": "nodemon --watch components --ext css --exec \"npm run compile:css\"",
     "watch:js": "watchify -v --transform [babelify] client/main.js -o static/bundle.js"
   },
+  "engines": {
+    "node": "5.3.0",
+    "npm": "3.3.12"
+  },
   "author": "",
   "license": "UNLICENSED",
   "dependencies": {

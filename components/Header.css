@@ -2,7 +2,7 @@
 
 .Header {
   background-color: var(--color-black);
-  padding: 10px;
+  padding: 10px 0;
   text-align: center;
 }
 
@@ -10,22 +10,66 @@
   transition: fill var(--transition-time) linear;
 }
 
-.Header--home .Header-logo {
-  fill: hotpink;
+/* Nav
+  ========================================================================== */
+
+.Header-nav {
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 0 16px;
 }
 
-.Header--projects .Header-logo {
-  fill: var(--color-projects-cream);
+.Header-navList {
+  display: flex;
+  justify-content: flex-between;
+  list-style-type: none;
+  margin-left: -8px;
+  padding: 0;
 }
 
-.Header--about .Header-logo {
-  fill: var(--color-about-blue);
+.Header-navListItem {
+  flex: 1;
+  margin-left: 8px;
 }
 
-.Header--shop .Header-logo {
-  fill: var(--color-shop-red);
+.Header-navListItem:first-child {
+  text-align: left;
 }
 
-.Header--hindsight .Header-logo {
-  fill: var(--color-hindsight-purple);
+.Header-navListItem:last-child {
+  text-align: right;
 }
+
+.Header-navLink {
+  font-family: var(--font-family-sans-book);
+  font-size: 11px;
+  letter-spacing: 2.2px;
+  line-height: 19px;
+  padding: 4px 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color var(--transition-time) linear;
+}
+
+.Header-navLink.is-active,
+.Header-navLink:hover {
+  text-decoration: underline;
+}
+
+/* Colour modifiers
+  ========================================================================== */
+
+.Header--home .Header-logo { fill: hotpink; }
+.Header--home .Header-navLink { color: hotpink; }
+
+.Header--projects .Header-logo { fill: var(--color-projects-cream); }
+.Header--projects .Header-navLink { color: var(--color-projects-cream); }
+
+.Header--about .Header-logo { fill: var(--color-about-blue); }
+.Header--about .Header-navLink { color: var(--color-about-blue); }
+
+.Header--shop .Header-logo { fill: var(--color-shop-red); }
+.Header--shop .Header-navLink { color: var(--color-shop-red); }
+
+.Header--hindsight .Header-logo { fill: var(--color-hindsight-purple); }
+.Header--hindsight .Header-navLink { color: var(--color-hindsight-purple); }

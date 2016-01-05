@@ -22,22 +22,8 @@
 /* Colour modifiers
   ========================================================================== */
 
-.App--home {
-  background-color: hotpink;
-}
-
-.App--projects {
-  background-color: var(--color-projects-cream);
-}
-
-.App--about {
-  background-color: var(--color-about-blue);
-}
-
-.App--shop {
-  background-color: var(--color-shop-red);
-}
-
-.App--hindsight {
-  background-color: var(--color-hindsight-purple);
-}
+.App--home { background-color: hotpink; }
+.App--projects { background-color: var(--color-projects-cream); }
+.App--about { background-color: var(--color-about-blue); }
+.App--shop { background-color: var(--color-shop-red); }
+.App--hindsight { background-color: var(--color-hindsight-purple); }

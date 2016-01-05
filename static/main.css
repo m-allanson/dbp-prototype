@@ -1,3 +1,7 @@
+
+
+@import url("//hello.myfonts.net/count/2fec8c");
+
 /**
  * Main CSS entry point.
  *
@@ -439,6 +443,50 @@ th {
 /* Fonts
    ========================================================================== */
 
+/**
+ * @license
+ * MyFonts Webfont Build ID 3140748, 2015-12-14T08:28:43-0500
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: PlantinMTPro-Light by Monotype
+ * URL: http://www.myfonts.com/fonts/mti/plantin/pro-light/
+ * Copyright: Font software Copyright 1990, 1995, 2002 Adobe Systems Incorporated. All rights reserved. Typeface designs Copyright The Monotype Corporation. All rights reserved.
+ * Licensed pageviews: 250,000
+ *
+ * Webfont: P22UndergroundBook by P22
+ * URL: http://www.myfonts.com/fonts/p22/underground-basic/book/
+ * Copyright: Copyright (c) 2007-2103 by P22 type foundry. All rights reserved.
+ * Licensed pageviews: 10,000
+ *
+ * Webfont: P22UndergroundDemiBold by P22
+ * URL: http://www.myfonts.com/fonts/p22/underground-basic/demi/
+ * Copyright: Copyright (c) 2007-2103 by P22 type foundry. All rights reserved.
+ * Licensed pageviews: 10,000
+ *
+ * Webfont: P22UndergroundThin by P22
+ * URL: http://www.myfonts.com/fonts/p22/underground-basic/thin/
+ * Copyright: Copyright (c) 2007-2103 by P22 type foundry. All rights reserved.
+ * Licensed pageviews: 10,000
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3140748
+ *
+ * © 2015 MyFonts Inc
+*/
+
+@font-face { font-family: "PlantinMTPro-Light"; src: url("fonts/2FEC8C_0_0.eot"); src: url("fonts/2FEC8C_0_0.eot?#iefix") format("embedded-opentype"), url("fonts/2FEC8C_0_0.woff2") format("woff2"), url("fonts/2FEC8C_0_0.woff") format("woff"), url("fonts/2FEC8C_0_0.ttf") format("truetype"); }
+
+@font-face { font-family: "P22UndergroundBook"; src: url("fonts/2FEC8C_1_0.eot"); src: url("fonts/2FEC8C_1_0.eot?#iefix") format("embedded-opentype"), url("fonts/2FEC8C_1_0.woff2") format("woff2"), url("fonts/2FEC8C_1_0.woff") format("woff"), url("fonts/2FEC8C_1_0.ttf") format("truetype"); }
+
+@font-face { font-family: "P22UndergroundDemiBold"; src: url("fonts/2FEC8C_2_0.eot"); src: url("fonts/2FEC8C_2_0.eot?#iefix") format("embedded-opentype"), url("fonts/2FEC8C_2_0.woff2") format("woff2"), url("fonts/2FEC8C_2_0.woff") format("woff"), url("fonts/2FEC8C_2_0.ttf") format("truetype"); }
+
+@font-face { font-family: "P22UndergroundThin"; src: url("fonts/2FEC8C_3_0.eot"); src: url("fonts/2FEC8C_3_0.eot?#iefix") format("embedded-opentype"), url("fonts/2FEC8C_3_0.woff2") format("woff2"), url("fonts/2FEC8C_3_0.woff") format("woff"), url("fonts/2FEC8C_3_0.ttf") format("truetype"); }
+
 /* Variables
    ========================================================================== */
 
@@ -508,25 +556,11 @@ html {
 /* Colour modifiers
   ========================================================================== */
 
-.App--home {
-  background-color: hotpink;
-}
-
-.App--projects {
-  background-color: #fff4e0;
-}
-
-.App--about {
-  background-color: #d0e9f2;
-}
-
-.App--shop {
-  background-color: #ffecec;
-}
-
-.App--hindsight {
-  background-color: #dee2f1;
-}
+.App--home { background-color: hotpink; }
+.App--projects { background-color: #fff4e0; }
+.App--about { background-color: #d0e9f2; }
+.App--shop { background-color: #ffecec; }
+.App--hindsight { background-color: #dee2f1; }
 
 /** @define Footer */
 
@@ -536,44 +570,59 @@ html {
   text-align: center;
 }
 
-/* Colour modifiers
-  ========================================================================== */
-
-.Footer--home {
-  color: hotpink;
+.Footer-title {
+  font-family: "P22UndergroundBook", Verdana, Geneva, sans-serif;
+  font-size: 13px;
+  letter-spacing: 2.2px;
+  line-height: 18px;
+  text-transform: uppercase;
 }
 
-.Footer--projects {
-  color: #fff4e0;
+.Footer-list {
+  list-style-type: none;
+  margin-top: 16px;
+  padding: 0;
 }
 
-.Footer--about {
-  color: #d0e9f2;
+.Footer-listItem {
+  font-family: "P22UndergroundThin", Verdana, Geneva, sans-serif;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: 18px;
 }
 
-.Footer--shop {
-  color: #ffecec;
-}
+.Footer-emailLink { text-decoration: none; }
+.Footer-emailLink:hover { text-decoration: underline; }
 
-.Footer--hindsight {
-  color: #dee2f1;
-}
-
-/* Titles
+/* Colour transitions
   ========================================================================== */
 
 .Footer-title,
-.Footer-subtitle {
+.Footer-listItem {
   color: inherit;
   -webkit-transition: color 0.5s linear;
   transition: color 0.5s linear;
 }
 
+.Footer-emailLink,
+.Footer-link {
+  color: inherit;
+}
+
+/* Colour modifiers
+  ========================================================================== */
+
+.Footer--home { color: hotpink; }
+.Footer--projects { color: #fff4e0; }
+.Footer--about { color: #d0e9f2; }
+.Footer--shop { color: #ffecec; }
+.Footer--hindsight { color: #dee2f1; }
+
 /** @define Header */
 
 .Header {
   background-color: #1c1c1a;
-  padding: 10px;
+  padding: 10px 0;
   text-align: center;
 }
 
@@ -582,22 +631,73 @@ html {
   transition: fill 0.5s linear;
 }
 
-.Header--home .Header-logo {
-  fill: hotpink;
+/* Nav
+  ========================================================================== */
+
+.Header-nav {
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 0 16px;
 }
 
-.Header--projects .Header-logo {
-  fill: #fff4e0;
+.Header-navList {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: flex-between;
+          justify-content: flex-between;
+  list-style-type: none;
+  margin-left: -8px;
+  padding: 0;
 }
 
-.Header--about .Header-logo {
-  fill: #d0e9f2;
+.Header-navListItem {
+  -webkit-box-flex: 1;
+          flex: 1;
+  margin-left: 8px;
 }
 
-.Header--shop .Header-logo {
-  fill: #ffecec;
+.Header-navListItem:first-child {
+  text-align: left;
 }
 
-.Header--hindsight .Header-logo {
-  fill: #dee2f1;
+.Header-navListItem:last-child {
+  text-align: right;
 }
+
+.Header-navLink {
+  font-family: "P22UndergroundBook", Verdana, Geneva, sans-serif;
+  font-size: 11px;
+  letter-spacing: 2.2px;
+  line-height: 19px;
+  padding: 4px 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: color 0.5s linear;
+  transition: color 0.5s linear;
+}
+
+.Header-navLink.is-active,
+.Header-navLink:hover {
+  text-decoration: underline;
+}
+
+/* Colour modifiers
+  ========================================================================== */
+
+.Header--home .Header-logo { fill: hotpink; }
+.Header--home .Header-navLink { color: hotpink; }
+
+.Header--projects .Header-logo { fill: #fff4e0; }
+.Header--projects .Header-navLink { color: #fff4e0; }
+
+.Header--about .Header-logo { fill: #d0e9f2; }
+.Header--about .Header-navLink { color: #d0e9f2; }
+
+.Header--shop .Header-logo { fill: #ffecec; }
+.Header--shop .Header-navLink { color: #ffecec; }
+
+.Header--hindsight .Header-logo { fill: #dee2f1; }
+.Header--hindsight .Header-navLink { color: #dee2f1; }
+
+/* Myfonts counter
+  ========================================================================== */
