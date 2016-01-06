@@ -526,6 +526,39 @@ html {
 /* Components
    ========================================================================== */
 
+/** @define About */
+
+.About-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.About-statement {
+  list-style-type: none;
+  margin: 32px auto 0;
+  max-width: 512px;
+  padding: 0 16px;
+}
+
+.About-statementIcon {
+  background: transparent url("/static/images/about-bullet-a.svg") no-repeat;
+  display: block;
+  height: 22px;
+  margin: 0 auto;
+  text-align: center;
+  width: 22px;
+}
+
+.About-statementCopy {
+  color: #1c1c1a;
+  font-family: "P22UndergroundThin", Verdana, Geneva, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 24px;
+  text-align: center;
+}
+
 /** @define App
  *
  * 1. Sticky footer https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
@@ -537,7 +570,7 @@ html {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
-  height: 100%;
+  min-height: 100%;
   -webkit-transition: background-color 0.5s linear;
   transition: background-color 0.5s linear;
 }
@@ -566,6 +599,7 @@ html {
 
 .Footer {
   background-color: #1c1c1a;
+  margin-top: 64px;
   padding: 10px;
   text-align: center;
 }
@@ -624,12 +658,12 @@ html {
  */
 
 .Header {
-  background-color: #1c1c1a;
-  height: 124px;
-  display: -webkit-box;
-  display: flex;
   -webkit-box-align: center;
           align-items: center;
+  background-color: #1c1c1a;
+  display: -webkit-box;
+  display: flex;
+  height: 124px;
   -webkit-box-pack: center;
           justify-content: center;
 }

@@ -1,0 +1,32 @@
+/** @define About */
+
+.About-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.About-statement {
+  list-style-type: none;
+  margin: 32px auto 0;
+  max-width: 512px;
+  padding: 0 16px;
+}
+
+.About-statementIcon {
+  background: transparent url("/static/images/about-bullet-a.svg") no-repeat;
+  display: block;
+  height: 22px;
+  margin: 0 auto;
+  text-align: center;
+  width: 22px;
+}
+
+.About-statementCopy {
+  color: var(--color-black);
+  font-family: var(--font-family-sans-thin);
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 24px;
+  text-align: center;
+}
