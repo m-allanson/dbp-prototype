@@ -618,11 +618,24 @@ html {
 .Footer--shop { color: #ffecec; }
 .Footer--hindsight { color: #dee2f1; }
 
-/** @define Header */
+/** @define Header
+ *
+ * 1. Reposition logo to sit inline and inbetween the other nav links
+ */
 
 .Header {
   background-color: #1c1c1a;
-  padding: 10px 0;
+  height: 124px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.Header-title {
+  margin: 0;
   text-align: center;
 }
 
@@ -635,41 +648,68 @@ html {
   ========================================================================== */
 
 .Header-nav {
-  margin: 0 auto;
-  max-width: 400px;
+  max-width: 432px;
   padding: 0 16px;
+  width: 100%;
 }
 
 .Header-navList {
+  -webkit-box-align: center;
+          align-items: center;
   display: -webkit-box;
   display: flex;
-  -webkit-box-pack: flex-between;
-          justify-content: flex-between;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   list-style-type: none;
-  margin-left: -8px;
+  margin: 0;
   padding: 0;
 }
 
 .Header-navListItem {
-  -webkit-box-flex: 1;
-          flex: 1;
-  margin-left: 8px;
+  -webkit-box-flex: 0;
+          flex: 0 1 auto;
 }
 
-.Header-navListItem:first-child {
-  text-align: left;
+.Header-navListItem--prime {
+  -webkit-box-flex: 0;
+          flex: 0 100%;
+  margin-bottom: 18px;
+  -webkit-box-ordinal-group: 2;
+          order: 1;
 }
 
-.Header-navListItem:last-child {
-  text-align: right;
+.Header-navListItem--beginning { -webkit-box-ordinal-group: 3; order: 2; }
+.Header-navListItem--end { -webkit-box-ordinal-group: 4; order: 3; }
+
+@media (min-width: 960px) { /* 1 */
+
+  .Header-nav {
+    max-width: 1024px;
+    padding: 0 64px;
+  }
+
+  .Header-navListItem--prime {
+    -webkit-box-flex: 0;
+            flex: 0 1 auto;
+    margin-bottom: 0;
+    -webkit-box-ordinal-group: 3;
+            order: 2;
+  }
+
+  .Header-navListItem--beginning { -webkit-box-ordinal-group: 2; order: 1; }
+  .Header-navListItem--end { -webkit-box-ordinal-group: 4; order: 3; }
 }
+
+/* Nav links
+  ========================================================================== */
 
 .Header-navLink {
   font-family: "P22UndergroundBook", Verdana, Geneva, sans-serif;
   font-size: 11px;
   letter-spacing: 2.2px;
   line-height: 19px;
-  padding: 4px 8px;
+  padding: 4px;
   text-decoration: none;
   text-transform: uppercase;
   -webkit-transition: color 0.5s linear;
@@ -679,6 +719,10 @@ html {
 .Header-navLink.is-active,
 .Header-navLink:hover {
   text-decoration: underline;
+}
+
+@media (min-width: 640px) {
+  .Header-navLink { font-size: 13px; }
 }
 
 /* Colour modifiers

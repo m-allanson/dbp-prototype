@@ -1,8 +1,18 @@
-/** @define Header */
+/** @define Header
+ *
+ * 1. Reposition logo to sit inline and inbetween the other nav links
+ */
 
 .Header {
+  align-items: center;
   background-color: var(--color-black);
-  padding: 10px 0;
+  display: flex;
+  height: 124px;
+  justify-content: center;
+}
+
+.Header-title {
+  margin: 0;
   text-align: center;
 }
 
@@ -14,38 +24,60 @@
   ========================================================================== */
 
 .Header-nav {
-  margin: 0 auto;
-  max-width: 400px;
+  max-width: 432px;
   padding: 0 16px;
+  width: 100%;
 }
 
 .Header-navList {
+  align-items: center;
   display: flex;
-  justify-content: flex-between;
+  flex-flow: row wrap;
+  justify-content: space-between;
   list-style-type: none;
-  margin-left: -8px;
+  margin: 0;
   padding: 0;
 }
 
 .Header-navListItem {
-  flex: 1;
-  margin-left: 8px;
+  flex: 0 1 auto;
 }
 
-.Header-navListItem:first-child {
-  text-align: left;
+.Header-navListItem--prime {
+  flex: 0 100%;
+  margin-bottom: 18px;
+  order: 1;
 }
 
-.Header-navListItem:last-child {
-  text-align: right;
+.Header-navListItem--beginning { order: 2; }
+.Header-navListItem--end { order: 3; }
+
+@media (--large) { /* 1 */
+
+  .Header-nav {
+    max-width: 1024px;
+    padding: 0 64px;
+  }
+
+  .Header-navListItem--prime {
+    flex: 0 1 auto;
+    margin-bottom: 0;
+    order: 2;
+  }
+
+  .Header-navListItem--beginning { order: 1; }
+  .Header-navListItem--end { order: 3; }
 }
+
+/* Nav links
+  ========================================================================== */
 
 .Header-navLink {
   font-family: var(--font-family-sans-book);
   font-size: 11px;
   letter-spacing: 2.2px;
   line-height: 19px;
-  padding: 4px 8px;
+  padding: 4px;
   text-decoration: none;
   text-transform: uppercase;
   transition: color var(--transition-time) linear;
@@ -54,6 +86,10 @@
 .Header-navLink.is-active,
 .Header-navLink:hover {
   text-decoration: underline;
+}
+
+@media (--medium) {
+  .Header-navLink { font-size: 13px; }
 }
 
 /* Colour modifiers
