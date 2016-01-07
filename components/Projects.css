@@ -1,0 +1,14 @@
+/** @define Projects */
+
+.Projects {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.Projects-item {
+  color: var(--color-black);
+  font-family: var(--font-family-serif);
+  font-size: 44px;
+  line-height: 80px;
+}

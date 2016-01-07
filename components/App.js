@@ -15,15 +15,14 @@ export default ({
         <Header routeName={routeName} />
       </div>
       <ReactCSSTransitionGroup
-        component="div"
         transitionName={ {
           enter: 'App-transitionEnter',
           enterActive: 'is-enterActive',
           leave: 'App-transitionLeave',
-          leaveActive: 'is-leaveActive',
+          leaveActive: 'is-leaveActive'
         } }
-        transitionEnterTimeout={200}
-        transitionLeaveTimeout={200}
+        transitionEnterTimeout={250}
+        transitionLeaveTimeout={250}
       >
         <div className='App-content' key={children.props.location.pathname}>
           { children }

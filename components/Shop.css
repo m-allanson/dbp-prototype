@@ -1,0 +1,24 @@
+/** @define Shop */
+
+.Shop {
+  list-style-type: none;
+  padding: 0;
+}
+
+.Shop-item {
+  text-align: center;
+}
+
+.Shop-itemName {
+  color: var(--color-black);
+  font-family: var(--font-family-sans-demi);
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.Shop-itemPrice {
+  color: var(--color-black);
+  font-family: var(--font-family-sans-thin);
+  font-size: 18px;
+  line-height: 24px;
+}

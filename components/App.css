@@ -8,7 +8,7 @@
 
 :root {
   --App-header-height: 124px;
-  --App-transition-time: calc(var(--transition-time) / 2)
+  --App-transition-time: calc(var(--transition-time) / 2);
 }
 
 .App {

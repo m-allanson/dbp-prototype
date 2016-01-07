@@ -2,10 +2,10 @@ import React from 'react'
 
 export default () => (
   <div className='About'>
-    <picture property="photo">
+    <picture property='photo'>
       <source
-        media="(min-width: 640px)"
-        srcSet="/static/images/pascal-large.jpg 1x"
+        media='(min-width: 640px)'
+        srcSet='/static/images/pascal-large.jpg 1x'
       />
       <img
         className='About-image'

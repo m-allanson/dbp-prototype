@@ -800,5 +800,86 @@ html {
 .Header--hindsight .Header-logo { fill: #dee2f1; }
 .Header--hindsight .Header-navLink { color: #dee2f1; }
 
+/** @define Hindsight */
+
+/* .Hindsight { } */
+
+.Hindsight-title {
+  color: #1c1c1a;
+  font-family: "P22UndergroundBook", Verdana, Geneva, sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  line-height: 19px;
+  margin-top: 32px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.Hindsight-items {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.Hindsight-item {
+  margin-top: 64px;
+}
+
+.Hindsight-itemCategory {
+  color: #1c1c1a;
+  font-family: "P22UndergroundBook", Verdana, Geneva, sans-serif;
+  font-size: 12px;
+  letter-spacing: 2.2px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.Hindsight-itemTitle {
+  color: #1c1c1a;
+  font-family: "PlantinMTPro-Light", Georgia, Times, serif;
+  font-size: 28px;
+  line-height: 28px;
+}
+
+/** @define Projects */
+
+.Projects {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.Projects-item {
+  color: #1c1c1a;
+  font-family: "PlantinMTPro-Light", Georgia, Times, serif;
+  font-size: 44px;
+  line-height: 80px;
+}
+
+/** @define Shop */
+
+.Shop {
+  list-style-type: none;
+  padding: 0;
+}
+
+.Shop-item {
+  text-align: center;
+}
+
+.Shop-itemName {
+  color: #1c1c1a;
+  font-family: "P22UndergroundDemiBold", Verdana, Geneva, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.Shop-itemPrice {
+  color: #1c1c1a;
+  font-family: "P22UndergroundThin", Verdana, Geneva, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
 /* Myfonts counter
   ========================================================================== */
