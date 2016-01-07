@@ -14,7 +14,7 @@
     "start:dev": "PORT=8080 NODE_ENV=development nodemon --watch components --watch server --watch routes server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "npm-run-all --parallel watch:* ",
-    "watch:css": "nodemon --watch components --ext css --exec \"npm run compile:css\"",
+    "watch:css": "nodemon --watch components --watch css --ext css --exec \"npm run compile:css\"",
     "watch:js": "watchify -v --transform [babelify] client/main.js -o static/bundle.js"
   },
   "engines": {
@@ -45,6 +45,7 @@
     "postcss-media-minmax": "^2.1.1",
     "postcss-reporter": "^1.3.0",
     "react": "^0.14.3",
+    "react-addons-css-transition-group": "^0.14.5",
     "react-dom": "^0.14.3",
     "react-router": "^1.0.3",
     "stylelint": "^3.1.4",

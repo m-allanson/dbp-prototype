@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import Header from './Header.js'
 import Footer from './Footer.js'
 
@@ -13,12 +14,24 @@ export default ({
       <div className='App-header'>
         <Header routeName={routeName} />
       </div>
-      <div className='App-inner'>
-        { children }
-      </div>
-      <div className='App-footer'>
-        { footer }
-      </div>
+      <ReactCSSTransitionGroup
+        component="div"
+        transitionName={ {
+          enter: 'App-transitionEnter',
+          enterActive: 'is-enterActive',
+          leave: 'App-transitionLeave',
+          leaveActive: 'is-leaveActive',
+        } }
+        transitionEnterTimeout={200}
+        transitionLeaveTimeout={200}
+      >
+        <div className='App-content' key={children.props.location.pathname}>
+          { children }
+          <div className='App-footer'>
+            { footer }
+          </div>
+        </div>
+      </ReactCSSTransitionGroup>
     </div>
   )
 }

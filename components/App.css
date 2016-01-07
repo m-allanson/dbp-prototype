@@ -1,22 +1,28 @@
 /** @define App
  *
- * 1. Sticky footer https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
+ * 1. During content transitions, some child elements of .App are set to
+ * position absolute. This rule ensures that .App's background colour is
+ * always fully visible, even when the page is partially scrolled during a
+ * transition.
  */
 
+:root {
+  --App-header-height: 124px;
+  --App-transition-time: calc(var(--transition-time) / 2)
+}
+
 .App {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
+  min-height: calc(100% + var(--App-header-height)); /* 1 */
+  position: relative;
   transition: background-color var(--transition-time) linear;
 }
 
-.App-header,
-.App-footer {
-  flex: none;
+.App-header {
+  height: var(--App-header-height);
 }
 
-.App-inner {
-  flex: 1 0 auto; /* 1 */
+.App-content {
+  width: 100%;
 }
 
 /* Colour modifiers
@@ -27,3 +33,28 @@
 .App--about { background-color: var(--color-about-blue); }
 .App--shop { background-color: var(--color-shop-red); }
 .App--hindsight { background-color: var(--color-hindsight-purple); }
+
+/* Content transitions
+  ========================================================================== */
+
+.App-transitionEnter {
+  opacity: 0.01;
+  position: absolute;
+  top: var(--App-header-height);
+}
+
+.App-transitionEnter.is-enterActive {
+  opacity: 1;
+  transition: opacity var(--App-transition-time) ease-in;
+}
+
+.App-transitionLeave {
+  opacity: 1;
+  position: absolute;
+  top: var(--App-header-height);
+}
+
+.App-transitionLeave.is-leaveActive {
+  opacity: 0.01;
+  transition: opacity var(--App-transition-time)  ease-out;
+}
