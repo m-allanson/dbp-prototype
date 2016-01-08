@@ -6,16 +6,16 @@
   "scripts": {
     "compile": "npm-run-all compile:*",
     "compile:css": "postcss --config postcss.json",
-    "compile:js": "browserify -v --transform [babelify] client/main.js -o static/bundle.js",
+    "compile:js": "browserify -v --transform [babelify] client/index.js -o static/client.js",
     "lint": "npm-run-all lint:*",
-    "lint:css": "stylelint './components/**/*.css' './css/*'",
+    "lint:css": "stylelint './common/**/*.css' './css/*'",
     "lint:js": "eslint --cache .",
     "start": "npm run compile && NODE_ENV=production node server/index.js",
-    "start:dev": "PORT=8080 NODE_ENV=development nodemon --watch components --watch server --watch routes server/index.js",
+    "start:dev": "PORT=8080 NODE_ENV=development nodemon --watch common --watch server server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "npm-run-all --parallel watch:* ",
-    "watch:css": "nodemon --watch components --watch css --ext css --exec \"npm run compile:css\"",
-    "watch:js": "watchify -v --transform [babelify] client/main.js -o static/bundle.js"
+    "watch:css": "nodemon --watch common --ext css --exec \"npm run compile:css\"",
+    "watch:js": "watchify -v --transform [babelify] client/index.js -o static/client.js"
   },
   "engines": {
     "node": "5.3.0",
@@ -33,7 +33,6 @@
     "babelify": "^7.2.0",
     "browserify": "^12.0.1",
     "express": "^4.13.3",
-    "express-handlebars": "^2.0.1",
     "history": "^1.17.0",
     "normalize.css": "^3.0.3",
     "npm-run-all": "^1.4.0",
@@ -47,7 +46,9 @@
     "react": "^0.14.3",
     "react-addons-css-transition-group": "^0.14.5",
     "react-dom": "^0.14.3",
+    "react-redux": "^4.0.6",
     "react-router": "^1.0.3",
+    "redux": "^3.0.5",
     "stylelint": "^3.1.4",
     "stylelint-config-suitcss": "^2.0.0",
     "stylelint-selector-bem-pattern": "^0.2.0"

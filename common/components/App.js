@@ -6,13 +6,13 @@ import Footer from './Footer.js'
 export default ({
   children
 }) => {
-  const routeName = children.props.route.routeName
-  const className = `App App--${routeName}`
-  const footer = routeName === 'home' ? null : <Footer routeName={routeName} />
+  const sectionName = children.props.route.sectionName
+  const className = `App App--${sectionName}`
+  const footer = sectionName === 'home' ? null : <Footer sectionName={sectionName} />
   return (
     <div className={className}>
       <div className='App-header'>
-        <Header routeName={routeName} />
+        <Header sectionName={sectionName} />
       </div>
       <ReactCSSTransitionGroup
         transitionName={ {

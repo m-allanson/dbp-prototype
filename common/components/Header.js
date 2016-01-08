@@ -2,9 +2,9 @@ import React from 'react'
 import { Link } from 'react-router'
 
 export default ({
-  routeName
+  sectionName
 }) => {
-  const className = `Header Header--${routeName}`
+  const className = `Header Header--${sectionName}`
   return (
     <div className={className}>
       <nav className='Header-nav'>

@@ -7,7 +7,7 @@
     "postcss-media-minmax",
     "autoprefixer"
   ],
-  "input": "css/main.css",
+  "input": "common/styles/main.css",
   "output": "static/main.css",
   "postcss-import": {
     "glob": true

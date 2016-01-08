@@ -1,9 +1,9 @@
 import React from 'react'
 
 export default ({
-  routeName
+  sectionName
 }) => {
-  const className = `Footer Footer--${routeName}`
+  const className = `Footer Footer--${sectionName}`
   return (
     <div className={className}>
       <h1 className='Footer-title'>CONTACT</h1>
