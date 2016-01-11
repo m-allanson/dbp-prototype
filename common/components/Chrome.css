@@ -1,0 +1,60 @@
+/** @define Chrome
+ *
+ * 1. During content transitions, some child elements of .Chrome are set to
+ * position absolute. This rule ensures that .Chrome's background colour is
+ * always fully visible, even when the page is partially scrolled during a
+ * transition.
+ */
+
+:root {
+  --Chrome-header-height: 124px;
+  --Chrome-transition-time: calc(var(--transition-time) / 2);
+}
+
+.Chrome {
+  min-height: calc(100% + var(--Chrome-header-height)); /* 1 */
+  position: relative;
+  transition: background-color var(--transition-time) linear;
+}
+
+.Chrome-header {
+  height: var(--Chrome-header-height);
+}
+
+.Chrome-content {
+  width: 100%;
+}
+
+/* Colour modifiers
+  ========================================================================== */
+
+.Chrome--home { background-color: hotpink; }
+.Chrome--projects { background-color: var(--color-projects-cream); }
+.Chrome--about { background-color: var(--color-about-blue); }
+.Chrome--shop { background-color: var(--color-shop-red); }
+.Chrome--hindsight { background-color: var(--color-hindsight-purple); }
+
+/* Content transitions
+  ========================================================================== */
+
+.Chrome-transitionEnter {
+  opacity: 0.01;
+  position: absolute;
+  top: var(--Chrome-header-height);
+}
+
+.Chrome-transitionEnter.is-enterActive {
+  opacity: 1;
+  transition: opacity var(--Chrome-transition-time) ease-in;
+}
+
+.Chrome-transitionLeave {
+  opacity: 1;
+  position: absolute;
+  top: var(--Chrome-header-height);
+}
+
+.Chrome-transitionLeave.is-leaveActive {
+  opacity: 0.01;
+  transition: opacity var(--Chrome-transition-time)  ease-out;
+}

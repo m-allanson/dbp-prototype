@@ -23,3 +23,5 @@ Deployment is handled via dokku. Once a dokku remote is added, deploy with:
 
 ## TODO
 Write a readme file :)
+
+[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)

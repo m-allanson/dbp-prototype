@@ -1,32 +1,34 @@
 import React from 'react'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
-import Header from './Header.js'
-import Footer from './Footer.js'
+import Header from './Header'
+import Footer from './Footer'
 
 export default ({
   children
 }) => {
+  // console.log('Chrome children', children)
   const sectionName = children.props.route.sectionName
-  const className = `App App--${sectionName}`
+  const className = `Chrome Chrome--${sectionName}`
   const footer = sectionName === 'home' ? null : <Footer sectionName={sectionName} />
+
   return (
     <div className={className}>
-      <div className='App-header'>
+      <div className='Chrome-header'>
         <Header sectionName={sectionName} />
       </div>
       <ReactCSSTransitionGroup
         transitionName={ {
-          enter: 'App-transitionEnter',
+          enter: 'Chrome-transitionEnter',
           enterActive: 'is-enterActive',
-          leave: 'App-transitionLeave',
+          leave: 'Chrome-transitionLeave',
           leaveActive: 'is-leaveActive'
         } }
         transitionEnterTimeout={250}
         transitionLeaveTimeout={250}
       >
-        <div className='App-content' key={children.props.location.pathname}>
+        <div className='Chrome-content' key={children.props.location.pathname}>
           { children }
-          <div className='App-footer'>
+          <div className='Chrome-footer'>
             { footer }
           </div>
         </div>
