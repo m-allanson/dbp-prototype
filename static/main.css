@@ -837,60 +837,80 @@ html {
   line-height: 28px;
 }
 
-/** @define Project */
+/** @define ProductItem */
 
-.Project {
+.ProductItem {
   text-align: center;
 }
 
-.Project-title {
+.ProductItem-title {
   font-family: "PlantinMTPro-Light", Georgia, Times, serif;
   font-size: 44px;
   line-height: 80px;
 }
 
-.Project-id {
+.ProductItem-id {
   font-size: 9px;
 }
 
-/** @define ProjectCategories */
+/** @define Products */
 
-.ProjectCategories {
-  list-style-type: none;
-  padding: 0;
-  text-align: center;
-}
-
-.ProjectCategories-item {
-  color: #1c1c1a;
-  font-family: "PlantinMTPro-Light", Georgia, Times, serif;
-  font-size: 44px;
-  line-height: 80px;
-}
-
-/** @define Shop */
-
-.Shop {
+.Products {
   list-style-type: none;
   padding: 0;
 }
 
-.Shop-item {
+.Products-item {
   text-align: center;
 }
 
-.Shop-itemName {
+.Products-itemLink {
+  text-decoration: none;
+}
+
+.Products-itemName {
   color: #1c1c1a;
   font-family: "P22UndergroundDemiBold", Verdana, Geneva, sans-serif;
   font-size: 18px;
   line-height: 24px;
 }
 
-.Shop-itemPrice {
+.Products-itemPrice {
   color: #1c1c1a;
   font-family: "P22UndergroundThin", Verdana, Geneva, sans-serif;
   font-size: 18px;
   line-height: 24px;
+}
+
+/** @define ProjectItem */
+
+.ProjectItem {
+  text-align: center;
+}
+
+.ProjectItem-title {
+  font-family: "PlantinMTPro-Light", Georgia, Times, serif;
+  font-size: 44px;
+  line-height: 80px;
+}
+
+.ProjectItem-id {
+  font-size: 9px;
+}
+
+/** @define Projects */
+
+.Projects {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.Projects-item {
+  color: #1c1c1a;
+  font-family: "PlantinMTPro-Light", Georgia, Times, serif;
+  font-size: 44px;
+  line-height: 80px;
 }
 
 /* Myfonts counter

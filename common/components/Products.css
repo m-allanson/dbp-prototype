@@ -1,22 +1,26 @@
-/** @define Shop */
+/** @define Products */
 
-.Shop {
+.Products {
   list-style-type: none;
   padding: 0;
 }
 
-.Shop-item {
+.Products-item {
   text-align: center;
 }
 
-.Shop-itemName {
+.Products-itemLink {
+  text-decoration: none;
+}
+
+.Products-itemName {
   color: var(--color-black);
   font-family: var(--font-family-sans-demi);
   font-size: 18px;
   line-height: 24px;
 }
 
-.Shop-itemPrice {
+.Products-itemPrice {
   color: var(--color-black);
   font-family: var(--font-family-sans-thin);
   font-size: 18px;

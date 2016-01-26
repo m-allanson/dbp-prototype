@@ -1,15 +1,15 @@
-/** @define Project */
+/** @define ProductItem */
 
-.Project {
+.ProductItem {
   text-align: center;
 }
 
-.Project-title {
+.ProductItem-title {
   font-family: var(--font-family-serif);
   font-size: 44px;
   line-height: 80px;
 }
 
-.Project-id {
+.ProductItem-id {
   font-size: 9px;
 }

@@ -1,0 +1,15 @@
+/** @define ProjectItem */
+
+.ProjectItem {
+  text-align: center;
+}
+
+.ProjectItem-title {
+  font-family: var(--font-family-serif);
+  font-size: 44px;
+  line-height: 80px;
+}
+
+.ProjectItem-id {
+  font-size: 9px;
+}

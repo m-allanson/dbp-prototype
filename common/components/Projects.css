@@ -1,12 +1,12 @@
-/** @define ProjectCategories */
+/** @define Projects */
 
-.ProjectCategories {
+.Projects {
   list-style-type: none;
   padding: 0;
   text-align: center;
 }
 
-.ProjectCategories-item {
+.Projects-item {
   color: var(--color-black);
   font-family: var(--font-family-serif);
   font-size: 44px;

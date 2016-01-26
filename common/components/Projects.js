@@ -6,9 +6,9 @@ export default ({
   categories
 }) => {
   return (
-    <ul className='ProjectCategories'>
+    <ul className='Projects'>
       { _map(categories, cat => (
-        <li key={ cat.id } className='ProjectCategories-item'>
+        <li key={ cat.id } className='Projects-item'>
           <p>{ cat.name }</p>
           <ProjectList projects={ cat.projects } />
         </li>

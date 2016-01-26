@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
-import Project from '../components/Project'
+import ProjectItem from '../components/ProjectItem'
 import { connect } from 'react-redux'
 import _find from 'lodash/find'
 
-class ProjectDetails extends Component {
+class ProjectItemContainer extends Component {
   render () {
     const { project } = this.props
-    return <Project project={ project } />
+    return <ProjectItem project={ project } />
   }
 }
 
-ProjectDetails.propTypes = {
+ProjectItemContainer.propTypes = {
   project: React.PropTypes.object.isRequired
 }
 
@@ -26,4 +26,4 @@ const mapStateToProps = (state, ownProps) => {
   }
 }
 
-export default connect(mapStateToProps)(ProjectDetails)
+export default connect(mapStateToProps)(ProjectItemContainer)

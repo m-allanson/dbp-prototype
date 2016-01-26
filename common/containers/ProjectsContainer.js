@@ -1,13 +1,13 @@
 import React from 'react'
-import ProjectCategories from '../components/ProjectCategories'
+import Projects from '../components/Projects'
 import { connect } from 'react-redux'
 import _forOwn from 'lodash/forOwn'
 import _objectSet from 'lodash/set'
 
-const Projects = ({
+const ProjectsContainer = ({
   params, categories
 }) => {
-  return <ProjectCategories categories={ categories } />
+  return <Projects categories={ categories } />
 }
 
 // Convert project and category state objects to a single normalised object,
@@ -37,4 +37,4 @@ const select = (state) => {
   }
 }
 
-export default connect(select)(Projects)
+export default connect(select)(ProjectsContainer)
