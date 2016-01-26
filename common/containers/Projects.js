@@ -1,11 +1,13 @@
 import React from 'react'
 import ProjectCategories from '../components/ProjectCategories'
 import { connect } from 'react-redux'
+import _forOwn from 'lodash/forOwn'
+import _objectSet from 'lodash/set'
 
 const Projects = ({
   params, categories
 }) => {
-  return <ProjectCategories categories={categories} />
+  return <ProjectCategories categories={ categories } />
 }
 
 // Convert state structure to something like:
@@ -20,21 +22,17 @@ const Projects = ({
 //   }
 // }
 const getProjectsByCategory = (projects, categories) => {
-  let mapped = {}
-
-  Object.keys(projects).forEach(key => {
-    let project = projects[key]
-    const categoryId = project.category
-    if (!mapped[categoryId]) {
-      mapped[categoryId] = Object.assign(categories[categoryId], {projects: []})
+  _forOwn(projects, (project) => {
+    const catId = project.category
+    if (!categories[catId].projects) {
+      _objectSet(categories, `${catId}.projects`, [])
     }
-    mapped[project.category].projects.push(project)
+    categories[catId].projects.push(project)
   })
-
-  return mapped
+  return categories
 }
 
-const select = state => {
+const select = (state) => {
   return {
     categories: getProjectsByCategory(state.projects, state.categories)
   }

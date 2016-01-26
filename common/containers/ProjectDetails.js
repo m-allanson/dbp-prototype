@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import Project from '../components/Project'
 import { connect } from 'react-redux'
+import _find from 'lodash/find'
 
 class ProjectDetails extends Component {
   render () {
     const { project } = this.props
-    return <Project project={project} />
+    return <Project project={ project } />
   }
 }
 
@@ -14,11 +15,9 @@ ProjectDetails.propTypes = {
 }
 
 const getProjectFromSlug = (slug, projects) => {
-  let project
-  Object.keys(projects).forEach(key => {
-    if (projects[key].slug === slug) project = projects[key]
-  })
-  return project
+  return _find(projects,
+    project => project.slug === slug
+  )
 }
 
 const mapStateToProps = (state, ownProps) => {
