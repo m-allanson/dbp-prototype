@@ -9,7 +9,6 @@ import { syncReduxAndRouter, routeReducer } from 'redux-simple-router'
 import { categories, projects } from '../common/reducers'
 
 import Routes from '../common/containers/Routes'
-// console.log('reducers are', reducers, reducers())
 const reducer = combineReducers(
   Object.assign(
     {}, { categories, projects, routing: routeReducer }

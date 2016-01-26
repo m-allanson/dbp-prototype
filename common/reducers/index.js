@@ -3,7 +3,7 @@
 const initialState = {
   projects: {
     1: {
-      id: '1',
+      id: 1,
       title: 'hey',
       slug: 'test',
       content: 'A lorem ipsum dolor sit amet',
@@ -12,7 +12,7 @@ const initialState = {
       category: 1
     },
     2: {
-      id: '2',
+      id: 2,
       title: 'go',
       slug: 'test2',
       content: 'B lorem ipsum dolor sit amet',
@@ -21,7 +21,7 @@ const initialState = {
       category: 2
     },
     3: {
-      id: '3',
+      id: 3,
       title: 'lets',
       slug: 'test3',
       content: 'C lorem ipsum dolor sit amet',

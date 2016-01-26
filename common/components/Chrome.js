@@ -6,7 +6,6 @@ import Footer from './Footer'
 export default ({
   children
 }) => {
-  // console.log('Chrome children', children)
   const sectionName = children.props.route.sectionName
   const className = `Chrome Chrome--${sectionName}`
   const footer = sectionName === 'home' ? null : <Footer sectionName={sectionName} />

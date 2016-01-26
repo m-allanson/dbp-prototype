@@ -10,7 +10,8 @@ const Projects = ({
   return <ProjectCategories categories={ categories } />
 }
 
-// Convert state structure to something like:
+// Convert project and category state objects to a single normalised object,
+// arranged by category:
 // {
 //   1: {
 //     id: 1
@@ -22,14 +23,12 @@ const Projects = ({
 //   }
 // }
 const getProjectsByCategory = (projects, categories) => {
+  const normalised = Object.assign({}, categories)
   _forOwn(projects, (project) => {
     const catId = project.category
-    if (!categories[catId].projects) {
-      _objectSet(categories, `${catId}.projects`, [])
-    }
-    categories[catId].projects.push(project)
+    _objectSet(normalised, `${catId}.projects.${project.id}`, project)
   })
-  return categories
+  return normalised
 }
 
 const select = (state) => {

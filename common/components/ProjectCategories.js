@@ -1,31 +1,18 @@
 import React from 'react'
 import ProjectList from './ProjectList'
+import _map from 'lodash/map'
 
 export default ({
   categories
 }) => {
-  const links = []
-
-  Object.keys(categories).forEach(id => {
-    links.push(
-      <li key={id} className='ProjectCategories-item'>
-        <p>{ categories[id].name }</p>
-        <ProjectList projects={categories[id].projects} />
-      </li>
-    )
-  })
-
   return (
     <ul className='ProjectCategories'>
-      { links }
+      { _map(categories, cat => (
+        <li key={ cat.id } className='ProjectCategories-item'>
+          <p>{ cat.name }</p>
+          <ProjectList projects={ cat.projects } />
+        </li>
+      ))}
     </ul>
   )
 }
-
-// {categories[id].projects.map(
-//   project => {
-//     console.log('project is', project)
-//     return <Link to={`/projects/${project.slug}`} project={project}>{project.name}</Link>
-//   }
-// )
-// }
