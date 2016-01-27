@@ -22,8 +22,8 @@ export default ({
           leave: 'Chrome-transitionLeave',
           leaveActive: 'is-leaveActive'
         } }
-        transitionEnterTimeout={250}
-        transitionLeaveTimeout={250}
+        transitionEnterTimeout={150}
+        transitionLeaveTimeout={150}
       >
         <div className='Chrome-content' key={children.props.location.pathname}>
           { children }
