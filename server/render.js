@@ -15,7 +15,7 @@ function renderFullPage (html, initialState) {
       <title>DbP tech prototype</title>
       <link href="/static/main.css" rel="stylesheet" type="text/css" />
     </head>
-    <body style="margin: 0;">
+    <body style="margin: 0; background-color: #1c1c1a;">
       <div id="app" style="height: 100%;">${html}</div>
       <script>
         window.__INITIAL_STATE__ = ${JSON.stringify(initialState)}

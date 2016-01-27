@@ -22,11 +22,13 @@ export default ({
           leave: 'Chrome-transitionLeave',
           leaveActive: 'is-leaveActive'
         } }
-        transitionEnterTimeout={150}
-        transitionLeaveTimeout={150}
+        transitionEnterTimeout={200}
+        transitionLeaveTimeout={200}
       >
-        <div className='Chrome-content' key={children.props.location.pathname}>
-          { children }
+        <div className='Chrome-inner' key={children.props.location.pathname}>
+          <div className='Chrome-content'>
+            { children }
+          </div>
           <div className='Chrome-footer'>
             { footer }
           </div>

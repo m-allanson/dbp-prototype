@@ -2,10 +2,12 @@
 
 .Products {
   list-style-type: none;
-  padding: 0;
+  margin: 0;
+  padding: 32px 0 0 0;
 }
 
 .Products-item {
+  margin-top: 32px;
   text-align: center;
 }
 

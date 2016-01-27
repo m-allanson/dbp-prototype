@@ -1,6 +1,7 @@
 /** @define ProjectItem */
 
 .ProjectItem {
+  padding-top: 32px;
   text-align: center;
 }
 
@@ -8,6 +9,7 @@
   font-family: var(--font-family-serif);
   font-size: 44px;
   line-height: 80px;
+  margin: 0;
 }
 
 .ProjectItem-id {

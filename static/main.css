@@ -558,7 +558,18 @@ html {
 /** @define ArticleItem */
 
 .ArticleItem {
+  padding-top: 32px;
   text-align: center;
+}
+
+.ArticleItem-date {
+  color: #1c1c1a;
+  font-family: "P22UndergroundBook", Verdana, Geneva, sans-serif;
+  font-size: 12px;
+  letter-spacing: 2.2px;
+  line-height: 14px;
+  margin: 0;
+  text-transform: uppercase;
 }
 
 .ArticleItem-title {
@@ -579,7 +590,8 @@ html {
   font-size: 15px;
   letter-spacing: 0.3px;
   line-height: 19px;
-  margin-top: 32px;
+  margin: 0;
+  padding-top: 32px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -630,28 +642,47 @@ html {
  */
 
 .Chrome {
+  background-color: #fff;
   min-height: calc(100% + 124px); /* 1 */
   position: relative;
-  -webkit-transition: background-color 0.3s linear;
-  transition: background-color 0.3s linear;
+  z-index: 0;
 }
 
 .Chrome-header {
   height: 124px;
 }
 
-.Chrome-content {
+.Chrome-inner {
   width: 100%;
+}
+
+.Chrome-content {
+  margin-bottom: 240px;
+  min-height: 98vh; /* 2 */
+  position: relative;
+  -webkit-transition: background-color 0.4s linear;
+  transition: background-color 0.4s linear;
+  width: 100%;
+  z-index: 1;
+}
+
+.Chrome-footer {
+  bottom: 0;
+  height: 240px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 0;
 }
 
 /* Colour modifiers
   ========================================================================== */
 
-.Chrome--home { background-color: hotpink; }
-.Chrome--projects { background-color: #fff4e0; }
-.Chrome--about { background-color: #d0e9f2; }
-.Chrome--shop { background-color: #ffecec; }
-.Chrome--hindsight { background-color: #dee2f1; }
+.Chrome--home .Chrome-content { background-color: hotpink; }
+.Chrome--projects .Chrome-content { background-color: #fff4e0; }
+.Chrome--about .Chrome-content { background-color: #d0e9f2; }
+.Chrome--shop .Chrome-content { background-color: #ffecec; }
+.Chrome--hindsight .Chrome-content { background-color: #dee2f1; }
 
 /* Content transitions
   ========================================================================== */
@@ -664,8 +695,8 @@ html {
 
 .Chrome-transitionEnter.is-enterActive {
   opacity: 1;
-  -webkit-transition: opacity calc(0.3s / 2) ease-in;
-  transition: opacity calc(0.3s / 2) ease-in;
+  -webkit-transition: opacity calc(0.4s / 2) ease-in;
+  transition: opacity calc(0.4s / 2) ease-in;
 }
 
 .Chrome-transitionLeave {
@@ -676,15 +707,14 @@ html {
 
 .Chrome-transitionLeave.is-leaveActive {
   opacity: 0.01;
-  -webkit-transition: opacity calc(0.3s / 2)  ease-out;
-  transition: opacity calc(0.3s / 2)  ease-out;
+  -webkit-transition: opacity calc(0.4s / 2)  ease-out;
+  transition: opacity calc(0.4s / 2)  ease-out;
 }
 
 /** @define Footer */
 
 .Footer {
   background-color: #1c1c1a;
-  margin-top: 64px;
   padding: 10px;
   text-align: center;
 }
@@ -719,8 +749,8 @@ html {
 .Footer-title,
 .Footer-listItem {
   color: inherit;
-  -webkit-transition: color 0.3s linear;
-  transition: color 0.3s linear;
+  -webkit-transition: color 0.4s linear;
+  transition: color 0.4s linear;
 }
 
 .Footer-emailLink,
@@ -759,8 +789,8 @@ html {
 }
 
 .Header-logo {
-  -webkit-transition: fill 0.3s linear;
-  transition: fill 0.3s linear;
+  -webkit-transition: fill 0.4s linear;
+  transition: fill 0.4s linear;
 }
 
 /* Nav
@@ -831,8 +861,8 @@ html {
   padding: 4px;
   text-decoration: none;
   text-transform: uppercase;
-  -webkit-transition: color 0.3s linear;
-  transition: color 0.3s linear;
+  -webkit-transition: color 0.4s linear;
+  transition: color 0.4s linear;
 }
 
 .Header-navLink.is-active,
@@ -906,6 +936,7 @@ html {
 /** @define ProductItem */
 
 .ProductItem {
+  padding-top: 32px;
   text-align: center;
 }
 
@@ -913,6 +944,7 @@ html {
   font-family: "PlantinMTPro-Light", Georgia, Times, serif;
   font-size: 44px;
   line-height: 80px;
+  margin: 0;
 }
 
 .ProductItem-id {
@@ -923,10 +955,12 @@ html {
 
 .Products {
   list-style-type: none;
-  padding: 0;
+  margin: 0;
+  padding: 32px 0 0 0;
 }
 
 .Products-item {
+  margin-top: 32px;
   text-align: center;
 }
 
@@ -951,6 +985,7 @@ html {
 /** @define ProjectItem */
 
 .ProjectItem {
+  padding-top: 32px;
   text-align: center;
 }
 
@@ -958,6 +993,7 @@ html {
   font-family: "PlantinMTPro-Light", Georgia, Times, serif;
   font-size: 44px;
   line-height: 80px;
+  margin: 0;
 }
 
 .ProjectItem-id {
@@ -968,7 +1004,8 @@ html {
 
 .Projects {
   list-style-type: none;
-  padding: 0;
+  margin-top: 0;
+  padding: 32px 0 0 0;
   text-align: center;
 }
 

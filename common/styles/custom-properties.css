@@ -5,6 +5,7 @@
   /* Colours */
 
   --color-black: #1c1c1a;
+  --color-white: #fff;
   --color-projects-cream: #fff4e0;
   --color-about-blue: #d0e9f2;
   --color-shop-red: #ffecec;
@@ -26,7 +27,7 @@
 
   /* Transitions */
 
-  --transition-time: 0.3s;
+  --transition-time: 0.4s;
 }
 
 /* stylelint-enable */
