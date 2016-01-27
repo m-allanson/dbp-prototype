@@ -2,10 +2,10 @@ require('babel-polyfill')
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { createStore, combineReducers } from 'redux'
+import { createStore, combineReducers, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
-import { createHistory } from 'history'
-import { syncReduxAndRouter, routeReducer } from 'redux-simple-router'
+import { browserHistory } from 'react-router'
+import { syncHistory, routeReducer } from 'react-router-redux'
 import { categories, projects, products, articles } from '../common/reducers'
 
 import Routes from '../common/containers/Routes'
@@ -19,14 +19,14 @@ const reducer = combineReducers(
 
 // const initialState = window.__INITIAL_STATE__ || undefined
 // const store = createStore(reducer, initialState)
-const store = createStore(reducer)
-const history = createHistory()
-
-syncReduxAndRouter(history, store) // Sync store to history
+// Sync dispatched route actions to the history
+const reduxRouterMiddleware = syncHistory(browserHistory)
+const createStoreWithMiddleware = applyMiddleware(reduxRouterMiddleware)(createStore)
+const store = createStoreWithMiddleware(reducer)
 
 ReactDOM.render(
   <Provider store={store}>
-    <Routes history={history} />
+    <Routes history={browserHistory} />
   </Provider>,
   document.getElementById('app')
 )
