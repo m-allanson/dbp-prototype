@@ -1,5 +1,5 @@
 import React from 'react'
-import ProjectList from './ProjectList'
+import ProjectList from '../project-list/ProjectList'
 import _map from 'lodash/map'
 
 export default ({

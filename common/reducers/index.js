@@ -69,6 +69,19 @@ const initialState = {
       buyText: 'regular & bold',
       buyUrl: 'http://example.com'
     }
+  },
+  articles: {
+    1: {
+      id: 1,
+      slug: 'screen-feast-app',
+      title: 'Screen Feast App',
+      topic: 'Design Notes',
+      date: 'August 2014',
+      intro: 'Coming to iOS app design for the first time on a big project was a daunting but exciting challenge.',
+      content: `As our prescriptions grew ever more detailed, responsive web design signaled a way out. Beyond offering a means of building device-agnostic layouts, RWD initiated a period of reappraisal; not since the adoption of web standards has our industry seen such radical realignment of thought and practice.
+In the five years since Ethan Marcotte’s article first graced these pages, thousands of websites have launched with responsive layouts at their core. During this time, we’ve experimented with new ways of working, and refined our design and development practice so that it’s more suited to a fluid, messy medium.
+As we emerge from this period of enlightenment, we need to consolidate our learning and consider how we build upon it.`
+    }
   }
 }
 
@@ -88,6 +101,13 @@ export function categories (
 
 export function products (
   state = initialState.products,
+  action
+) {
+  return state
+}
+
+export function articles (
+  state = initialState.articles,
   action
 ) {
   return state

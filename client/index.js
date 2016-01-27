@@ -6,12 +6,14 @@ import { createStore, combineReducers } from 'redux'
 import { Provider } from 'react-redux'
 import { createHistory } from 'history'
 import { syncReduxAndRouter, routeReducer } from 'redux-simple-router'
-import { categories, projects, products } from '../common/reducers'
+import { categories, projects, products, articles } from '../common/reducers'
 
 import Routes from '../common/containers/Routes'
 const reducer = combineReducers(
   Object.assign(
-    {}, { categories, projects, products, routing: routeReducer }
+    {},
+    { categories, projects, products, articles },
+    { routing: routeReducer }
   )
 )
 

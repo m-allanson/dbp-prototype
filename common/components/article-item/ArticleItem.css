@@ -1,0 +1,15 @@
+/** @define ArticleItem */
+
+.ArticleItem {
+  text-align: center;
+}
+
+.ArticleItem-title {
+  font-family: var(--font-family-serif);
+  font-size: 44px;
+  line-height: 80px;
+}
+
+.ArticleItem-id {
+  font-size: 9px;
+}

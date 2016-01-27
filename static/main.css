@@ -555,6 +555,72 @@ html {
   text-align: center;
 }
 
+/** @define ArticleItem */
+
+.ArticleItem {
+  text-align: center;
+}
+
+.ArticleItem-title {
+  font-family: "PlantinMTPro-Light", Georgia, Times, serif;
+  font-size: 44px;
+  line-height: 80px;
+}
+
+.ArticleItem-id {
+  font-size: 9px;
+}
+
+/** @define Articles */
+
+.Articles-title {
+  color: #1c1c1a;
+  font-family: "P22UndergroundBook", Verdana, Geneva, sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  line-height: 19px;
+  margin-top: 32px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.Articles-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.Articles-list::before {
+  border-top: 4px solid #1c1c1a;
+  content: "";
+  display: block;
+  margin: 0 auto 32px;
+  width: 32px;
+}
+
+.Articles-item {
+  text-align: center;
+}
+
+.Articles-itemLink {
+  text-decoration: none;
+}
+
+.Articles-itemTopic {
+  color: #1c1c1a;
+  font-family: "P22UndergroundBook", Verdana, Geneva, sans-serif;
+  font-size: 12px;
+  letter-spacing: 2.2px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.Articles-itemTitle {
+  color: #1c1c1a;
+  font-family: "PlantinMTPro-Light", Georgia, Times, serif;
+  font-size: 28px;
+  line-height: 28px;
+}
+
 /** @define Chrome
  *
  * 1. During content transitions, some child elements of .Chrome are set to

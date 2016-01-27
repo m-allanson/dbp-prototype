@@ -1,5 +1,5 @@
 import React from 'react'
-import Projects from '../components/Projects'
+import Projects from '../components/projects/Projects'
 import { connect } from 'react-redux'
 import _forOwn from 'lodash/forOwn'
 import _objectSet from 'lodash/set'

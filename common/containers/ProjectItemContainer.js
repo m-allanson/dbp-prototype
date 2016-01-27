@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ProjectItem from '../components/ProjectItem'
+import ProjectItem from '../components/project-item/ProjectItem'
 import { connect } from 'react-redux'
 import _find from 'lodash/find'
 
