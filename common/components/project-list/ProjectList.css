@@ -1,0 +1,16 @@
+/** @define ProjectList */
+
+.ProjectList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ProjectList-item {
+  padding: 0;
+}
+
+.ProjectList-link {
+  color: var(--color-black);
+  font-size: 14px;
+  text-decoration: none;
+}

@@ -1000,6 +1000,23 @@ html {
   font-size: 9px;
 }
 
+/** @define ProjectList */
+
+.ProjectList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ProjectList-item {
+  padding: 0;
+}
+
+.ProjectList-link {
+  color: #1c1c1a;
+  font-size: 14px;
+  text-decoration: none;
+}
+
 /** @define Projects */
 
 .Projects {

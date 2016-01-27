@@ -20,7 +20,7 @@ export default ({
         <Route path='projects/:slug' component={ProjectItemContainer} sectionName='projects' />
         <Route path='projects' component={ProjectsContainer} sectionName='projects' />
         <Route path='about' component={About} sectionName='about' />
-        <Route path='shop/:slug' component={ProductItemContainer} sectionName='projects' />
+        <Route path='shop/:slug' component={ProductItemContainer} sectionName='shop' />
         <Route path='shop' component={ProductsContainer} sectionName='shop' />
         <Route path='hindsight/:slug' component={ArticleItemContainer} sectionName='hindsight' />
         <Route path='hindsight' component={ArticlesContainer} sectionName='hindsight' />
