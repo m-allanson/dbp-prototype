@@ -1,6 +1,11 @@
 import React from 'react'
 import { Link, IndexLink } from 'react-router'
 
+const linkClass = (linkSection, currentSection) => {
+  const activeClass = linkSection === currentSection ? ' is-active' : ''
+  return `Header-navLink${activeClass}`
+}
+
 export default ({
   sectionName
 }) => {
@@ -33,16 +38,16 @@ export default ({
             </h1>
           </li>
           <li className='Header-navListItem Header-navListItem--beginning'>
-            <Link to='/projects' className='Header-navLink' activeClassName='is-active'>Projects</Link>
+            <Link to='/projects' className={linkClass('projects', sectionName)}>Projects</Link>
           </li>
           <li className='Header-navListItem Header-navListItem--beginning'>
-            <Link to='/about' className='Header-navLink' activeClassName='is-active'>About</Link>
+            <Link to='/about' className={linkClass('about', sectionName)}>About</Link>
           </li>
           <li className='Header-navListItem Header-navListItem--end'>
-            <Link to='/shop' className='Header-navLink' activeClassName='is-active'>Shop</Link>
+            <Link to='/shop' className={linkClass('shop', sectionName)}>Shop</Link>
           </li>
           <li className='Header-navListItem Header-navListItem--end'>
-            <Link to='/hindsight' className='Header-navLink' activeClassName='is-active'>Hindsight</Link>
+            <Link to='/hindsight' className={linkClass('hindsight', sectionName)}>Hindsight</Link>
           </li>
         </ul>
       </nav>
