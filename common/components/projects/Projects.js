@@ -6,13 +6,13 @@ export default ({
   categories
 }) => {
   return (
-    <ul className='Projects'>
+    <ol className='Projects'>
       { _map(categories, cat => (
         <li key={ cat.id } className='Projects-item'>
-          <p>{ cat.name }</p>
-          <ProjectList projects={ cat.projects } />
+          <h1 className='Projects-itemTitle'>{ cat.name }</h1>
+          { cat.projects ? <ProjectList projects={ cat.projects } /> : null}
         </li>
       ))}
-    </ul>
+    </ol>
   )
 }

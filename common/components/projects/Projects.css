@@ -1,15 +1,34 @@
 /** @define Projects */
 
 .Projects {
+  counter-reset: project;
   list-style-type: none;
   margin-top: 0;
-  padding: 32px 0 0 0;
+  padding: 0;
   text-align: center;
+
 }
 
 .Projects-item {
+  counter-increment: project;
+  padding-top: 48px;
+  position: relative;
+}
+
+.Projects-item::before {
+  color: var(--color-black);
+  content: counter(project, decimal-leading-zero);
+  counter-increment: li;
+  font-family: var(--font-family-sans-book);
+  font-size: 12px;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 32px;
+}
+
+.Projects-itemTitle {
   color: var(--color-black);
   font-family: var(--font-family-serif);
-  font-size: 44px;
-  line-height: 80px;
+  font-size: 38px;
+  margin: 0;
 }

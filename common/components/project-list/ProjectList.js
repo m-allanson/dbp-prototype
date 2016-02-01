@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router'
 
-export default ({
+const ProjectList = ({
   projects
 }) => (
   <ul className='ProjectList'>
@@ -12,3 +12,9 @@ export default ({
     )) }
   </ul>
 )
+
+ProjectList.propTypes = {
+  projects: React.PropTypes.array.isRequired
+}
+
+export default ProjectList

@@ -4,7 +4,7 @@ const initialState = {
   projects: {
     1: {
       id: 1,
-      title: 'hey',
+      title: 'Cephalonia',
       slug: 'test',
       content: 'A lorem ipsum dolor sit amet',
       url: 'lulutypeface.com',
@@ -13,7 +13,7 @@ const initialState = {
     },
     2: {
       id: 2,
-      title: 'go',
+      title: 'Film Typography',
       slug: 'test2',
       content: 'B lorem ipsum dolor sit amet',
       url: 'blahblah.com',
@@ -22,7 +22,7 @@ const initialState = {
     },
     3: {
       id: 3,
-      title: 'lets',
+      title: 'Lulu Typeface',
       slug: 'test3',
       content: 'C lorem ipsum dolor sit amet',
       url: 'heyhey.com',
@@ -33,11 +33,15 @@ const initialState = {
   categories: {
     1: {
       id: 1,
-      name: 'category A'
+      name: 'Brand'
     },
     2: {
       id: 2,
-      name: 'category B'
+      name: 'Web'
+    },
+    3: {
+      id: 3,
+      name: 'Type'
     }
   },
   products: {

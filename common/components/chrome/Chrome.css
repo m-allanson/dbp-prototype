@@ -7,7 +7,7 @@
  */
 
 :root {
-  --Chrome-header-height: 124px;
+  --Chrome-header-height: 128px;
   --Chrome-transition-time: calc(var(--transition-time) / 2);
 }
 

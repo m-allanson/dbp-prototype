@@ -643,13 +643,13 @@ html {
 
 .Chrome {
   background-color: #fff;
-  min-height: calc(100% + 124px); /* 1 */
+  min-height: calc(100% + 128px); /* 1 */
   position: relative;
   z-index: 0;
 }
 
 .Chrome-header {
-  height: 124px;
+  height: 128px;
 }
 
 .Chrome-inner {
@@ -690,7 +690,7 @@ html {
 .Chrome-transitionEnter {
   opacity: 0.01;
   position: absolute;
-  top: 124px;
+  top: 128px;
 }
 
 .Chrome-transitionEnter.is-enterActive {
@@ -702,7 +702,7 @@ html {
 .Chrome-transitionLeave {
   opacity: 1;
   position: absolute;
-  top: 124px;
+  top: 128px;
 }
 
 .Chrome-transitionLeave.is-leaveActive {
@@ -823,7 +823,7 @@ html {
 .Header-navListItem--prime {
   -webkit-box-flex: 0;
           flex: 0 100%;
-  margin-bottom: 18px;
+  margin-bottom: 32px;
   -webkit-box-ordinal-group: 2;
           order: 1;
 }
@@ -1004,6 +1004,7 @@ html {
 
 .ProjectList {
   list-style-type: none;
+  margin-top: 5px;
   padding: 0;
 }
 
@@ -1013,24 +1014,46 @@ html {
 
 .ProjectList-link {
   color: #1c1c1a;
-  font-size: 14px;
+  font-family: "PlantinMTPro-Light", Georgia, Times, serif;
+  font-size: 24px;
+  letter-spacing: -0.06px;
+  line-height: 40px;
   text-decoration: none;
 }
 
 /** @define Projects */
 
 .Projects {
+  counter-reset: project;
   list-style-type: none;
   margin-top: 0;
-  padding: 32px 0 0 0;
+  padding: 0;
   text-align: center;
+
 }
 
 .Projects-item {
+  counter-increment: project;
+  padding-top: 48px;
+  position: relative;
+}
+
+.Projects-item::before {
+  color: #1c1c1a;
+  content: counter(project, decimal-leading-zero);
+  counter-increment: li;
+  font-family: "P22UndergroundBook", Verdana, Geneva, sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 32px;
+}
+
+.Projects-itemTitle {
   color: #1c1c1a;
   font-family: "PlantinMTPro-Light", Georgia, Times, serif;
-  font-size: 44px;
-  line-height: 80px;
+  font-size: 38px;
+  margin: 0;
 }
 
 /* Myfonts counter
