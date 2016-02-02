@@ -451,7 +451,16 @@ th {
  *
  * Webfont: PlantinMTPro-Light by Monotype
  * URL: http://www.myfonts.com/fonts/mti/plantin/pro-light/
- * Copyright: Font software Copyright 1990, 1995, 2002 Adobe Systems Incorporated. All rights reserved. Typeface designs Copyright The Monotype Corporation. All rights reserved.
+ * Copyright: Font software Copyright 1990, 1995, 2002 Adobe Systems
+ * Incorporated. All rights reserved. Typeface designs Copyright The Monotype
+ * Corporation. All rights reserved.
+ * Licensed pageviews: 250,000
+ *
+ * Webfont: PlantinMTPro-LightItalic by Monotype
+ * URL: http://www.myfonts.com/fonts/mti/plantin/pro-light-italic/
+ * Copyright: Font software Copyright 1990, 1995, 2002 Adobe Systems
+ * Incorporated. All rights reserved. Typeface designs Copyright The Monotype
+ * Corporation. All rights reserved.
  * Licensed pageviews: 250,000
  *
  * Webfont: P22UndergroundBook by P22
@@ -476,6 +485,8 @@ th {
 */
 
 @font-face { font-family: "PlantinMTPro-Light"; src: url("fonts/2FEC8C_0_0.eot"); src: url("fonts/2FEC8C_0_0.eot?#iefix") format("embedded-opentype"), url("fonts/2FEC8C_0_0.woff2") format("woff2"), url("fonts/2FEC8C_0_0.woff") format("woff"), url("fonts/2FEC8C_0_0.ttf") format("truetype"); }
+
+@font-face { font-family: "PlantinMTPro-LightItalic"; src: url("webfonts/304A96_0_0.eot"); src: url("webfonts/304A96_0_0.eot?#iefix") format("embedded-opentype"), url("webfonts/304A96_0_0.woff2") format("woff2"), url("webfonts/304A96_0_0.woff") format("woff"), url("webfonts/304A96_0_0.ttf") format("truetype"); }
 
 @font-face { font-family: "P22UndergroundBook"; src: url("fonts/2FEC8C_1_0.eot"); src: url("fonts/2FEC8C_1_0.eot?#iefix") format("embedded-opentype"), url("fonts/2FEC8C_1_0.woff2") format("woff2"), url("fonts/2FEC8C_1_0.woff") format("woff"), url("fonts/2FEC8C_1_0.ttf") format("truetype"); }
 
@@ -659,6 +670,7 @@ html {
 .Chrome-content {
   margin-bottom: 240px;
   min-height: 98vh; /* 2 */
+  padding-bottom: 32px;
   position: relative;
   -webkit-transition: background-color 0.4s linear;
   transition: background-color 0.4s linear;
@@ -985,19 +997,116 @@ html {
 /** @define ProjectItem */
 
 .ProjectItem {
-  padding-top: 32px;
-  text-align: center;
+  padding: 25px 16px 0;
 }
 
 .ProjectItem-title {
   font-family: "PlantinMTPro-Light", Georgia, Times, serif;
-  font-size: 44px;
-  line-height: 80px;
+  font-size: 38px;
+  line-height: 46px;
   margin: 0;
+  text-align: center;
 }
 
-.ProjectItem-id {
-  font-size: 9px;
+.ProjectItem-subTitle {
+  font-family: "P22UndergroundBook", Verdana, Geneva, sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ProjectItem-content {
+  border-bottom: 2px solid #1c1c1a;
+  margin-top: 28px;
+  padding-bottom: 28px;
+}
+
+.ProjectItem-description {
+  font-family: "PlantinMTPro-Light", Georgia, Times, serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.ProjectItem-descriptionBorder {
+  border-bottom: 1px solid #1c1c1a;
+  display: block;
+  height: 1px;
+  margin-top: 26px;
+  width: 60px;
+}
+
+.ProjectItem-credits {
+  color: #1c1c1a;
+  font-family: "PlantinMTPro-Light", Georgia, Times, serif;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 26px;
+}
+
+.ProjectItem-url {
+  color: #1c1c1a;
+  display: block;
+  font-family: "P22UndergroundBook", Verdana, Geneva, sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 14px;
+  margin-top: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.ProjectItem-imageList {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.ProjectItem-image {
+  margin-top: 16px;
+}
+
+/* Nav (next / previous)
+  ========================================================================== */
+
+.ProjectItem-nav {
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  margin-top: 16px;
+}
+
+.ProjectItem-navLink {
+  color: #1c1c1a;
+  font-family: "P22UndergroundBook", Verdana, Geneva, sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 14px;
+  margin-top: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.ProjectItem-navLink--previous {
+  -webkit-box-ordinal-group: 3;
+          order: 2;
+}
+
+.ProjectItem-navLink--next {
+  -webkit-box-ordinal-group: 4;
+          order: 3;
+}
+
+.ProjectItem-navHr {
+  border-bottom: 1px solid #1c1c1a;
+  -webkit-box-ordinal-group: 2;
+          order: 1;
+  width: 100%;
 }
 
 /** @define ProjectList */

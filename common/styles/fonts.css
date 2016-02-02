@@ -10,7 +10,16 @@
  *
  * Webfont: PlantinMTPro-Light by Monotype
  * URL: http://www.myfonts.com/fonts/mti/plantin/pro-light/
- * Copyright: Font software Copyright 1990, 1995, 2002 Adobe Systems Incorporated. All rights reserved. Typeface designs Copyright The Monotype Corporation. All rights reserved.
+ * Copyright: Font software Copyright 1990, 1995, 2002 Adobe Systems
+ * Incorporated. All rights reserved. Typeface designs Copyright The Monotype
+ * Corporation. All rights reserved.
+ * Licensed pageviews: 250,000
+ *
+ * Webfont: PlantinMTPro-LightItalic by Monotype
+ * URL: http://www.myfonts.com/fonts/mti/plantin/pro-light-italic/
+ * Copyright: Font software Copyright 1990, 1995, 2002 Adobe Systems
+ * Incorporated. All rights reserved. Typeface designs Copyright The Monotype
+ * Corporation. All rights reserved.
  * Licensed pageviews: 250,000
  *
  * Webfont: P22UndergroundBook by P22
@@ -35,6 +44,8 @@
 */
 
 @font-face { font-family: "PlantinMTPro-Light"; src: url("fonts/2FEC8C_0_0.eot"); src: url("fonts/2FEC8C_0_0.eot?#iefix") format("embedded-opentype"), url("fonts/2FEC8C_0_0.woff2") format("woff2"), url("fonts/2FEC8C_0_0.woff") format("woff"), url("fonts/2FEC8C_0_0.ttf") format("truetype"); }
+
+@font-face { font-family: "PlantinMTPro-LightItalic"; src: url("webfonts/304A96_0_0.eot"); src: url("webfonts/304A96_0_0.eot?#iefix") format("embedded-opentype"), url("webfonts/304A96_0_0.woff2") format("woff2"), url("webfonts/304A96_0_0.woff") format("woff"), url("webfonts/304A96_0_0.ttf") format("truetype"); }
 
 @font-face { font-family: "P22UndergroundBook"; src: url("fonts/2FEC8C_1_0.eot"); src: url("fonts/2FEC8C_1_0.eot?#iefix") format("embedded-opentype"), url("fonts/2FEC8C_1_0.woff2") format("woff2"), url("fonts/2FEC8C_1_0.woff") format("woff"), url("fonts/2FEC8C_1_0.ttf") format("truetype"); }
 
