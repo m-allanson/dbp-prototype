@@ -1,17 +1,108 @@
 /** @define ProjectItem */
 
 .ProjectItem {
-  padding-top: 32px;
-  text-align: center;
+  padding: 25px 16px 0;
 }
 
 .ProjectItem-title {
   font-family: var(--font-family-serif);
-  font-size: 44px;
-  line-height: 80px;
+  font-size: 38px;
+  line-height: 46px;
   margin: 0;
+  text-align: center;
 }
 
-.ProjectItem-id {
-  font-size: 9px;
+.ProjectItem-subTitle {
+  font-family: var(--font-family-sans-book);
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ProjectItem-content {
+  border-bottom: 2px solid var(--color-black);
+  margin-top: 28px;
+  padding-bottom: 28px;
+}
+
+.ProjectItem-description {
+  font-family: var(--font-family-serif);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.ProjectItem-descriptionBorder {
+  border-bottom: 1px solid var(--color-black);
+  display: block;
+  height: 1px;
+  margin-top: 26px;
+  width: 60px;
+}
+
+.ProjectItem-credits {
+  color: var(--color-black);
+  font-family: var(--font-family-serif);
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 26px;
+}
+
+.ProjectItem-url {
+  color: var(--color-black);
+  display: block;
+  font-family: var(--font-family-sans-book);
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 14px;
+  margin-top: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.ProjectItem-imageList {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.ProjectItem-image {
+  margin-top: 16px;
+}
+
+/* Nav (next / previous)
+  ========================================================================== */
+
+.ProjectItem-nav {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.ProjectItem-navLink {
+  color: var(--color-black);
+  font-family: var(--font-family-sans-book);
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 14px;
+  margin-top: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.ProjectItem-navLink--previous {
+  order: 2;
+}
+
+.ProjectItem-navLink--next {
+  order: 3;
+}
+
+.ProjectItem-navHr {
+  border-bottom: 1px solid var(--color-black);
+  order: 1;
+  width: 100%;
 }

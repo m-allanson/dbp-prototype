@@ -29,6 +29,7 @@
 .Chrome-content {
   margin-bottom: 240px;
   min-height: 98vh; /* 2 */
+  padding-bottom: 32px;
   position: relative;
   transition: background-color var(--transition-time) linear;
   width: 100%;

@@ -23,10 +23,15 @@ const initialState = {
     3: {
       id: 3,
       title: 'Lulu Typeface',
-      slug: 'test3',
-      content: 'C lorem ipsum dolor sit amet',
-      url: 'heyhey.com',
-      images: [],
+      slug: 'lulu',
+      content: 'Lorem ipsum dolor sit ifurcated consectetur adipiscing typeface in all caps. Based off of an old classic French biscuit logo, this distinctive vintage display typeface can also evoke edgier sentiments when set in a moodier context.',
+      credits: 'Design and development was in collaboration with lorem ipsum dolor sit amet consectetur.',
+      url: 'example.com',
+      images: [
+        '/static/images/projects-placeholder-1.jpg',
+        '/static/images/projects-placeholder-2.jpg',
+        '/static/images/projects-placeholder-3.jpg'
+      ],
       category: 1
     }
   },
