@@ -1,5 +1,3 @@
-require('babel-polyfill')
-
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { createStore, combineReducers, applyMiddleware } from 'redux'
@@ -7,6 +5,7 @@ import { Provider } from 'react-redux'
 import { browserHistory } from 'react-router'
 import { syncHistory, routeReducer } from 'react-router-redux'
 import { categories, projects, products, articles } from '../common/reducers'
+import '../common/styles/main.css'
 
 import Routes from '../common/containers/Routes'
 const reducer = combineReducers(

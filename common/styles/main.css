@@ -1,17 +1,14 @@
 /**
  * Main CSS entry point.
- *
- * 1. https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust
- * 2. Allow box-sizing overrides to be cascade down to children
  * 3. There is no --small breakpoint since mobile-first styles are written for
  *    the smallest screen size first. PostCSS enables the syntax which is
  *    based on the W3C Custom Media Queries and Media Queries L4 min/max specs.
  */
 
-/* 3rd party libs
+/* Reset
    ========================================================================== */
 
-@import "../../node_modules/normalize.css/normalize.css";
+@import "./reset.css";
 
 /* Fonts
    ========================================================================== */
@@ -22,27 +19,6 @@
    ========================================================================== */
 
 @import "./custom-properties.css";
-
-/* Base
-   ========================================================================== */
-
-html {
-  box-sizing: border-box;
-  text-size-adjust: 100%; /* 1 */
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit; /* 2 */
-}
-
-/* Mobile-first breakpoints
-   ========================================================================== */
-
-@custom-media --medium (width >= 640px);
-@custom-media --large (width >= 960px);
-@custom-media --xlarge (width >= 1200px); /* 3 */
 
 /* Components
    ========================================================================== */
@@ -55,3 +31,10 @@ html {
 /*
   @import url("//hello.myfonts.net/count/2fec8c");
 */
+
+/* Mobile-first breakpoints
+   ========================================================================== */
+
+@custom-media --medium (width >= 640px);
+@custom-media --large (width >= 960px);
+@custom-media --xlarge (width >= 1200px); /* 3 */

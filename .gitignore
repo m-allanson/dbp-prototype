@@ -6,7 +6,7 @@ logs
 node_modules/
 
 # Compiled assets
-static/*.js
+dist/
 
 # Other
 .eslintcache

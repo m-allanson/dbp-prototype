@@ -1,0 +1,25 @@
+/**
+ * CSS Reset
+ *
+ * 1. https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust
+ * 2. Allow box-sizing overrides to be cascade down to children
+ */
+
+/* 3rd party
+   ========================================================================== */
+
+@import "../../node_modules/normalize.css/normalize.css";
+
+/* Reset
+   ========================================================================== */
+
+html {
+  box-sizing: border-box;
+  text-size-adjust: 100%; /* 1 */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /* 2 */
+}

@@ -43,12 +43,12 @@
  * © 2015 MyFonts Inc
 */
 
-@font-face { font-family: "PlantinMTPro-Light"; src: url("fonts/2FEC8C_0_0.eot"); src: url("fonts/2FEC8C_0_0.eot?#iefix") format("embedded-opentype"), url("fonts/2FEC8C_0_0.woff2") format("woff2"), url("fonts/2FEC8C_0_0.woff") format("woff"), url("fonts/2FEC8C_0_0.ttf") format("truetype"); }
+@font-face { font-family: "PlantinMTPro-Light"; src: url("/static/fonts/2FEC8C_0_0.eot"); src: url("/static/fonts/2FEC8C_0_0.eot?#iefix") format("embedded-opentype"), url("/static/fonts/2FEC8C_0_0.woff2") format("woff2"), url("/static/fonts/2FEC8C_0_0.woff") format("woff"), url("/static/fonts/2FEC8C_0_0.ttf") format("truetype"); }
 
-@font-face { font-family: "PlantinMTPro-LightItalic"; src: url("webfonts/304A96_0_0.eot"); src: url("webfonts/304A96_0_0.eot?#iefix") format("embedded-opentype"), url("webfonts/304A96_0_0.woff2") format("woff2"), url("webfonts/304A96_0_0.woff") format("woff"), url("webfonts/304A96_0_0.ttf") format("truetype"); }
+@font-face { font-family: "PlantinMTPro-LightItalic"; src: url("/static/fonts/304A96_0_0.eot"); src: url("/static/fonts/304A96_0_0.eot?#iefix") format("embedded-opentype"), url("/static/fonts/304A96_0_0.woff2") format("woff2"), url("/static/fonts/304A96_0_0.woff") format("woff"), url("/static/fonts/304A96_0_0.ttf") format("truetype"); }
 
-@font-face { font-family: "P22UndergroundBook"; src: url("fonts/2FEC8C_1_0.eot"); src: url("fonts/2FEC8C_1_0.eot?#iefix") format("embedded-opentype"), url("fonts/2FEC8C_1_0.woff2") format("woff2"), url("fonts/2FEC8C_1_0.woff") format("woff"), url("fonts/2FEC8C_1_0.ttf") format("truetype"); }
+@font-face { font-family: "P22UndergroundBook"; src: url("/static/fonts/2FEC8C_1_0.eot"); src: url("/static/fonts/2FEC8C_1_0.eot?#iefix") format("embedded-opentype"), url("/static/fonts/2FEC8C_1_0.woff2") format("woff2"), url("/static/fonts/2FEC8C_1_0.woff") format("woff"), url("/static/fonts/2FEC8C_1_0.ttf") format("truetype"); }
 
-@font-face { font-family: "P22UndergroundDemiBold"; src: url("fonts/2FEC8C_2_0.eot"); src: url("fonts/2FEC8C_2_0.eot?#iefix") format("embedded-opentype"), url("fonts/2FEC8C_2_0.woff2") format("woff2"), url("fonts/2FEC8C_2_0.woff") format("woff"), url("fonts/2FEC8C_2_0.ttf") format("truetype"); }
+@font-face { font-family: "P22UndergroundDemiBold"; src: url("/static/fonts/2FEC8C_2_0.eot"); src: url("/static/fonts/2FEC8C_2_0.eot?#iefix") format("embedded-opentype"), url("/static/fonts/2FEC8C_2_0.woff2") format("woff2"), url("/static/fonts/2FEC8C_2_0.woff") format("woff"), url("/static/fonts/2FEC8C_2_0.ttf") format("truetype"); }
 
-@font-face { font-family: "P22UndergroundThin"; src: url("fonts/2FEC8C_3_0.eot"); src: url("fonts/2FEC8C_3_0.eot?#iefix") format("embedded-opentype"), url("fonts/2FEC8C_3_0.woff2") format("woff2"), url("fonts/2FEC8C_3_0.woff") format("woff"), url("fonts/2FEC8C_3_0.ttf") format("truetype"); }
+@font-face { font-family: "P22UndergroundThin"; src: url("/static/fonts/2FEC8C_3_0.eot"); src: url("/static/fonts/2FEC8C_3_0.eot?#iefix") format("embedded-opentype"), url("/static/fonts/2FEC8C_3_0.woff2") format("woff2"), url("/static/fonts/2FEC8C_3_0.woff") format("woff"), url("/static/fonts/2FEC8C_3_0.ttf") format("truetype"); }

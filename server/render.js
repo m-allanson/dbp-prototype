@@ -6,14 +6,17 @@ import { match } from 'react-router'
 import React from 'react' // eslint-disable-line no-unused-vars
 import Routes from '../common/containers/Routes'
 
-function renderFullPage (html, initialState) {
+const NODE_ENV = process.env.NODE_ENV
+
+function renderFullPage (html, initialState, env) {
+  const cssLink = (env !== 'production') ? '' : '<link href="/static/main.css" rel="stylesheet" type="text/css" />'
   return `
     <html>
     <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>DbP tech prototype</title>
-      <link href="/static/main.css" rel="stylesheet" type="text/css" />
+      ${cssLink}
     </head>
     <body style="margin: 0; background-color: #1c1c1a;">
       <div id="app" style="height: 100%;">${html}</div>
@@ -56,7 +59,7 @@ export default function handleRender (req, res) {
         //
         // const html = renderToString(component)
         // res.send(renderFullPage(html, store.getState()))
-        res.send(renderFullPage('', ''))
+        res.send(renderFullPage('', '', NODE_ENV))
       }
     }
   )

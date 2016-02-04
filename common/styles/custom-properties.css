@@ -13,11 +13,11 @@
 
   /* Typography */
 
-  --font-family-serif: "PlantinMTPro-Light", Georgia, Times, serif;
-  --font-family-serif-light-italic: "PlantinMTPro-LightItalic", Georgia, Times, serif;
-  --font-family-sans-book: "P22UndergroundBook", Verdana, Geneva, sans-serif;
-  --font-family-sans-demi: "P22UndergroundDemiBold", Verdana, Geneva, sans-serif;
-  --font-family-sans-thin: "P22UndergroundThin", Verdana, Geneva, sans-serif;
+  --font-family-serif: "PlantinMTPro-Light", serif;
+  --font-family-serif-light-italic: "PlantinMTPro-LightItalic", serif;
+  --font-family-sans-book: "P22UndergroundBook", sans-serif;
+  --font-family-sans-demi: "P22UndergroundDemiBold", sans-serif;
+  --font-family-sans-thin: "P22UndergroundThin", sans-serif;
 
   --font-weight-normal: 400;
 
