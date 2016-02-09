@@ -1,4 +1,6 @@
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
+var glob = require('glob')
+var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
@@ -34,7 +36,9 @@ module.exports = {
     return [
       require('postcss-import')({
         addDependencyTo: webpack,
-        glob: true
+        resolve: function (id, base) { // Manually add glob support: https://github.com/postcss/postcss-import/releases/tag/8.0.0
+          return glob.sync(path.join(base, id))
+        }
       }),
       require('postcss-custom-properties')(),
       require('postcss-custom-media')(),
