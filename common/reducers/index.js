@@ -91,6 +91,17 @@ const initialState = {
       content: `As our prescriptions grew ever more detailed, responsive web design signaled a way out. Beyond offering a means of building device-agnostic layouts, RWD initiated a period of reappraisal; not since the adoption of web standards has our industry seen such radical realignment of thought and practice.
 In the five years since Ethan Marcotte’s article first graced these pages, thousands of websites have launched with responsive layouts at their core. During this time, we’ve experimented with new ways of working, and refined our design and development practice so that it’s more suited to a fluid, messy medium.
 As we emerge from this period of enlightenment, we need to consolidate our learning and consider how we build upon it.`
+    },
+    2: {
+      id: 2,
+      slug: 'designer-developer',
+      title: 'Designer - Developer',
+      topic: 'Process',
+      date: 'September 2014',
+      intro: 'Lorem ipsum dolor sit amet',
+      content: `Lorem ipsum dolor sit amet consectetur, responsive web design signaled a way out. Beyond offering a means of building device-agnostic layouts, RWD initiated a period of reappraisal; not since the adoption of web standards has our industry seen such radical realignment of thought and practice.
+    In the five years since Ethan Marcotte’s article first graced these pages, thousands of websites have launched with responsive layouts at their core. During this time, we’ve experimented with new ways of working, and refined our design and development practice so that it’s more suited to a fluid, messy medium.
+    As we emerge from this period of enlightenment, we need to consolidate our learning and consider how we build upon it.`
     }
   }
 }

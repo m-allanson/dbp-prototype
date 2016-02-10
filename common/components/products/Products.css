@@ -11,6 +11,10 @@
   text-align: center;
 }
 
+.Products-item:first-child {
+  margin-top: 0;
+}
+
 .Products-itemLink {
   display: block;
   text-decoration: none;
