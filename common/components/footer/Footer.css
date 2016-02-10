@@ -2,21 +2,23 @@
 
 .Footer {
   background-color: var(--color-black);
-  padding: 10px;
+  padding: 40px 10px 10px 10px;
   text-align: center;
 }
 
 .Footer-title {
   font-family: var(--font-family-sans-book);
   font-size: 13px;
+  font-weight: normal;
   letter-spacing: 2.2px;
   line-height: 18px;
+  margin: 0;
   text-transform: uppercase;
 }
 
 .Footer-list {
   list-style-type: none;
-  margin-top: 16px;
+  margin: 0 0 16px 0;
   padding: 0;
 }
 

@@ -12,6 +12,7 @@
 }
 
 .Products-itemLink {
+  display: block;
   text-decoration: none;
 }
 
@@ -20,6 +21,7 @@
   font-family: var(--font-family-sans-demi);
   font-size: 18px;
   line-height: 24px;
+  margin: 16px 0 0 0;
 }
 
 .Products-itemPrice {
@@ -27,4 +29,5 @@
   font-family: var(--font-family-sans-thin);
   font-size: 18px;
   line-height: 24px;
+  margin: 8px 0 0 0;
 }

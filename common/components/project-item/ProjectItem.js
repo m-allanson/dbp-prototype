@@ -19,7 +19,7 @@ const ProjectItem = ({
       </div>
       <ul className='ProjectItem-imageList'>
         { project.images.map(image => (
-          <li key={image} className='ProjectItem-image'>
+          <li key={ image } className='ProjectItem-image'>
               <img className='ProjectItem-imageItem' src={ image }/>
           </li>
         )) }

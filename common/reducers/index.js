@@ -58,8 +58,8 @@ const initialState = {
       heroImage: '/static/images/shop-placeholder.jpg',
       slug: 'cephalonia-typeface',
       images: [
-        'urlA',
-        'urlB'
+        '/static/images/projects-placeholder-1.jpg',
+        '/static/images/projects-placeholder-2.jpg'
       ],
       buyText: 'regular & bold',
       buyUrl: 'http://example.com'
@@ -72,8 +72,9 @@ const initialState = {
       heroImage: '/static/images/shop-placeholder.jpg',
       slug: 'lulu-typeface',
       images: [
-        'urlA',
-        'urlB'
+        '/static/images/projects-placeholder-1.jpg',
+        '/static/images/projects-placeholder-2.jpg',
+        '/static/images/projects-placeholder-3.jpg'
       ],
       buyText: 'regular & bold',
       buyUrl: 'http://example.com'
