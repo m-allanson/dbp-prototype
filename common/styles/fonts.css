@@ -22,22 +22,6 @@
  * Corporation. All rights reserved.
  * Licensed pageviews: 250,000
  *
- * Webfont: P22UndergroundBook by P22
- * URL: http://www.myfonts.com/fonts/p22/underground-basic/book/
- * Copyright: Copyright (c) 2007-2103 by P22 type foundry. All rights reserved.
- * Licensed pageviews: 10,000
- *
- * Webfont: P22UndergroundDemiBold by P22
- * URL: http://www.myfonts.com/fonts/p22/underground-basic/demi/
- * Copyright: Copyright (c) 2007-2103 by P22 type foundry. All rights reserved.
- * Licensed pageviews: 10,000
- *
- * Webfont: P22UndergroundThin by P22
- * URL: http://www.myfonts.com/fonts/p22/underground-basic/thin/
- * Copyright: Copyright (c) 2007-2103 by P22 type foundry. All rights reserved.
- * Licensed pageviews: 10,000
- *
- *
  * License: http://www.myfonts.com/viewlicense?type=web&buildid=3140748
  *
  * © 2015 MyFonts Inc
@@ -46,9 +30,3 @@
 @font-face { font-family: "PlantinMTPro-Light"; src: url("/static/fonts/2FEC8C_0_0.eot"); src: url("/static/fonts/2FEC8C_0_0.eot?#iefix") format("embedded-opentype"), url("/static/fonts/2FEC8C_0_0.woff2") format("woff2"), url("/static/fonts/2FEC8C_0_0.woff") format("woff"), url("/static/fonts/2FEC8C_0_0.ttf") format("truetype"); }
 
 @font-face { font-family: "PlantinMTPro-LightItalic"; src: url("/static/fonts/304A96_0_0.eot"); src: url("/static/fonts/304A96_0_0.eot?#iefix") format("embedded-opentype"), url("/static/fonts/304A96_0_0.woff2") format("woff2"), url("/static/fonts/304A96_0_0.woff") format("woff"), url("/static/fonts/304A96_0_0.ttf") format("truetype"); }
-
-@font-face { font-family: "P22UndergroundBook"; src: url("/static/fonts/2FEC8C_1_0.eot"); src: url("/static/fonts/2FEC8C_1_0.eot?#iefix") format("embedded-opentype"), url("/static/fonts/2FEC8C_1_0.woff2") format("woff2"), url("/static/fonts/2FEC8C_1_0.woff") format("woff"), url("/static/fonts/2FEC8C_1_0.ttf") format("truetype"); }
-
-@font-face { font-family: "P22UndergroundDemiBold"; src: url("/static/fonts/2FEC8C_2_0.eot"); src: url("/static/fonts/2FEC8C_2_0.eot?#iefix") format("embedded-opentype"), url("/static/fonts/2FEC8C_2_0.woff2") format("woff2"), url("/static/fonts/2FEC8C_2_0.woff") format("woff"), url("/static/fonts/2FEC8C_2_0.ttf") format("truetype"); }
-
-@font-face { font-family: "P22UndergroundThin"; src: url("/static/fonts/2FEC8C_3_0.eot"); src: url("/static/fonts/2FEC8C_3_0.eot?#iefix") format("embedded-opentype"), url("/static/fonts/2FEC8C_3_0.woff2") format("woff2"), url("/static/fonts/2FEC8C_3_0.woff") format("woff"), url("/static/fonts/2FEC8C_3_0.ttf") format("truetype"); }

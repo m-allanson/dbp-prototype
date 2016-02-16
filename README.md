@@ -21,6 +21,10 @@ In dev mode, WebPack will run an http server on port 8081 (or DEV_PORT), it will
 
 In production mode all requests are handled by the Express server. Requests starting with `/static` will be served from the `dist` directory.
 
+## Fonts
+
+Fonts are served with a combination of local font files (from MyFonts) and remotely served files via JS (from TypeKit).
+
 ## Deploy
 
 Deployment is handled via dokku. Once a dokku remote is added, deploy with:

@@ -15,9 +15,8 @@
 
   --font-family-serif: "PlantinMTPro-Light", serif;
   --font-family-serif-italic: "PlantinMTPro-LightItalic", serif;
-  --font-family-sans-book: "P22UndergroundBook", sans-serif;
-  --font-family-sans-demi: "P22UndergroundDemiBold", sans-serif;
-  --font-family-sans-thin: "P22UndergroundThin", sans-serif;
+  --font-family-sans-book: "p22-underground-n4", "p22-underground", sans-serif;
+  --font-family-sans-demi: "p22-underground-n6", "p22-underground", sans-serif;
 
   --font-weight-normal: 400;
 
