@@ -8,7 +8,6 @@ export default ({
 }) => {
   const sectionName = children.props.route.sectionName
   const className = `Chrome Chrome--${sectionName}`
-  const footer = sectionName === 'home' ? null : <Footer sectionName={sectionName} />
 
   return (
     <div className={className}>
@@ -30,7 +29,7 @@ export default ({
             { children }
           </div>
           <div className='Chrome-footer'>
-            { footer }
+            <Footer />
           </div>
         </div>
       </ReactCSSTransitionGroup>
