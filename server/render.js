@@ -18,7 +18,7 @@ function renderFullPage (html, initialState, env) {
       <title>DbP tech prototype</title>
       ${cssLink}
     </head>
-    <body style="margin: 0; background-color: #1c1c1a;">
+    <body style="margin: 0;">
       <div id="app" style="height: 100%;">${html}</div>
       <script src="https://use.typekit.net/vei7odk.js"></script>
       <script>try{Typekit.load({ async: true });}catch(e){}</script>

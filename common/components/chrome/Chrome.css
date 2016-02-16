@@ -12,9 +12,9 @@
 }
 
 .Chrome {
-  background-color: var(--color-white);
-  min-height: calc(100% + var(--Chrome-header-height)); /* 1 */
+  min-height: 100%; /* 1 */
   position: relative;
+  transition: background-color var(--transition-time) linear;
   z-index: 0;
 }
 
@@ -22,37 +22,30 @@
   height: var(--Chrome-header-height);
 }
 
-.Chrome-inner {
+.Chrome-contentWrap {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100% - var(--Chrome-header-height));
   width: 100%;
 }
 
 .Chrome-content {
-  margin-bottom: 240px;
-  min-height: 98vh; /* 2 */
-  padding-bottom: 32px;
-  position: relative;
-  transition: background-color var(--transition-time) linear;
+  flex: 1;
   width: 100%;
-  z-index: 1;
 }
 
 .Chrome-footer {
-  bottom: 0;
-  height: 240px;
-  left: 0;
-  position: fixed;
-  right: 0;
-  z-index: 0;
+  margin-top: 32px;
 }
 
 /* Colour modifiers
   ========================================================================== */
 
-.Chrome--home .Chrome-content { background-color: hotpink; }
-.Chrome--projects .Chrome-content { background-color: var(--color-projects-cream); }
-.Chrome--about .Chrome-content { background-color: var(--color-about-blue); }
-.Chrome--shop .Chrome-content { background-color: var(--color-shop-red); }
-.Chrome--hindsight .Chrome-content { background-color: var(--color-hindsight-purple); }
+.Chrome--home { background-color: hotpink; }
+.Chrome--projects { background-color: var(--color-projects-cream); }
+.Chrome--about { background-color: var(--color-about-blue); }
+.Chrome--shop { background-color: var(--color-shop-red); }
+.Chrome--hindsight { background-color: var(--color-hindsight-purple); }
 
 /* Content transitions
   ========================================================================== */

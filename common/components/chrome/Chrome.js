@@ -25,7 +25,7 @@ export default ({
         transitionEnterTimeout={200}
         transitionLeaveTimeout={200}
       >
-        <div className='Chrome-inner' key={children.props.location.pathname}>
+        <div className='Chrome-contentWrap' key={children.props.location.pathname}>
           <div className='Chrome-content'>
             { children }
           </div>
