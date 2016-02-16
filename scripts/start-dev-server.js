@@ -6,6 +6,7 @@ import { spawn } from 'child_process'
 import { startServer } from '../server/server'
 
 startServer(() => {
+  console.log(`Development server starting on port ${process.env.DEV_PORT}`)
   const proc = spawn(
     'node',
     [

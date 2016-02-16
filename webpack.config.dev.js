@@ -1,4 +1,7 @@
 var prodConfig = require('./webpack.config.prod')
+var glob = require('glob') // eslint-disable-line no-unused-vars
+var path = require('path') // eslint-disable-line no-unused-vars
+var webpack = require('webpack') // eslint-disable-line no-unused-vars
 
 module.exports = {
   debug: true,
