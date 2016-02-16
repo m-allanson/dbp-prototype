@@ -13,6 +13,7 @@ export default () => (
         src='static/images/pascal.jpg'
       />
     </picture>
+    <h1 className='About-title'>I’m a senior designer working in print, digital and branding. Based in South East London.</h1>
     <ul className='About-statement'>
       <li className='About-statementIcon'></li>
       <li className='About-statementCopy'>I have clear ideas and strong values that inform a thorough process, ensuring design interacts with and facilitates business objectives.</li>
