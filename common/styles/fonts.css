@@ -30,3 +30,5 @@
 @font-face { font-family: "PlantinMTPro-Light"; src: url("/static/fonts/2FEC8C_0_0.eot"); src: url("/static/fonts/2FEC8C_0_0.eot?#iefix") format("embedded-opentype"), url("/static/fonts/2FEC8C_0_0.woff2") format("woff2"), url("/static/fonts/2FEC8C_0_0.woff") format("woff"), url("/static/fonts/2FEC8C_0_0.ttf") format("truetype"); }
 
 @font-face { font-family: "PlantinMTPro-LightItalic"; src: url("/static/fonts/304A96_0_0.eot"); src: url("/static/fonts/304A96_0_0.eot?#iefix") format("embedded-opentype"), url("/static/fonts/304A96_0_0.woff2") format("woff2"), url("/static/fonts/304A96_0_0.woff") format("woff"), url("/static/fonts/304A96_0_0.ttf") format("truetype"); }
+
+@font-face { font-family: "GTSectra-DisplayBold"; src: url("/static/fonts/gt-sectra-display-bold.eot"); src: url("/static/fonts/gt-sectra-display-bold.eot?#iefix") format("embedded-opentype"), url("/static/fonts/gt-sectra-display-bold.woff") format("woff"), url("/static/fonts/gt-sectra-display-bold.ttf") format("truetype"); }

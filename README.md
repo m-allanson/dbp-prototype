@@ -13,7 +13,6 @@
 - Clone this project
 - `npm install`
 - `npm run start:dev`
-- `npm run watch`
 - open `http://localhost:8081`
 
 ## Webpack

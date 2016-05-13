@@ -7,7 +7,7 @@ export default ({
 }) => {
   return (
   <div className='Articles'>
-    <h1 className='Articles-title'>Looking back on the future</h1>
+    <h1 className='Articles-title'>On Lessons Learnt</h1>
     <ul className='Articles-list'>
       { _map(articles, article => (
         <li key={article.id} className='Articles-item'>

@@ -16,9 +16,16 @@
 }
 
 .ArticleItem-title {
-  font-family: var(--font-family-serif);
-  font-size: 44px;
-  line-height: 80px;
+  color: var(--color-black);
+  font-family: var(--font-family-title);
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.ArticleItem-intro {
+  color: #222;
+  font-family: var(--font-family-serif-italic);
+  font-size: 18px;
 }
 
 .ArticleItem-id {
