@@ -5,11 +5,11 @@ const ProjectList = ({
   projects
 }) => (
   <ul className='ProjectList'>
-    { projects.map(project => (
+    {projects.map(project => (
       <li key={project.id} className='ProjectList-item'>
-        <Link to={ `/projects/${project.slug}` } className='ProjectList-link'>{ project.title }</Link>
+        <Link to={`/projects/${project.slug}`} className='ProjectList-link'>{project.title}</Link>
       </li>
-    )) }
+    ))}
   </ul>
 )
 

@@ -6,7 +6,7 @@ const linkClass = (linkSection, currentSection) => {
   return `Header-navLink${activeClass}`
 }
 
-export default ({
+const Header = ({
   sectionName
 }) => {
   const className = `Header Header--${sectionName}`
@@ -54,3 +54,9 @@ export default ({
     </div>
   )
 }
+
+Header.propTypes = {
+  sectionName: React.PropTypes.string.isRequired
+}
+
+export default Header

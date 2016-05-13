@@ -10,7 +10,7 @@ import ProductsContainer from '../containers/ProductsContainer'
 import ProjectItemContainer from '../containers/ProjectItemContainer'
 import ProjectsContainer from '../containers/ProjectsContainer'
 
-export default ({
+const Routes = ({
   history
 }) => {
   return (
@@ -28,3 +28,9 @@ export default ({
     </Router>
   )
 }
+
+Routes.propTypes = {
+  history: React.PropTypes.object.isRequired
+}
+
+export default Routes

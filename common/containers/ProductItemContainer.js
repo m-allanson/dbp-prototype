@@ -6,7 +6,7 @@ import _find from 'lodash/find'
 class ProductItemContainer extends Component {
   render () {
     const { product } = this.props
-    return <ProductItem product={ product } />
+    return <ProductItem product={product} />
   }
 }
 

@@ -6,7 +6,7 @@ import _find from 'lodash/find'
 class ProjectItemContainer extends Component {
   render () {
     const { project } = this.props
-    return <ProjectItem project={ project } />
+    return <ProjectItem project={project} />
   }
 }
 

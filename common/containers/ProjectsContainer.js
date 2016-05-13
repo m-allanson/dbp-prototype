@@ -5,9 +5,13 @@ import _forOwn from 'lodash/forOwn'
 import _objectSet from 'lodash/set'
 
 const ProjectsContainer = ({
-  params, categories
+  categories
 }) => {
-  return <Projects categories={ categories } />
+  return <Projects categories={categories} />
+}
+
+ProjectsContainer.propTypes = {
+  categories: React.PropTypes.objectOf(React.PropTypes.object).isRequired
 }
 
 // Convert project and category state objects to a single normalised object,
