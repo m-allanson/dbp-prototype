@@ -4,7 +4,7 @@
     "stylelint-selector-bem-pattern"
   ],
   "rules": {
-    "selector-bem-pattern": {
+    "plugin/selector-bem-pattern": {
       "preset": "suit"
     }
   }
