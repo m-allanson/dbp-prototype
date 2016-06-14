@@ -46,9 +46,6 @@ const Header = ({
           <li className='Header-navListItem Header-navListItem--end'>
             <Link to='/shop' className={linkClass('shop', sectionName)}>Shop</Link>
           </li>
-          <li className='Header-navListItem Header-navListItem--end'>
-            <Link to='/hindsight' className={linkClass('hindsight', sectionName)}>Hindsight</Link>
-          </li>
         </ul>
       </nav>
     </div>
