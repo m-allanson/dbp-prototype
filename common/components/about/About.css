@@ -8,9 +8,11 @@
 
 .About-title {
   color: var(--color-black);
-  font-family: var(--font-family-serif);
+  font-family: var(--font-family-title);
   font-size: 28px;
-  line-height: 32px;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: 54px;
   margin-top: 52px;
   text-align: center;
 }
