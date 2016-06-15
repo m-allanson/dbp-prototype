@@ -72,6 +72,22 @@
   margin-top: 16px;
 }
 
+@media (--medium) {
+  .ProjectItem-content {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+  }
+
+  .ProjectItem-contentInner {
+    flex: 0 calc(50% - 16px);
+  }
+
+  .ProjectItem-credits {
+    margin-top: 0;
+  }
+}
+
 /* Nav (next / previous)
   ========================================================================== */
 

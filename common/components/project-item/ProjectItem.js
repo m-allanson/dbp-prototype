@@ -8,14 +8,18 @@ const ProjectItem = ({
       <h1 className='ProjectItem-title'>{project.title}</h1>
       <h2 className='ProjectItem-subTitle'>Details</h2>
       <div className='ProjectItem-content'>
-        <div className='ProjectItem-description'>
-          {project.content}
-          <span className='ProjectItem-descriptionBorder' />
+        <div className='ProjectItem-contentInner'>
+          <div className='ProjectItem-description'>
+            {project.content}
+            <span className='ProjectItem-descriptionBorder' />
+          </div>
         </div>
-        <div className='ProjectItem-credits'>
-          {project.credits}
+        <div className='ProjectItem-contentInner'>
+          <div className='ProjectItem-credits'>
+            {project.credits}
+          </div>
+          <a className='ProjectItem-url' href='#'>{project.url}</a>
         </div>
-        <a className='ProjectItem-url' href='#'>{project.url}</a>
       </div>
       <ul className='ProjectItem-imageList'>
         {project.images.map(image => (
