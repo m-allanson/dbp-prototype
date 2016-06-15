@@ -73,9 +73,10 @@
 }
 
 @media (--medium) {
+
   .ProjectItem-content {
-    display: flex;
     align-items: top;
+    display: flex;
     justify-content: space-between;
   }
 

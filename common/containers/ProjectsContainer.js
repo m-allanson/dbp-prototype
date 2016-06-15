@@ -1,13 +1,29 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Projects from '../components/projects/Projects'
 import { connect } from 'react-redux'
 import _forOwn from 'lodash/forOwn'
 import _objectSet from 'lodash/set'
 
-const ProjectsContainer = ({
-  categories
-}) => {
-  return <Projects categories={categories} />
+class ProjectsContainer extends Component {
+  constructor () {
+    super()
+    this.state = { selectedCategory: null }
+    this.handleClick = this.handleClick.bind(this)
+  }
+
+  handleClick (categoryId) {
+    const newId = this.state.selectedCategory === categoryId ? null : categoryId
+    this.setState({selectedCategory: newId})
+  }
+
+  render () {
+    const { categories } = this.props
+    return <Projects
+      categories={categories}
+      selectedCategory={this.state.selectedCategory}
+      onClickHandler={this.handleClick}
+    />
+  }
 }
 
 ProjectsContainer.propTypes = {
@@ -28,10 +44,16 @@ ProjectsContainer.propTypes = {
 // }
 const getProjectsByCategory = (projects, categories) => {
   const normalised = Object.assign({}, categories)
-  _forOwn(projects, (project) => {
+
+  _forOwn(projects, (project) => { // assign each project to a category
     const catId = project.category
     _objectSet(normalised, `${catId}.projects.${project.id}`, project)
   })
+
+  _forOwn(normalised, (cat) => { // remove categories without associated projects
+    if (!cat.projects) delete normalised[cat.id]
+  })
+
   return normalised
 }
 

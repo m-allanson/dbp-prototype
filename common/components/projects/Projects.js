@@ -1,24 +1,30 @@
 import React from 'react'
-import ProjectList from '../project-list/ProjectList'
+import Category from '../category/Category'
 import _map from 'lodash/map'
 
 const Projects = ({
-  categories
+  categories,
+  selectedCategory,
+  onClickHandler
 }) => {
   return (
     <ol className='Projects'>
       {_map(categories, cat => (
-        <li key={cat.id} className='Projects-item'>
-          <h1 className='Projects-itemTitle'>{cat.name}</h1>
-          {cat.projects ? <ProjectList projects={cat.projects} /> : null}
-        </li>
+        <Category
+          key={cat.id}
+          category={cat}
+          isSelected={selectedCategory === cat.id}
+          onCategoryClick={onClickHandler}
+        />
       ))}
     </ol>
   )
 }
 
 Projects.propTypes = {
-  categories: React.PropTypes.objectOf(React.PropTypes.object).isRequired
+  categories: React.PropTypes.objectOf(React.PropTypes.object).isRequired,
+  selectedCategory: React.PropTypes.number,
+  onClickHandler: React.PropTypes.func.isRequired
 }
 
 export default Projects
