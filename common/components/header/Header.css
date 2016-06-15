@@ -107,5 +107,5 @@
 .Header--shop .Header-logo { fill: var(--color-shop-red); }
 .Header--shop .Header-navLink { color: var(--color-shop-red); }
 
-.Header--hindsight .Header-logo { fill: var(--color-hindsight-purple); }
-.Header--hindsight .Header-navLink { color: var(--color-hindsight-purple); }
+.Header--contact .Header-logo { fill: var(--color-contact-purple); }
+.Header--contact .Header-navLink { color: var(--color-contact-purple); }
