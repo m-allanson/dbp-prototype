@@ -15,9 +15,8 @@ const Routes = ({
   return (
     <Router history={history}>
       <Route path='/' component={App}>
-        <IndexRoute component={Home} sectionName='home' />
+        <IndexRoute component={ProjectsContainer} sectionName='projects' />
         <Route path='projects/:slug' component={ProjectItemContainer} sectionName='projects' />
-        <Route path='projects' component={ProjectsContainer} sectionName='projects' />
         <Route path='about' component={About} sectionName='about' />
         <Route path='contact' component={Contact} sectionName='contact' />
         <Route path='shop/:slug' component={ProductItemContainer} sectionName='shop' />

@@ -38,7 +38,7 @@ const Header = ({
             </h1>
           </li>
           <li className='Header-navListItem Header-navListItem--beginning'>
-            <Link to='/projects' className={linkClass('projects', sectionName)}>Projects</Link>
+            <Link to='/' className={linkClass('projects', sectionName)}>Projects</Link>
           </li>
           <li className='Header-navListItem Header-navListItem--beginning'>
             <Link to='/about' className={linkClass('about', sectionName)}>About</Link>
