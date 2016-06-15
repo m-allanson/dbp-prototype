@@ -2,6 +2,7 @@ import React from 'react'
 import { Router, Route, IndexRoute } from 'react-router'
 import About from '../components/about/About'
 import App from './App'
+import Contact from '../components/contact/Contact'
 import Home from '../components/home/Home'
 import ProductItemContainer from '../containers/ProductItemContainer'
 import ProductsContainer from '../containers/ProductsContainer'
@@ -18,8 +19,10 @@ const Routes = ({
         <Route path='projects/:slug' component={ProjectItemContainer} sectionName='projects' />
         <Route path='projects' component={ProjectsContainer} sectionName='projects' />
         <Route path='about' component={About} sectionName='about' />
+        <Route path='contact' component={Contact} sectionName='contact' />
         <Route path='shop/:slug' component={ProductItemContainer} sectionName='shop' />
         <Route path='shop' component={ProductsContainer} sectionName='shop' />
+        <Route path='about' component={About} sectionName='about' />
       </Route>
     </Router>
   )
