@@ -19,8 +19,8 @@
 
 .Category-title {
   color: var(--color-black);
-  font-family: var(--font-family-serif);
-  font-size: 38px;
+  font-family: var(--font-family-title);
+  font-size: 48px;
   margin: 0;
 }
 
