@@ -25,8 +25,9 @@
 .Chrome-contentWrap {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   min-height: calc(100% - var(--Chrome-header-height));
-  width: 100%;
+  width: calc(100% - 32px);
 }
 
 .Chrome-content {
@@ -70,4 +71,28 @@
 .Chrome-transitionLeave.is-leaveActive {
   opacity: 0.01;
   transition: opacity var(--Chrome-transition-time)  ease-out;
+}
+
+/* responsive layout changes
+  ========================================================================== */
+
+@media (--medium) {
+
+  .Chrome-contentWrap {
+    width: calc(100% - 64px);
+  }
+}
+
+@media (--large) {
+
+  .Chrome-contentWrap {
+    width: calc(100% - 128px);
+  }
+}
+
+@media (--xlarge) {
+
+  .Chrome-contentWrap {
+    max-width: 1200px;
+  }
 }
