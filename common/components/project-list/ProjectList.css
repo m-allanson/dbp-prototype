@@ -14,7 +14,6 @@
   color: var(--color-black);
   font-family: var(--font-family-serif-italic);
   font-size: 24px;
-  letter-spacing: -0.06px;
   line-height: 40px;
   text-decoration: none;
 }
