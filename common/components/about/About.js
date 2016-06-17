@@ -13,18 +13,22 @@ export default () => (
         src='static/images/pascal.jpg'
       />
     </picture>
-    <h1 className='About-title'>I’m a senior designer working in print, digital and branding. Based in South East London.</h1>
+    <h1 className='About-title'>A senior designer working across print, digital, branding & UX. Based in SE London.</h1>
     <ul className='About-statement'>
-      <li className='About-statementIcon'></li>
+      <li className='About-icon About-icon--first'></li>
       <li className='About-statementCopy'>I have clear ideas and strong values that inform a thorough process, ensuring design interacts with and facilitates business objectives.</li>
     </ul>
     <ul className='About-statement'>
-      <li className='About-statementIcon'></li>
-      <li className='About-statementCopy'>I have clear ideas and strong values that inform a thorough process, ensuring design interacts with and facilitates business objectives.</li>
+      <li className='About-icon About-icon--second'></li>
+      <li className='About-statementCopy'>My work is informed by evidence, research and user testing, as well as intuition informed from a broad and varied experience within design.</li>
     </ul>
     <ul className='About-statement'>
-      <li className='About-statementIcon'></li>
-      <li className='About-statementCopy'>I have clear ideas and strong values that inform a thorough process, ensuring design interacts with and facilitates business objectives.</li>
+      <li className='About-icon About-icon--third'></li>
+      <li className='About-statementCopy'>I believe in immersing myself in a project, working with one client at a time, providing a unique service as well as design solution.</li>
+    </ul>
+    <ul className='About-statement'>
+      <li className='About-icon About-icon--fourth'></li>
+      <li className='About-statementCopy'>I work with those who are passionate about their work, who make a positive social contribution, and who value creative collaborative.</li>
     </ul>
   </div>
 )

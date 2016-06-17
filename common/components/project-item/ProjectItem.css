@@ -5,9 +5,9 @@
 }
 
 .ProjectItem-title {
-  font-family: var(--font-family-serif);
-  font-size: 38px;
-  line-height: 46px;
+  font-family: var(--font-family-title);
+  font-size: 48px;
+  line-height: 56px;
   margin: 0;
   text-align: center;
 }
@@ -15,6 +15,7 @@
 .ProjectItem-subTitle {
   font-family: var(--font-family-sans-book);
   font-size: 12px;
+  font-weight: 500;
   letter-spacing: 2px;
   line-height: 14px;
   text-align: center;
@@ -28,7 +29,7 @@
 }
 
 .ProjectItem-description {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-family-sans-book);
   font-size: 14px;
   line-height: 20px;
 }

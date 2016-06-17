@@ -24,7 +24,7 @@
   color: var(--color-black);
   font-family: var(--font-family-sans-demi);
   font-size: 18px;
-  line-height: 24px;
+  line-height: 26px;
   margin: 16px 0 0 0;
 }
 
@@ -32,6 +32,7 @@
   color: var(--color-black);
   font-family: var(--font-family-sans-book);
   font-size: 18px;
-  line-height: 24px;
-  margin: 8px 0 0 0;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0;
 }

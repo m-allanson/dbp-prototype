@@ -15,7 +15,9 @@
 
 html {
   box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
   text-size-adjust: 100%; /* 1 */
+  -moz-webkit-font-smoothing: antialiased;
 }
 
 *,
