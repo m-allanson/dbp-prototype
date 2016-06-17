@@ -12,7 +12,7 @@
 
 .Contact-link {
   color: var(--color-black);
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 @media (--medium) {
