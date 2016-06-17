@@ -14,10 +14,10 @@
    ========================================================================== */
 
 html {
-  box-sizing: border-box;
-  text-size-adjust: 100%; /* 1 */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	box-sizing: border-box;
+	-moz-osx-font-smoothing: grayscale;
+	-moz-webkit-font-smoothing: antialiased;
+	text-size-adjust: 100%; /* 1 */
 }
 
 *,
