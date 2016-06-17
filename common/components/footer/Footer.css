@@ -19,8 +19,9 @@
   color: var(--color-black);
   font-family: var(--font-family-sans-book);
   font-size: 11px;
-  letter-spacing: 0;
+  letter-spacing: 0.2px;
   line-height: 13px;
+  margin: 0 auto;
 }
 
 .Footer-emailLink {
