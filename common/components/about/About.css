@@ -33,19 +33,19 @@
 }
 
 .About-icon--first {
-    background: transparent url("/static/images/about-bullet-a.svg") no-repeat;
+  background: transparent url("/static/images/about-bullet-a.svg") no-repeat;
 }
 
 .About-icon--second {
-    background: transparent url("/static/images/about-bullet-b.svg") no-repeat;
+  background: transparent url("/static/images/about-bullet-b.svg") no-repeat;
 }
 
 .About-icon--third {
-    background: transparent url("/static/images/about-bullet-c.svg") no-repeat;
+  background: transparent url("/static/images/about-bullet-c.svg") no-repeat;
 }
 
 .About-icon--fourth {
-    background: transparent url("/static/images/about-bullet-d.svg") no-repeat;
+  background: transparent url("/static/images/about-bullet-d.svg") no-repeat;
 }
 
 .About-statementCopy {
