@@ -75,6 +75,7 @@
 .Header-navLink {
   font-family: var(--font-family-sans-book);
   font-size: 11px;
+  font-weight: 200;
   letter-spacing: 2.2px;
   line-height: 19px;
   padding: 4px;
