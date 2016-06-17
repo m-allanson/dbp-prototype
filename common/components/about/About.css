@@ -2,18 +2,17 @@
 
 .About-image {
   display: block;
-  margin: 0 auto;
+  margin: 16px auto 0;
   width: 100%;
 }
 
 .About-title {
   color: var(--color-black);
   font-family: var(--font-family-title);
-  font-size: 28px;
-  font-size: 48px;
+  font-size: 38px;
   letter-spacing: 0;
-  line-height: 54px;
-  margin-top: 52px;
+  line-height: 48px;
+  margin-top: 32px;
   text-align: center;
 }
 
@@ -57,3 +56,15 @@
   text-align: center;
 }
 
+@media (--medium) {
+
+  .About-title {
+    font-size: 48px;
+    line-height: 60px;
+    margin-top: 48px;
+  }
+
+  .About-image {
+    margin-top: 32px;
+  }
+}
