@@ -78,7 +78,8 @@
   font-weight: 200;
   letter-spacing: 2.2px;
   line-height: 19px;
-  padding: 4px;
+  margin: 4px;
+  padding-bottom: 5px;
   text-decoration: none;
   text-transform: uppercase;
   transition: color var(--transition-time) linear;
@@ -86,7 +87,7 @@
 
 .Header-navLink.is-active,
 .Header-navLink:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid currentColor;
 }
 
 @media (--medium) {
