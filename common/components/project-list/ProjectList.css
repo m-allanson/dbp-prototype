@@ -13,7 +13,13 @@
 .ProjectList-link {
   color: var(--color-black);
   font-family: var(--font-family-serif-italic);
-  font-size: 24px;
-  line-height: 40px;
+  font-size: 22px;
+  line-height: 32px;
   text-decoration: none;
+  transition: opacity 0.4s ease;
+  opacity: 1.0;
+}
+
+.ProjectList-link:hover {
+  opacity: 0.85;
 }
