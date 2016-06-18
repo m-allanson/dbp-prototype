@@ -109,7 +109,7 @@ const initialState = {
       content: 'B lorem ipsum dolor sit amet',
       images: [],
       category: 5
-    }    
+    }
   },
 /* Categories: Digital, Brand, Print etc
 ========================================================================== */
@@ -129,7 +129,7 @@ const initialState = {
     4: {
       id: 4,
       name: 'Type'
-    },    
+    },
     5: {
       id: 5,
       name: 'Lettering'
