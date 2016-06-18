@@ -20,7 +20,7 @@ export default () => (
     </ul>
     <ul className='About-statement'>
       <li className='About-icon About-icon--second'></li>
-      <li className='About-statementCopy'>My work is informed by evidence, research and user testing, as well as intuition informed from a broad and varied experience within design.</li>
+      <li className='About-statementCopy'>My work is informed by evidence, research and user testing, as well as intuition developed over a broad and varied career within design.</li>
     </ul>
     <ul className='About-statement'>
       <li className='About-icon About-icon--third'></li>
