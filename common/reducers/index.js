@@ -139,31 +139,38 @@ const initialState = {
     1: {
       id: 1,
       title: 'Cephalonia Typeface',
-      price: '£40',
-      content: 'A mono-weight, bifurcated serif typeface in all caps. Based off of an old classic French biscuit logo, this distinctive vintage display typeface can also evoke edgier sentiments when set in a moodier context.',
-      heroImage: '/static/images/shop-placeholder.jpg',
+      price: '$30',
+      content: 'Cephalonia is an all caps geometric sans-serif that draws its inspiration from classical greek engravings. Its unique crossbars in the letters O, E, F and D are the most notable examples of this greek influence.',
+      heroImage: '/static/images/Cephalonia-1.jpg',
       slug: 'cephalonia-typeface',
       images: [
-        '/static/images/projects-placeholder-1.jpg',
-        '/static/images/projects-placeholder-2.jpg'
+        '/static/images/Cephalonia-2.jpg',
+        '/static/images/Cephalonia-3.jpg',
+        '/static/images/Cephalonia-4.jpg',
+        '/static/images/Cephalonia-5.png',
+        '/static/images/Cephalonia-6.jpg',
+        '/static/images/Cephalonia-7.png',
+        '/static/images/Cephalonia-8.jpg'
       ],
-      buyText: 'regular & bold',
-      buyUrl: 'http://example.com'
+      buyText: 'buy cephalonia | ',
+      buyUrl: 'https://www.youworkforthem.com/font/T4519/cephalonia'
     },
     2: {
       id: 2,
-      title: 'LuLu Typeface',
-      price: '£30',
-      content: 'Lorem ipsum dolor sit ifurcated consectetur adipiscing typeface in all caps. Based off of an old classic French biscuit logo, this distinctive vintage display typeface can also evoke edgier sentiments when set in a moodier context.',
-      heroImage: '/static/images/shop-placeholder.jpg',
+      title: 'Lu Lu Typeface',
+      price: '$45',
+      content: 'A mono-weight, bifurcated serif typeface in all caps. Based off of an old classic French biscuit logo. This distinctive vintage display typeface can also evoke edgier sentiments when set in a moodier context, as well as making for a playful option when set in a soft colour palette.',
+      heroImage: '/static/images/Lu-Lu-1.jpg',
       slug: 'lulu-typeface',
       images: [
-        '/static/images/projects-placeholder-1.jpg',
-        '/static/images/projects-placeholder-2.jpg',
-        '/static/images/projects-placeholder-3.jpg'
+        '/static/images/Lu-Lu-2.jpg',
+        '/static/images/Lu-Lu-3.jpg',
+        '/static/images/Lu-Lu-4.jpg',
+        '/static/images/Lu-Lu-5.jpg',
+        '/static/images/Lu-Lu-6.jpg'
       ],
-      buyText: 'regular & bold',
-      buyUrl: 'http://example.com'
+      buyText: 'Buy Lu Lu | ',
+      buyUrl: 'https://www.myfonts.com/fonts/design-by-pascal/lu-lu/'
     }
   }
 }

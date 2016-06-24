@@ -7,9 +7,11 @@ const ProductItem = ({
   return (
     <div className='ProductItem'>
       <h1 className='ProductItem-title'>{product.title}</h1>
-      <h2 className='ProductItem-subTitle'>Details</h2>
-      <div className='ProductItem-description'>
-        {product.content}
+      <div className='ProductItem-wrapper'>
+        <div className='ProductItem-description'>
+          {product.content}
+          <br /><a className='ProductItem-price' target='_blank' href={product.buyUrl}>{`${product.buyText} ${product.price}`}</a>
+        </div>
       </div>
       <ul className='ProductItem-imageList'>
         {images.map(image => (
@@ -18,7 +20,7 @@ const ProductItem = ({
           </li>
         ))}
       </ul>
-      <a className='ProductItem-price' href={product.buyUrl}>{`${product.buyText} ${product.price}`}</a>
+      <a className='ProductItem-price' target='_blank' href={product.buyUrl}>{`${product.buyText} ${product.price}`}</a>
     </div>
   )
 }

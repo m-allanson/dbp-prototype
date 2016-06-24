@@ -20,6 +20,10 @@
   text-decoration: none;
 }
 
+.Products-itemImage {
+  max-width: 288px;
+}
+
 .Products-itemName {
   color: var(--color-black);
   font-family: var(--font-family-sans-demi);
@@ -35,4 +39,17 @@
   font-weight: 400;
   line-height: 26px;
   margin: 0;
+}
+
+@media (--medium) {
+
+  .Products {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .Products-item {
+    margin: 0 16px;
+  }
 }
