@@ -33,14 +33,17 @@
 
 .About-icon--first {
   background: transparent url("/static/images/about-bullet-a.svg") no-repeat;
+  width: 21px;
 }
 
 .About-icon--second {
   background: transparent url("/static/images/about-bullet-b.svg") no-repeat;
+  width: 21px;
 }
 
 .About-icon--third {
   background: transparent url("/static/images/about-bullet-c.svg") no-repeat;
+  width: 20px;
 }
 
 .About-icon--fourth {
