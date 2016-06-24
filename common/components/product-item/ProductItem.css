@@ -68,7 +68,7 @@
 
   .ProductItem-price::after {
     background: var(--color-black);
-    content: "";
+    content: '';
     height: 0;
     left: 0;
     position: absolute;
@@ -78,13 +78,13 @@
     z-index: -1;
   }
 
-  .ProductItem-price::hover,
-  .ProductItem-price::active {
+  .ProductItem-price:hover,
+  .ProductItem-price:active {
     color: var(--color-shop-red);
   }
 
-  .ProductItem-price::hover:after,
-  .ProductItem-price::active:after {
+  .ProductItem-price:hover::after,
+  .ProductItem-price:active::after {
     height: 100%;
   }
 }

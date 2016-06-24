@@ -17,8 +17,11 @@
 
 .Products-itemLink {
   display: block;
-  max-width: 288px;
   text-decoration: none;
+}
+
+.Products-itemImage {
+  max-width: 288px;
 }
 
 .Products-itemName {
