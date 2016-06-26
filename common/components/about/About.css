@@ -23,6 +23,10 @@
   padding: 0;
 }
 
+.About-statement:last-child {
+  margin-bottom: 32px;
+}
+
 .About-icon {
   display: block;
   height: 22px;
@@ -55,7 +59,7 @@
   font-family: var(--font-family-sans-book);
   font-size: 16px;
   line-height: 22px;
-  margin-top: 20px;
+  margin-top: 16px;
   text-align: center;
 }
 
