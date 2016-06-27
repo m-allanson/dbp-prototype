@@ -55,8 +55,9 @@
 @media (--large) { /* 1 */
 
   .Header-nav {
-    max-width: 1024px;
-    padding: 0 64px;
+    max-width: 960px;
+    margin: 0 64px;
+    padding: 0;
   }
 
   .Header-navListItem--prime {
@@ -91,7 +92,7 @@
 }
 
 @media (--medium) {
-  .Header-navLink { font-size: 13px; }
+  .Header-navLink { font-size: 13px; margin: 0; }
 }
 
 /* Colour modifiers
