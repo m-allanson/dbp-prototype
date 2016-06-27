@@ -1,7 +1,7 @@
 /** @define ProjectItem */
 
 .ProjectItem {
-  padding-top: 25px;
+  padding-top: 32px;
 }
 
 .ProjectItem-title {
@@ -14,8 +14,8 @@
 
 .ProjectItem-content {
   border-bottom: 2px solid var(--color-black);
-  margin-top: 28px;
-  padding-bottom: 28px;
+  margin-top: 32px;
+  padding-bottom: 32px;
 }
 
 .ProjectItem-description {
