@@ -15,9 +15,16 @@ const initialState = {
       id: 2,
       title: 'Move',
       slug: 'move',
-      content: 'B lorem ipsum dolor sit amet',
+      content: 'As a new agency in a crowded marketplace, Move were keen to find an identity to help them stand out. Through branding workshops we identified their refreshingly personable and honest approach to recruitment. I worked on the branding strategy and concepts, as well as the website design and produced the hand-lettered logo.',
+      credits: 'Joe Lovelock, Studio Lovelock, Creative Director. Illustration by Rosie Lovelock. Development by Martin Buckner.',
       url: 'wearemove.com',
-      images: [],
+      images: [
+        '/static/images/move-1.jpg',
+        '/static/images/move-2.jpg',
+        '/static/images/move-3.jpg',
+        '/static/images/move-4.jpg',
+        '/static/images/move-5.png'
+        ],
       category: 1
     },
     3: {
@@ -147,9 +154,9 @@ const initialState = {
         '/static/images/Cephalonia-2.jpg',
         '/static/images/Cephalonia-3.jpg',
         '/static/images/Cephalonia-4.jpg',
-        '/static/images/Cephalonia-5.png',
+        '/static/images/Cephalonia-5.jpg',
         '/static/images/Cephalonia-6.jpg',
-        '/static/images/Cephalonia-7.png',
+        '/static/images/Cephalonia-7.jpg',
         '/static/images/Cephalonia-8.jpg'
       ],
       buyText: 'buy cephalonia | ',

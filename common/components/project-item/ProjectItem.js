@@ -6,7 +6,6 @@ const ProjectItem = ({
   return (
     <div className='ProjectItem'>
       <h1 className='ProjectItem-title'>{project.title}</h1>
-      <h2 className='ProjectItem-subTitle'>Details</h2>
       <div className='ProjectItem-content'>
         <div className='ProjectItem-contentInner'>
           <div className='ProjectItem-description'>
