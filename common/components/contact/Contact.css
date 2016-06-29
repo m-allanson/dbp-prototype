@@ -22,7 +22,7 @@
   text-decoration: none;
 }
 
-.Credit-link {
+.Contact-link--credit {
   border-bottom: 1px solid currentColor;
   color: var(--color-black);
   opacity: 1;
@@ -30,11 +30,11 @@
   transition: opacity 0.3s ease;
 }
 
-.Credit-link:hover {
+.Contact-link--credit:hover {
   opacity: 0.8;
 }
 
-.Site-credits {
+.Contact-credits {
   color: var(--color-black);
   font-family: var(--font-family-sans-book);
   font-size: 16px;

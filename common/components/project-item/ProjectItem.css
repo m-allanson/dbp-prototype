@@ -52,9 +52,9 @@
   text-transform: uppercase;
 }
 
-.ProjectItem-url:before {
+.ProjectItem-url::before {
   background: transparent url("/static/images/circle.svg") no-repeat;
-  content: '';
+  content: "";
   display: block;
   float: left;
   height: 11px;
@@ -63,10 +63,10 @@
   width: 11px;
 }
 
-.ProjectItem-url:hover:before,
-.ProjectItem-url:active:before {
+.ProjectItem-url:hover::before,
+.ProjectItem-url:active::before {
   background: transparent url("/static/images/circle-fill.svg") no-repeat;
-} 
+}
 
 .ProjectItem-imageList {
   list-style-type: none;
@@ -130,9 +130,9 @@
   order: 2;
 }
 
-.ProjectItem-navLink--previous:before {
+.ProjectItem-navLink--previous::before {
   background: transparent url("/static/images/triangle-left.svg") no-repeat;
-  content: '';
+  content: "";
   display: block;
   float: left;
   height: 11px;
@@ -141,8 +141,8 @@
   width: 11px;
 }
 
-.ProjectItem-navLink--previous:hover:before,
-.ProjectItem-navLink--previous:active:before {
+.ProjectItem-navLink--previous:hover::before,
+.ProjectItem-navLink--previous:active::before {
   background: transparent url("/static/images/triangle-left-fill.svg") no-repeat;
 } 
 
@@ -150,7 +150,7 @@
   order: 3;
 }
 
-.ProjectItem-navLink--next:after {
+.ProjectItem-navLink--next::after {
   background: transparent url("/static/images/triangle.svg") no-repeat;
   content: '';
   display: block;
@@ -161,10 +161,11 @@
   width: 11px;
 }
 
-.ProjectItem-navLink--next:hover:after,
-.ProjectItem-navLink--next:active:after {
+.ProjectItem-navLink--next:hover::after,
+.ProjectItem-navLink--next:active::after {
   background: transparent url("/static/images/triangle-fill.svg") no-repeat;
-} 
+}
+
 
 .ProjectItem-navHr {
   border-bottom: 1px solid var(--color-black);
