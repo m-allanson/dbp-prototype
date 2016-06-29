@@ -20,31 +20,31 @@
 
 .ProjectItem-description {
   font-family: var(--font-family-sans-book);
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .ProjectItem-descriptionBorder {
   border-bottom: 1px solid var(--color-black);
   display: block;
   height: 1px;
-  margin-top: 26px;
+  margin-top: 32px;
   width: 60px;
 }
 
 .ProjectItem-credits {
   color: var(--color-black);
   font-family: var(--font-family-serif-italic);
-  font-size: 15px;
-  line-height: 20px;
-  margin-top: 26px;
+  font-size: 17px;
+  line-height: 24px;
+  margin-top: 32px;
 }
 
 .ProjectItem-url {
   color: var(--color-black);
   display: block;
   font-family: var(--font-family-sans-book);
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 2px;
   line-height: 14px;
   margin-top: 27px;
@@ -89,20 +89,6 @@
     align-items: top;
     display: flex;
     justify-content: space-between;
-  }
-
-  .ProjectItem-url {
-    font-size: 13px;
-  }
-
-  .ProjectItem-credits {
-    font-size: 16px;
-    line-height: 22px;
-  }
-
-  .ProjectItem-description {
-    font-size: 15px;
-    line-height: 22px;
   }
 
   .ProjectItem-descriptionBorder {
