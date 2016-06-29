@@ -6,10 +6,18 @@ const initialState = {
       id: 1,
       title: 'IM Global',
       slug: 'im-global',
-      content: 'A lorem ipsum dolor sit amet',
+      content: 'IM Global are a worldwide distributer and producer of film and TV. My role in their rebrand was to explore the brand themes through an initial detailed sketch and exploration phase of typography and graphic concepts. The brief was to include a reference to a globe while pushing beyond the obvious circular design of their old brand. My work then involved tens of high fidelity designs that were used to test motion graphic ideas and included the final identity.',
+      credits: 'The project included an international team of designers and was led by the Design Studio for Film in LA.',
       url: 'imglobalfilm.com',
-      images: [],
-      category: 1
+      images: [
+              '/static/images/img-1.jpg',
+              '/static/images/img-2.jpg',
+              '/static/images/img-3.jpg',
+              '/static/images/img-4.jpg',
+              '/static/images/img-5.jpg'
+
+              ],
+            category: 1
     },
     2: {
       id: 2,
@@ -35,9 +43,12 @@ const initialState = {
       credits: 'In collaboration with Studio Lovelock.',
       url: 'nigelslater.com',
       images: [
-        '/static/images/projects-placeholder-1.jpg',
-        '/static/images/projects-placeholder-2.jpg',
-        '/static/images/projects-placeholder-3.jpg'
+        '/static/images/sloe-1.jpg',
+        '/static/images/sloe-2.jpg',
+        '/static/images/sloe-3.jpg',
+        '/static/images/sloe-4.jpg',
+        '/static/images/sloe-5.jpg',
+        '/static/images/sloe-6.jpg'
       ],
       category: 1
     },
