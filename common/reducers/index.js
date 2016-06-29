@@ -31,8 +31,9 @@ const initialState = {
       id: 3,
       title: 'Sloe Films',
       slug: 'sloe-films',
-      content: 'Lorem ipsum dolor sit ifurcated consectetur adipiscing typeface in all caps. Based off of an old classic French biscuit logo, this distinctive vintage display typeface can also evoke edgier sentiments when set in a moodier context.',
-      credits: 'Design and development was in collaboration with lorem ipsum dolor sit amet consectetur.',
+      content: 'Brand identity for a new independent TV production company, producing Nigel Slater’s new cooking shows. Working from a brief for simplicity and understated sophistication, we created a new diacritical mark with the O. The mark references the sloe berry in an abstract minimal form and serves as a standalone graphic device.',
+      credits: 'In collaboration with Studio Lovelock.',
+      url: 'nigelslater.com',
       images: [
         '/static/images/projects-placeholder-1.jpg',
         '/static/images/projects-placeholder-2.jpg',
