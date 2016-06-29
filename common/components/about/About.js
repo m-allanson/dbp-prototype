@@ -28,7 +28,7 @@ export default () => (
     </ul>
     <ul className='About-statement'>
       <li className='About-icon About-icon--fourth'></li>
-      <li className='About-statementCopy'>I work with those who are passionate about their work, who make a positive social contribution, and who value creative collaborative.</li>
+      <li className='About-statementCopy'>I work with those who are passionate about their work, who make a positive social contribution, and who value creative collaboration.</li>
     </ul>
   </div>
 )
