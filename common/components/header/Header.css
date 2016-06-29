@@ -92,8 +92,8 @@
 }
 
 @media (--medium) {
-  
-  .Header-navLink { 
+
+  .Header-navLink {
     font-size: 13px;
     margin: 0;
   }

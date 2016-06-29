@@ -10,14 +10,13 @@ const initialState = {
       credits: 'The project included an international team of designers and was led by the Design Studio for Film in LA.',
       url: 'imglobalfilm.com',
       images: [
-              '/static/images/img-1.jpg',
-              '/static/images/img-2.jpg',
-              '/static/images/img-3.jpg',
-              '/static/images/img-4.jpg',
-              '/static/images/img-5.jpg'
-
-              ],
-            category: 1
+        '/static/images/img-1.jpg',
+        '/static/images/img-2.jpg',
+        '/static/images/img-3.jpg',
+        '/static/images/img-4.jpg',
+        '/static/images/img-5.jpg'
+      ],
+      category: 1
     },
     2: {
       id: 2,
@@ -32,7 +31,7 @@ const initialState = {
         '/static/images/move-3.jpg',
         '/static/images/move-4.jpg',
         '/static/images/move-5.png'
-        ],
+      ],
       category: 1
     },
     3: {

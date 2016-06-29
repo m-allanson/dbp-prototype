@@ -144,7 +144,7 @@
 .ProjectItem-navLink--previous:hover::before,
 .ProjectItem-navLink--previous:active::before {
   background: transparent url("/static/images/triangle-left-fill.svg") no-repeat;
-} 
+}
 
 .ProjectItem-navLink--next {
   order: 3;
@@ -152,7 +152,7 @@
 
 .ProjectItem-navLink--next::after {
   background: transparent url("/static/images/triangle.svg") no-repeat;
-  content: '';
+  content: "";
   display: block;
   float: right;
   height: 11px;
@@ -165,7 +165,6 @@
 .ProjectItem-navLink--next:active::after {
   background: transparent url("/static/images/triangle-fill.svg") no-repeat;
 }
-
 
 .ProjectItem-navHr {
   border-bottom: 1px solid var(--color-black);
