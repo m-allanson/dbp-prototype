@@ -30,7 +30,7 @@ const initialState = {
         '/static/images/move-2.jpg',
         '/static/images/move-3.jpg',
         '/static/images/move-4.jpg',
-        '/static/images/move-5.png'
+        '/static/images/move-5.jpg'
       ],
       category: 1
     },
@@ -87,9 +87,9 @@ const initialState = {
       credits: 'Development by Stirtingale.',
       url: 'tinahillier.com',
       images: [
-      '/static/images/tina-1.jpg',
-      '/static/images/tina-2.jpg',
-      '/static/images/tina-3.jpg'
+        '/static/images/tina-1.jpg',
+        '/static/images/tina-2.jpg',
+        '/static/images/tina-3.jpg'
       ],
       category: 2
     },
@@ -113,8 +113,14 @@ const initialState = {
       id: 8,
       title: 'South Asian Literature Festival',
       slug: 'south-asian-literature-festival',
-      content: 'B lorem ipsum dolor sit amet',
-      images: [],
+      content: 'After creating the festival brand, I was responsible for all the design for the 4 years the festival ran. This included programmes, flyers, large-format posters, web design and merchandise. Below is a collection of images from two festival programmes.',
+      images: [
+        '/static/images/salf-1.jpg',
+        '/static/images/salf-2.jpg',
+        '/static/images/salf-3.jpg',
+        '/static/images/salf-4.jpg',
+        '/static/images/salf-5.jpg',
+      ],
       category: 3
     },
     9: {
@@ -134,28 +140,62 @@ const initialState = {
       category: 3
     },
     10: {
+      id: 10,
       title: 'Cephalonia',
       slug: 'cephalonia-typeface',
-      content: 'B lorem ipsum dolor sit amet',
+      content: 'Cephalonia is an all caps geometric sans-serif that draws its inspiration from classical greek engravings. Its unique crossbars in the letters O, E, F and D are the most notable examples of this greek influence. Cephalonia combines the simplicity and elegance of the most famous geometric sans-serifs while adding original embellishments that make it something new and exciting. The end result is a typeface that can evoke a classic feeling while simultaneously holding an edgy contemporary feel.',
+      credits: 'Cephalonia is available to purchase from youworkforthem in 4 weights. A complete font of uppercase and lowercase is coming soon!',
       url: 'youworkforthem.com',
-      images: [],
+      images: [
+        '/static/images/cephalonia-1.jpg',
+        '/static/images/cephalonia-2.jpg',
+        '/static/images/cephalonia-3.jpg',
+        '/static/images/cephalonia-4.jpg',
+        '/static/images/cephalonia-5.jpg',
+        '/static/images/cephalonia-6.jpg',
+        '/static/images/cephalonia-7.jpg',
+        '/static/images/cephalonia-8.jpg'
+      ],
       category: 4
     },
     11: {
       id: 11,
       title: 'Lu Lu',
       slug: 'lu-lu',
-      content: 'B lorem ipsum dolor sit amet',
+      content: 'A mono-weight, bifurcated serif typeface in all caps. Based off of an old classic French biscuit logo. This distinctive vintage display typeface can also evoke edgier sentiments when set in a moodier context, as well as making for a playful option when set in a soft colour palette.',
+      credits: 'Lu Lu is available to buy in two weights from myfonts.',
       url: 'myfonts.com',
-      images: [],
+      images: [
+        '/static/images/Lu-Lu-1.jpg',
+        '/static/images/Lu-Lu-2.jpg',
+        '/static/images/Lu-Lu-3.jpg',
+        '/static/images/Lu-Lu-4.jpg',
+        '/static/images/Lu-Lu-5.jpg',
+        '/static/images/Lu-Lu-6.jpg'
+      ],
       category: 4
     },
     12: {
       id: 12,
       title: 'Miscellaneous',
       slug: 'miscellaneous',
-      content: 'B lorem ipsum dolor sit amet',
-      images: [],
+      content: 'A selection of work including personal projects, pro bono and client work. Techniques range from sketches and traditional calligraphic techniques to digital lettering.',
+      images: [
+        '/static/images/misc-1.jpg',
+        '/static/images/misc-2.jpg',
+        '/static/images/misc-3.jpg',
+        '/static/images/misc-4.jpg',
+        '/static/images/misc-5.jpg',
+        '/static/images/misc-6.jpg',
+        '/static/images/misc-7.jpg',
+        '/static/images/misc-8.jpg',
+        '/static/images/misc-9.jpg',
+        '/static/images/misc-10.jpg',
+        '/static/images/misc-11.jpg',
+        '/static/images/misc-12.jpg',
+        '/static/images/misc-13.jpg',
+        '/static/images/misc-14.jpg',
+        '/static/images/misc-15.jpg'      ],
       category: 5
     }
   },
