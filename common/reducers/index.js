@@ -83,9 +83,14 @@ const initialState = {
       id: 6,
       title: 'Tina Hillier',
       slug: 'tina-hillier',
-      content: 'B lorem ipsum dolor sit amet',
+      content: 'Tina Hillier is a portrait and reportage photographer. Her work has appeared in the National Portrait Gallery and clients include FT Weekend Magazine, Monocle, Random House, Saturday Telegraph Magazine & Sunday Times Magazine. Along with a responsive web design an understated identity was created focusing on stylish and modern typography.',
+      credits: 'Development by Stirtingale.',
       url: 'tinahillier.com',
-      images: [],
+      images: [
+      '/static/images/tina-1.jpg',
+      '/static/images/tina-2.jpg',
+      '/static/images/tina-3.jpg'
+      ],
       category: 2
     },
     7: {
