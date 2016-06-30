@@ -6,7 +6,7 @@ const initialState = {
       id: 1,
       title: 'IM Global',
       slug: 'im-global',
-      content: 'IM Global are a worldwide distributer and producer of film and TV. My role in their rebrand was to explore the brand themes through an initial detailed sketch and exploration phase of typography and graphic concepts. The brief was to include a reference to a globe while pushing beyond the obvious circular design of their old brand. My work then involved tens of high fidelity designs that were used to test motion graphic ideas and included the final identity.',
+      content: 'IM Global are a worldwide distributer and producer of film and TV. Part of rebrand, the brief was to explore the brand themes through an initial detailed sketch and exploration phase of typography and graphic concepts. A reference to a globe had to be included while pushing beyond the obvious circular design of their old brand. The work also involved producing dozens of high fidelity designs that were used to test motion graphic ideas and included the final identity.',
       credits: 'The project included an international team of designers and was led by the Design Studio for Film in LA.',
       url: 'imglobalfilm.com',
       images: [
@@ -55,18 +55,28 @@ const initialState = {
       id: 4,
       title: 'Cookie Studio',
       slug: 'cookie-studio',
-      content: 'B lorem ipsum dolor sit amet',
+      content: 'This responsive web design project also involved developing the Cookie Studio brand. A distinctive animation studio based in East London, the brief was centred around showcasing the energy and creativity the studio has to offer. A significant part of the process involved looking the brand tone of voice and defining their offering clearly through a new showreel and selected projects.',
+      credits: 'Joe Lovelock, Studio Lovelock, Creative Director. Development by Martin Buckner.',
       url: 'cookiestudio.tv',
-      images: [],
+      images: [
+        '/static/images/cookie-1.jpg',
+        '/static/images/cookie-2.jpg',
+        '/static/images/cookie-3.jpg'
+      ],
       category: 2
     },
     5: {
       id: 5,
       title: 'Leapfrog Investments',
       slug: 'leapfrog-investments',
-      content: 'B lorem ipsum olor sit amet',
+      content: 'LeapFrog are an ethical investor making a huge social impact in emerging markets. As part of a comprehensive rebrand, work included redesigning their site to reflect their new identity, designing brand guidelines and print design of marketing materials.',
+      credits: 'Joe Lovelock, Studio Lovelock, Creative Director. Additional design from Richard Simic. Development by Martin Buckner.',
       url: 'leapfroginvest.com',
-      images: [],
+      images: [
+        '/static/images/leapfrog-1.jpg',
+        '/static/images/leapfrog-2.jpg',
+        '/static/images/leapfrog-3.jpg'
+      ],
       category: 2
     },
     6: {
