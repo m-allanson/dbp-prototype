@@ -82,8 +82,16 @@ const initialState = {
       id: 7,
       title: 'FIL Guadalajara 2015',
       slug: 'fil-guadalajara-2015',
-      content: 'B lorem ipsum dolor sit amet',
-      images: [],
+      content: 'Design and print management of a 120-page festival programme in Spanish and A1 poster for the Feria Internacional del Libro de Guadalajara. The brief was to evolve an existing festival identity to appeal to both Spanish and UK audiences, developing a colourful palette inspired by Mexican art and design while still using a European design aesthetic.',
+      credits: 'Part of the year of cultural exchange between UK and Mexico, the British Council led the production of materials for this event. Print by Fara Printers.',
+      url: 'britishcouncil.org',
+      images: [
+        '/static/images/fil-1.jpg',
+        '/static/images/fil-2.jpg',
+        '/static/images/fil-3.jpg',
+        '/static/images/fil-4.jpg',
+        '/static/images/fil-5.jpg'
+      ],
       category: 3
     },
     8: {
@@ -98,12 +106,19 @@ const initialState = {
       id: 9,
       title: 'The Synthesis of Movement',
       slug: 'the-synthesis-of-movement',
-      content: 'B lorem ipsum dolor sit amet',
-      images: [],
+      content: 'A collaboration with photographer David Newman, the project aimed to capture movement through the static medium of photography. Professional dancers were auditioned and chosed on their ability to improvise to music. Work involved assisting on multiple shoots, and designing the exhibition poster that featured custom type design.',
+      credits: 'David Newman is a photographer working in advertising.',
+      url: 'davidnewman.eu',
+      images: [
+        '/static/images/tsom-1.jpg',
+        '/static/images/tsom-2.jpg',
+        '/static/images/tsom-3.png',
+        '/static/images/tsom-4.jpg',
+        '/static/images/tsom-5.png'
+      ],
       category: 3
     },
     10: {
-      id: 10,
       title: 'Cephalonia',
       slug: 'cephalonia-typeface',
       content: 'B lorem ipsum dolor sit amet',
