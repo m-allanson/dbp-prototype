@@ -119,7 +119,7 @@ const initialState = {
         '/static/images/salf-2.jpg',
         '/static/images/salf-3.jpg',
         '/static/images/salf-4.jpg',
-        '/static/images/salf-5.jpg',
+        '/static/images/salf-5.jpg'
       ],
       category: 3
     },
@@ -195,7 +195,8 @@ const initialState = {
         '/static/images/misc-12.jpg',
         '/static/images/misc-13.jpg',
         '/static/images/misc-14.jpg',
-        '/static/images/misc-15.jpg'      ],
+        '/static/images/misc-15.jpg'
+      ],
       category: 5
     }
   },
