@@ -16,10 +16,25 @@
   font-size: 22px;
   line-height: 32px;
   opacity: 1;
+  position: relative;
   text-decoration: none;
   transition: opacity 0.3s ease;
 }
 
-.ProjectList-link:hover {
-  opacity: 0.8;
+.ProjectList-link::before {
+  background-color: var(--color-black);
+  bottom: -2px;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+  visibility: hidden;
+  width: 100%;
+}
+
+.ProjectList-link:hover::before {
+  transform: scaleX(1);
+  visibility: visible;
 }
