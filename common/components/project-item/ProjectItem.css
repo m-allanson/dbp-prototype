@@ -125,6 +125,7 @@
 
 .ProjectItem-navLink {
   color: var(--color-black);
+  flex: 1;
   font-family: var(--font-family-sans-book);
   font-size: 12px;
   letter-spacing: 2px;
@@ -156,6 +157,7 @@
 
 .ProjectItem-navLink--next {
   order: 3;
+  text-align: right;
 }
 
 .ProjectItem-navLink--next::after {

@@ -1,5 +1,6 @@
 import React from 'react'
 import urlParser from 'url-parse'
+import { Link } from 'react-router'
 
 const credits = (credits, url) => {
   const projectUrl = urlParser(url)
@@ -38,9 +39,13 @@ const ProjectItem = ({
         ))}
       </ul>
       <nav className='ProjectItem-nav'>
-        <a href='#' className='ProjectItem-navLink ProjectItem-navLink--previous'>Previous</a>
+        {project.previousProject &&
+          <Link to={`/projects/${project.previousProject.slug}`} className='ProjectItem-navLink ProjectItem-navLink--previous'>Previous</Link>
+        }
         <span className='ProjectItem-navHr'></span>
-        <a href='#' className='ProjectItem-navLink ProjectItem-navLink--next'>Next</a>
+        {project.nextProject &&
+          <Link to={`/projects/${project.nextProject.slug}`} className='ProjectItem-navLink ProjectItem-navLink--next'>Next</Link>
+        }
       </nav>
     </div>
   )
