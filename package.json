@@ -55,6 +55,7 @@
     "stylelint": "^6.3.3",
     "stylelint-config-suitcss": "^6.0.0",
     "stylelint-selector-bem-pattern": "^1.0.0",
+    "url-parse": "^1.1.1",
     "webpack": "^1.13.0"
   },
   "devDependencies": {

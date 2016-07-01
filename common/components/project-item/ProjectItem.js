@@ -1,8 +1,10 @@
 import React from 'react'
+import url from 'url-parse'
 
 const ProjectItem = ({
   project
 }) => {
+  const projectUrl = url(project.url)
   return (
     <div className='ProjectItem'>
       <h1 className='ProjectItem-title'>{project.title}</h1>
@@ -17,7 +19,7 @@ const ProjectItem = ({
           <div className='ProjectItem-credits'>
             {project.credits}
           </div>
-          <a className='ProjectItem-url' href='#'>{project.url}</a>
+          <a className='ProjectItem-url' href={projectUrl.href}>{projectUrl.hostname}</a>
         </div>
       </div>
       <ul className='ProjectItem-imageList'>
