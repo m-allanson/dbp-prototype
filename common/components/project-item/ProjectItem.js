@@ -1,10 +1,24 @@
 import React from 'react'
-import url from 'url-parse'
+import urlParser from 'url-parse'
+
+const credits = (credits, url) => {
+  const projectUrl = urlParser(url)
+  if (credits && url) {
+    return (
+      <div className='ProjectItem-contentInner'>
+        <span className='ProjectItem-descriptionBorder' />
+        <div className='ProjectItem-credits'>
+          {credits}
+        </div>
+        <a className='ProjectItem-url' href={projectUrl.href}>{projectUrl.hostname}</a>
+      </div>
+    )
+  }
+}
 
 const ProjectItem = ({
   project
 }) => {
-  const projectUrl = url(project.url)
   return (
     <div className='ProjectItem'>
       <h1 className='ProjectItem-title'>{project.title}</h1>
@@ -12,15 +26,9 @@ const ProjectItem = ({
         <div className='ProjectItem-contentInner'>
           <div className='ProjectItem-description'>
             {project.content}
-            <span className='ProjectItem-descriptionBorder' />
           </div>
         </div>
-        <div className='ProjectItem-contentInner'>
-          <div className='ProjectItem-credits'>
-            {project.credits}
-          </div>
-          <a className='ProjectItem-url' href={projectUrl.href}>{projectUrl.hostname}</a>
-        </div>
+        {credits(project.credits, project.url)}
       </div>
       <ul className='ProjectItem-imageList'>
         {project.images.map(image => (
