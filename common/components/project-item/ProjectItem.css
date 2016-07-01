@@ -96,7 +96,15 @@
   }
 
   .ProjectItem-contentInner {
-    flex: 0 calc(50% - 16px);
+    flex: 1 50%;
+  }
+
+  .ProjectItem-contentInner:first-child {
+    padding-right: 16px;
+  }
+
+  .ProjectItem-contentInner:last-child {
+    padding-left: 16px;
   }
 
   .ProjectItem-credits {
