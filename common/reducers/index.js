@@ -145,14 +145,14 @@ const initialState = {
       credits: 'Cephalonia is available to purchase from youworkforthem in 4 weights. A complete font of uppercase and lowercase is coming soon!',
       url: 'https://youworkforthem.com',
       images: [
-        '/static/images/cephalonia-1.jpg',
-        '/static/images/cephalonia-2.jpg',
-        '/static/images/cephalonia-3.jpg',
-        '/static/images/cephalonia-4.jpg',
-        '/static/images/cephalonia-5.jpg',
-        '/static/images/cephalonia-6.jpg',
-        '/static/images/cephalonia-7.jpg',
-        '/static/images/cephalonia-8.jpg'
+        '/static/images/Cephalonia-1.jpg',
+        '/static/images/Cephalonia-2.jpg',
+        '/static/images/Cephalonia-3.jpg',
+        '/static/images/Cephalonia-4.jpg',
+        '/static/images/Cephalonia-5.jpg',
+        '/static/images/Cephalonia-6.jpg',
+        '/static/images/Cephalonia-7.jpg',
+        '/static/images/Cephalonia-8.jpg'
       ],
       category: 4
     },
