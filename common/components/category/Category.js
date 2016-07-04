@@ -7,12 +7,11 @@ const Category = ({
   onCategoryClick
 }) => {
   const onClick = () => { onCategoryClick(category.id) }
-  const projectList = isSelected ? <ProjectList projects={category.projects} /> : ''
 
   return (
     <li className='Category'>
       <h1 className='Category-Title' onClick={onClick}> {category.name} </h1>
-      {projectList}
+      <ProjectList projects={category.projects} isSelected={isSelected} />
     </li>
   )
 }
