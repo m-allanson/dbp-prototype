@@ -22,13 +22,14 @@
   font-family: var(--font-family-sans-book);
   font-size: 16px;
   line-height: 24px;
+  max-width: 600px;
 }
 
 .ProjectItem-descriptionBorder {
   border-bottom: 1px solid var(--color-black);
   display: block;
   height: 1px;
-  margin-top: 32px;
+  margin: 32px auto 0;
   width: 60px;
 }
 
@@ -47,7 +48,7 @@
   font-size: 13px;
   letter-spacing: 2px;
   line-height: 14px;
-  margin-top: 31px;
+  margin-top: 29px;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -86,9 +87,9 @@
 @media (--medium) {
 
   .ProjectItem-content {
-    align-items: top;
+    align-items: baseline;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .ProjectItem-descriptionBorder {
@@ -105,6 +106,12 @@
 
   .ProjectItem-contentInner:last-child {
     padding-left: 16px;
+  }
+
+  .ProjectItem-contentInner:only-child {
+    max-width: 600px;
+    padding: 0;
+    text-align: center;
   }
 
   .ProjectItem-credits {
