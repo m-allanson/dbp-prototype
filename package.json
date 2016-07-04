@@ -1,7 +1,7 @@
 {
   "name": "dbp-prototype",
   "version": "0.0.1",
-  "description": "DbP tech prototype",
+  "description": "Source code for designbypascal.com",
   "main": "server/index.js",
   "scripts": {
     "compile": "babel-node ./scripts/dist.js",
@@ -17,7 +17,14 @@
     "node": "6.1.0",
     "npm": "3.8.6"
   },
-  "author": "",
+  "authors": [
+    "Michael Allanson",
+    "Pascal Barry"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m-allanson/designbypascal-portfolio"
+  },
   "license": "UNLICENSED",
   "dependencies": {
     "autoprefixer": "^6.3.6",

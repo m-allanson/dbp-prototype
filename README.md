@@ -2,11 +2,11 @@
 
 ## About
 
-## Tech stack
+This is the source code for designbypascal.com
 
 ## Requirements
 
-- NodeJS / npm
+- NodeJS v6+
 
 ## Getting started
 
@@ -15,8 +15,19 @@
 - `npm run start:dev`
 - open `http://localhost:8081`
 
-## Webpack
-In dev mode, WebPack will run an http server on port 8081 (or DEV_PORT), it will serve requests for any path starting with `/static`, all other requests will be proxied to the standard Express server running on port 8080 (or PORT). This allows WebPack to recompile assets in-memory during development.
+## Tech Stack
+
+- [webpack](https://webpack.github.io) Dev server and bundling
+- [Babel](https://babeljs.io) JavaScript compiler
+- [Express](http://expressjs.com) Web application server framework
+- [React](https://facebook.github.io/react/) Frontend components
+- [PostCSS](http://postcss.org/) Extra CSS features
+
+## Development
+
+`npm run start:dev` will start a server at http://localhost:8081 in development mode. When in development mode, any changes to project files will automatically be shown in the browser.
+
+The development server runs on port 8081 (or DEV_PORT), it will serve requests for any path starting with `/static`, all other requests will be proxied to the standard Express server running on port 8080 (or PORT). This allows webpack to recompile assets in-memory during development.
 
 In production mode all requests are handled by the Express server. Requests starting with `/static` will be served from the `dist` directory.
 
@@ -24,13 +35,17 @@ In production mode all requests are handled by the Express server. Requests star
 
 Fonts are served with a combination of local font files (from MyFonts) and remotely served files via JS (from TypeKit).
 
-## Deploy
+## Testing
 
-Deployment is handled via dokku. Once a dokku remote is added, deploy with:
+Tests are automatically run on [CircleCI](https://circleci.com/gh/m-allanson/designbypascal-portfolio) for each pull request. The tests (so far) just lint the CSS and JS files.
 
-`git push dokku master`
+## Deployment
 
-## TODO
-Write a readme file :)
+Changes to the `develop` and `master` branches are automatically deployed after tests are run successfully.
 
-[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+|  branch |                  deployed url        |
+|:-------:|:------------------------------------:|
+| develop | [designbypascal-staging.herokuapp.com](http://designbypascal-staging.herokuapp.com) |
+| master  | [designbypascal.com](http://designbypascal.com) |
+
+> Check the status of recent builds at https://circleci.com/gh/m-allanson/designbypascal-portfolio
