@@ -1,5 +1,5 @@
 import React from 'react'
-import { Router, Route, IndexRoute } from 'react-router'
+import { Redirect, Router, Route, IndexRoute } from 'react-router'
 import About from '../components/about/About'
 import App from './App'
 import Contact from '../components/contact/Contact'
@@ -15,6 +15,7 @@ const Routes = ({
     <Router history={history}>
       <Route path='/' component={App}>
         <IndexRoute component={ProjectsContainer} sectionName='projects' />
+        <Redirect from='projects' to='/' />
         <Route path='projects/:slug' component={ProjectItemContainer} sectionName='projects' />
         <Route path='about' component={About} sectionName='about' />
         <Route path='contact' component={Contact} sectionName='contact' />

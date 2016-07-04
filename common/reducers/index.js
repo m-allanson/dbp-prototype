@@ -8,7 +8,7 @@ const initialState = {
       slug: 'im-global',
       content: 'IM Global are a worldwide distributer and producer of film and TV. Part of rebrand, the brief was to explore the brand themes through an initial detailed sketch and exploration phase of typography and graphic concepts. A reference to a globe had to be included while pushing beyond the obvious circular design of their old brand. The work also involved producing dozens of high fidelity designs that were used to test motion graphic ideas and included the final identity.',
       credits: 'The project included an international team of designers and was led by the Design Studio for Film in LA.',
-      url: 'imglobalfilm.com',
+      url: 'http://imglobalfilm.com',
       images: [
         '/static/images/img-1.jpg',
         '/static/images/img-2.jpg',
@@ -24,7 +24,7 @@ const initialState = {
       slug: 'move',
       content: 'As a new agency in a crowded marketplace, Move were keen to find an identity to help them stand out. Through branding workshops we identified their refreshingly personable and honest approach to recruitment. I worked on the branding strategy and concepts, as well as the website design and produced the hand-lettered logo.',
       credits: 'Joe Lovelock, Studio Lovelock, Creative Director. Illustration by Rosie Lovelock. Development by Martin Buckner.',
-      url: 'wearemove.com',
+      url: 'http://wearemove.com',
       images: [
         '/static/images/move-1.jpg',
         '/static/images/move-2.jpg',
@@ -40,7 +40,7 @@ const initialState = {
       slug: 'sloe-films',
       content: 'Brand identity for a new independent TV production company, producing Nigel Slater’s new cooking shows. Working from a brief for simplicity and understated sophistication, we created a new diacritical mark with the O. The mark references the sloe berry in an abstract minimal form and serves as a standalone graphic device.',
       credits: 'In collaboration with Studio Lovelock.',
-      url: 'nigelslater.com',
+      url: 'http://nigelslater.com',
       images: [
         '/static/images/sloe-1.jpg',
         '/static/images/sloe-2.jpg',
@@ -57,7 +57,7 @@ const initialState = {
       slug: 'cookie-studio',
       content: 'This responsive web design project also involved developing the Cookie Studio brand. A distinctive animation studio based in East London, the brief was centred around showcasing the energy and creativity the studio has to offer. A significant part of the process involved looking the brand tone of voice and defining their offering clearly through a new showreel and selected projects.',
       credits: 'Joe Lovelock, Studio Lovelock, Creative Director. Development by Martin Buckner.',
-      url: 'cookiestudio.tv',
+      url: 'http://cookiestudio.tv',
       images: [
         '/static/images/cookie-1.jpg',
         '/static/images/cookie-2.jpg',
@@ -71,7 +71,7 @@ const initialState = {
       slug: 'leapfrog-investments',
       content: 'LeapFrog are an ethical investor making a huge social impact in emerging markets. As part of a comprehensive rebrand, work included redesigning their site to reflect their new identity, designing brand guidelines and print design of marketing materials.',
       credits: 'Joe Lovelock, Studio Lovelock, Creative Director. Additional design from Richard Simic. Development by Martin Buckner.',
-      url: 'leapfroginvest.com',
+      url: 'http://leapfroginvest.com',
       images: [
         '/static/images/leapfrog-1.jpg',
         '/static/images/leapfrog-2.jpg',
@@ -85,7 +85,7 @@ const initialState = {
       slug: 'tina-hillier',
       content: 'Tina Hillier is a portrait and reportage photographer. Her work has appeared in the National Portrait Gallery and clients include FT Weekend Magazine, Monocle, Random House, Saturday Telegraph Magazine & Sunday Times Magazine. Along with a responsive web design an understated identity was created focusing on stylish and modern typography.',
       credits: 'Development by Stirtingale.',
-      url: 'tinahillier.com',
+      url: 'http://tinahillier.com',
       images: [
         '/static/images/tina-1.jpg',
         '/static/images/tina-2.jpg',
@@ -99,7 +99,7 @@ const initialState = {
       slug: 'fil-guadalajara-2015',
       content: 'Design and print management of a 120-page festival programme in Spanish and A1 poster for the Feria Internacional del Libro de Guadalajara. The brief was to evolve an existing festival identity to appeal to both Spanish and UK audiences, developing a colourful palette inspired by Mexican art and design while still using a European design aesthetic.',
       credits: 'Part of the year of cultural exchange between UK and Mexico, the British Council led the production of materials for this event. Print by Fara Printers.',
-      url: 'britishcouncil.org',
+      url: 'https://www.britishcouncil.org',
       images: [
         '/static/images/fil-1.jpg',
         '/static/images/fil-2.jpg',
@@ -129,7 +129,7 @@ const initialState = {
       slug: 'the-synthesis-of-movement',
       content: 'A collaboration with photographer David Newman, the project aimed to capture movement through the static medium of photography. Professional dancers were auditioned and chosed on their ability to improvise to music. Work involved assisting on multiple shoots, and designing the exhibition poster that featured custom type design.',
       credits: 'David Newman is a photographer working in advertising.',
-      url: 'davidnewman.eu',
+      url: 'http://davidnewman.eu',
       images: [
         '/static/images/tsom-1.jpg',
         '/static/images/tsom-2.jpg',
@@ -145,7 +145,7 @@ const initialState = {
       slug: 'cephalonia-typeface',
       content: 'Cephalonia is an all caps geometric sans-serif that draws its inspiration from classical greek engravings. Its unique crossbars in the letters O, E, F and D are the most notable examples of this greek influence. Cephalonia combines the simplicity and elegance of the most famous geometric sans-serifs while adding original embellishments that make it something new and exciting. The end result is a typeface that can evoke a classic feeling while simultaneously holding an edgy contemporary feel.',
       credits: 'Cephalonia is available to purchase from youworkforthem in 4 weights. A complete font of uppercase and lowercase is coming soon!',
-      url: 'youworkforthem.com',
+      url: 'https://youworkforthem.com',
       images: [
         '/static/images/cephalonia-1.jpg',
         '/static/images/cephalonia-2.jpg',
@@ -164,7 +164,7 @@ const initialState = {
       slug: 'lu-lu',
       content: 'A mono-weight, bifurcated serif typeface in all caps. Based off of an old classic French biscuit logo. This distinctive vintage display typeface can also evoke edgier sentiments when set in a moodier context, as well as making for a playful option when set in a soft colour palette.',
       credits: 'Lu Lu is available to buy in two weights from myfonts.',
-      url: 'myfonts.com',
+      url: 'https://myfonts.com',
       images: [
         '/static/images/Lu-Lu-1.jpg',
         '/static/images/Lu-Lu-2.jpg',

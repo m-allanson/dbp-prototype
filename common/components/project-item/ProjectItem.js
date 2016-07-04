@@ -1,4 +1,21 @@
 import React from 'react'
+import urlParser from 'url-parse'
+import { Link } from 'react-router'
+
+const credits = (credits, url) => {
+  const projectUrl = urlParser(url)
+  if (credits && url) {
+    return (
+      <div className='ProjectItem-contentInner'>
+        <span className='ProjectItem-descriptionBorder' />
+        <div className='ProjectItem-credits'>
+          {credits}
+        </div>
+        <a className='ProjectItem-url' href={projectUrl.href}>{projectUrl.hostname}</a>
+      </div>
+    )
+  }
+}
 
 const ProjectItem = ({
   project
@@ -10,15 +27,9 @@ const ProjectItem = ({
         <div className='ProjectItem-contentInner'>
           <div className='ProjectItem-description'>
             {project.content}
-            <span className='ProjectItem-descriptionBorder' />
           </div>
         </div>
-        <div className='ProjectItem-contentInner'>
-          <div className='ProjectItem-credits'>
-            {project.credits}
-          </div>
-          <a className='ProjectItem-url' href='#'>{project.url}</a>
-        </div>
+        {credits(project.credits, project.url)}
       </div>
       <ul className='ProjectItem-imageList'>
         {project.images.map(image => (
@@ -28,9 +39,13 @@ const ProjectItem = ({
         ))}
       </ul>
       <nav className='ProjectItem-nav'>
-        <a href='#' className='ProjectItem-navLink ProjectItem-navLink--previous'>Previous</a>
+        {project.previousProject &&
+          <Link to={`/projects/${project.previousProject.slug}`} className='ProjectItem-navLink ProjectItem-navLink--previous'>Previous</Link>
+        }
         <span className='ProjectItem-navHr'></span>
-        <a href='#' className='ProjectItem-navLink ProjectItem-navLink--next'>Next</a>
+        {project.nextProject &&
+          <Link to={`/projects/${project.nextProject.slug}`} className='ProjectItem-navLink ProjectItem-navLink--next'>Next</Link>
+        }
       </nav>
     </div>
   )

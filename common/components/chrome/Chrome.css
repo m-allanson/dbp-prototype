@@ -25,14 +25,14 @@
 .Chrome-contentWrap {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
   min-height: calc(100% - var(--Chrome-header-height));
-  width: calc(100% - 32px);
+  width: 100%;
 }
 
 .Chrome-content {
   flex: 1;
-  width: 100%;
+  margin: 0 auto;
+  width: calc(100% - 32px);
 }
 
 .Chrome-footer {
@@ -73,26 +73,26 @@
   transition: opacity var(--Chrome-transition-time)  ease-out;
 }
 
-/* responsive layout changes
+/* Responsive layout changes
   ========================================================================== */
 
 @media (--medium) {
 
-  .Chrome-contentWrap {
+  .Chrome-content {
     width: calc(100% - 64px);
   }
 }
 
 @media (--large) {
 
-  .Chrome-contentWrap {
+  .Chrome-content {
     width: calc(100% - 128px);
   }
 }
 
 @media (--xlarge) {
 
-  .Chrome-contentWrap {
+  .Chrome-content {
     max-width: 1200px;
   }
 }
