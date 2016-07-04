@@ -40,7 +40,7 @@ const initialState = {
       slug: 'sloe-films',
       content: 'Brand identity for a new independent TV production company, producing Nigel Slater’s new cooking shows. Working from a brief for simplicity and understated sophistication, we created a new diacritical mark with the O. The mark references the sloe berry in an abstract minimal form and serves as a standalone graphic device.',
       credits: 'In collaboration with Studio Lovelock.',
-      url: 'http://nigelslater.com',
+      url: 'http://studiolovelock.com',
       images: [
         '/static/images/sloe-1.jpg',
         '/static/images/sloe-2.jpg',
@@ -128,8 +128,6 @@ const initialState = {
       title: 'The Synthesis of Movement',
       slug: 'the-synthesis-of-movement',
       content: 'A collaboration with photographer David Newman, the project aimed to capture movement through the static medium of photography. Professional dancers were auditioned and chosed on their ability to improvise to music. Work involved assisting on multiple shoots, and designing the exhibition poster that featured custom type design.',
-      credits: 'David Newman is a photographer working in advertising.',
-      url: 'http://davidnewman.eu',
       images: [
         '/static/images/tsom-1.jpg',
         '/static/images/tsom-2.jpg',
@@ -177,8 +175,8 @@ const initialState = {
     },
     12: {
       id: 12,
-      title: 'Miscellaneous',
-      slug: 'miscellaneous',
+      title: 'Miscellaneous Lettering',
+      slug: 'miscellaneous-lettering',
       content: 'A selection of work including personal projects, pro bono and client work. Techniques range from sketches and traditional calligraphic techniques to digital lettering.',
       images: [
         '/static/images/misc-1.jpg',
@@ -197,7 +195,7 @@ const initialState = {
         '/static/images/misc-14.jpg',
         '/static/images/misc-15.jpg'
       ],
-      category: 5
+      category: 4
     }
   },
 /* Categories: Digital, Brand, Print etc
@@ -218,10 +216,6 @@ const initialState = {
     4: {
       id: 4,
       name: 'Type'
-    },
-    5: {
-      id: 5,
-      name: 'Lettering'
     }
   },
   products: {
