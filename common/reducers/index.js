@@ -6,7 +6,7 @@ const initialState = {
       id: 1,
       title: 'IM Global',
       slug: 'im-global',
-      content: 'IM Global are a worldwide distributer and producer of film and TV. Part of rebrand, the brief was to explore the brand themes through an initial detailed sketch and exploration phase of typography and graphic concepts. A reference to a globe had to be included while pushing beyond the obvious circular design of their old brand. The work also involved producing dozens of high fidelity designs that were used to test motion graphic ideas and included the final identity.',
+      content: 'IM Global are a worldwide distributer and producer of film and TV. Part of a rebrand, the brief was to explore brand themes through an initial detailed sketch and exploration phase of typography and graphic concepts. A reference to a globe had to be included while pushing beyond the obvious circular design of their old brand. The work involved producing dozens of high fidelity designs along with concepts that were used to test motion graphic ideas and develop the animated ident.',
       credits: 'The project included an international team of designers and was led by the Design Studio for Film in LA.',
       url: 'http://imglobalfilm.com',
       images: [
