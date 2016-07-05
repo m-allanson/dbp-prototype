@@ -1,6 +1,7 @@
 import React from 'react'
 import urlParser from 'url-parse'
 import { Link } from 'react-router'
+import ImageLoader from '../image-loader/ImageLoader'
 
 const credits = (credits, url) => {
   const projectUrl = urlParser(url)
@@ -34,7 +35,7 @@ const ProjectItem = ({
       <ul className='ProjectItem-imageList'>
         {project.images.map(image => (
           <li key={image} className='ProjectItem-image'>
-            <img className='ProjectItem-imageItem' src={image} />
+            <ImageLoader className='ProjectItem-imageItem' section='projects' src={image} />
           </li>
         ))}
       </ul>

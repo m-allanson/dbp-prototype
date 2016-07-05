@@ -41,6 +41,7 @@ module.exports = {
         }
       }),
       require('postcss-custom-properties')(),
+      require('postcss-color-function')(),
       require('postcss-custom-media')(),
       require('postcss-media-minmax')()
     ]
