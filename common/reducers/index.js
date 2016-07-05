@@ -9,9 +9,7 @@ const initialState = {
       content: 'IM Global are a worldwide distributer and producer of film and TV. Part of a rebrand, the brief was to explore brand themes through an initial detailed sketch and exploration phase of typography and graphic concepts. A reference to a globe had to be included while pushing beyond the obvious circular design of their old brand. The work involved producing dozens of high fidelity designs along with concepts that were used to test motion graphic ideas and develop the animated ident.',
       credits: 'The project included an international team of designers and was led by the Design Studio for Film in LA.',
       url: 'http://imglobalfilm.com',
-      vimeoIds: [
-        '172933813'
-      ],
+      vimeoIds: [],
       images: [
         '/static/images/img-1.jpg',
         '/static/images/img-2.jpg',
@@ -63,7 +61,9 @@ const initialState = {
       content: 'This responsive web design project also involved developing the Cookie Studio brand. A distinctive animation studio based in East London, the brief was centred around showcasing the energy and creativity the studio has to offer. A significant part of the process involved looking the brand tone of voice and defining their offering clearly through a new showreel and selected projects.',
       credits: 'Joe Lovelock, Studio Lovelock, Creative Director. Development by Martin Buckner.',
       url: 'http://cookiestudio.tv',
-      vimeoIds: [],
+      vimeoIds: [
+        '166829742'
+      ],
       images: [
         '/static/images/cookie-1.jpg',
         '/static/images/cookie-2.jpg',
