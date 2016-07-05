@@ -1,5 +1,5 @@
 {
-  "name": "dbp-prototype",
+  "name": "designbypascal-portfolio",
   "version": "0.0.1",
   "description": "Source code for designbypascal.com",
   "main": "server/index.js",

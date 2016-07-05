@@ -1,4 +1,4 @@
-# DbP prototypes
+# designbypascal-portfolio
 
 ## About
 
