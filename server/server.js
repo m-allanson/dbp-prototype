@@ -3,6 +3,7 @@ import handleRender from './render'
 import morgan from 'morgan'
 import favicon from 'serve-favicon'
 import path from 'path'
+import compression from 'compression'
 
 const NODE_ENV = process.env.NODE_ENV
 const PORT = process.env.PORT || 8080
@@ -13,6 +14,7 @@ const faviconPath = path.join(__dirname, '../dist/favicon.ico')
 app.locals.settings['x-powered-by'] = false
 app.use(favicon(faviconPath))
 app.use(morgan('dev')) // request logging
+app.use(compression())
 app.use('/static', express.static('dist', {maxAge: 0}))
 app.use(handleRender) // Render the initial view
 // app.use((req, res, next) => res.status(404).send('Sorry cant find that!'))

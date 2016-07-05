@@ -145,6 +145,13 @@
   }
 }
 
+.ProjectItem-hr {
+  border-bottom: 1px solid var(--color-black);
+  display: block;
+  margin-top: 16px;
+  width: 100%;
+}
+
 /* Nav (next / previous)
   ========================================================================== */
 
@@ -153,7 +160,6 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  margin-top: 16px;
 }
 
 .ProjectItem-navLink {
@@ -207,12 +213,6 @@
 .ProjectItem-navLink--next:hover::after,
 .ProjectItem-navLink--next:active::after {
   background: transparent url("/static/images/triangle-fill.svg") no-repeat;
-}
-
-.ProjectItem-navHr {
-  border-bottom: 1px solid var(--color-black);
-  order: 1;
-  width: 100%;
 }
 
 @media (--medium) {

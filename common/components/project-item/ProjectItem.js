@@ -1,6 +1,7 @@
 import React from 'react'
 import urlParser from 'url-parse'
 import { Link } from 'react-router'
+import ImageLoader from '../image-loader/ImageLoader'
 
 const credits = (credits, url) => {
   const projectUrl = urlParser(url)
@@ -46,15 +47,15 @@ const ProjectItem = ({
         ))}
         {project.images.map(image => (
           <li key={image} className='ProjectItem-image'>
-            <img className='ProjectItem-imageItem' src={image} />
+            <ImageLoader className='ProjectItem-imageItem' section='projects' src={image} />
           </li>
         ))}
       </ul>
+      <span className='ProjectItem-hr'></span>
       <nav className='ProjectItem-nav'>
         {project.previousProject &&
           <Link to={`/projects/${project.previousProject.slug}`} className='ProjectItem-navLink ProjectItem-navLink--previous'>Previous</Link>
         }
-        <span className='ProjectItem-navHr'></span>
         {project.nextProject &&
           <Link to={`/projects/${project.nextProject.slug}`} className='ProjectItem-navLink ProjectItem-navLink--next'>Next</Link>
         }
