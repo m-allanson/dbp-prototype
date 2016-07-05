@@ -20,8 +20,8 @@
 .Category-title {
   color: var(--color-black);
   font-family: var(--font-family-title);
-  font-weight: initial;
   font-size: 48px;
+  font-weight: initial;
   letter-spacing: 0;
   margin: 0;
 }
