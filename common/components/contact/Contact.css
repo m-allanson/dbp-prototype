@@ -4,6 +4,8 @@
   color: var(--color-black);
   font-family: var(--font-family-title);
   font-size: 32px;
+  font-weight: initial;
+  letter-spacing: 0;
   line-height: 40px;
   margin: 48px 0;
   text-align: center;
