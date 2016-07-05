@@ -10,3 +10,5 @@ dist/
 
 # Other
 .eslintcache
+*.psd
+*.PSD
