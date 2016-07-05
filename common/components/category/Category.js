@@ -7,6 +7,7 @@ const Category = ({
   onCategoryClick
 }) => {
   const onClick = () => { onCategoryClick(category.id) }
+  isSelected = typeof isSelected !== 'boolean' ? false : isSelected
 
   return (
     <li className='Category'>
@@ -18,7 +19,7 @@ const Category = ({
 
 Category.propTypes = {
   category: React.PropTypes.object.isRequired,
-  isSelected: React.PropTypes.bool.isRequired,
+  isSelected: React.PropTypes.bool,
   onCategoryClick: React.PropTypes.func.isRequired
 }
 
