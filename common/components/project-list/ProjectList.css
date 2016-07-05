@@ -3,7 +3,9 @@
 .ProjectList {
   list-style-type: none;
   margin-top: 5px;
+  overflow: hidden;
   padding: 0;
+  transition: max-height 0.8s;
 }
 
 .ProjectList-item {

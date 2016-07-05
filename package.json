@@ -7,7 +7,7 @@
     "compile": "babel-node ./scripts/dist.js",
     "lint": "npm run lint:css -s && npm run lint:js -s",
     "lint:css": "stylelint './common/**/*.css'",
-    "lint:js": "eslint --cache .",
+    "lint:js": "eslint --cache . --ignore-path .gitignore",
     "postinstall": "npm run compile",
     "start": "NODE_ENV=production babel-node ./scripts/start-server.js",
     "start:dev": "PORT=8080 DEV_PORT=8081 NODE_ENV=development babel-node ./scripts/start-dev-server",

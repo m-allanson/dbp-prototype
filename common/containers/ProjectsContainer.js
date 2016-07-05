@@ -7,20 +7,20 @@ import _objectSet from 'lodash/set'
 class ProjectsContainer extends Component {
   constructor () {
     super()
-    this.state = { selectedCategory: null }
+    this.state = {}
     this.handleClick = this.handleClick.bind(this)
   }
 
   handleClick (categoryId) {
-    const newId = this.state.selectedCategory === categoryId ? null : categoryId
-    this.setState({selectedCategory: newId})
+    const selected = this.state[categoryId] !== true
+    this.setState({[categoryId]: selected})
   }
 
   render () {
     const { categories } = this.props
     return <Projects
       categories={categories}
-      selectedCategory={this.state.selectedCategory}
+      categoryStatuses={this.state}
       onClickHandler={this.handleClick}
     />
   }
