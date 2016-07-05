@@ -1,5 +1,6 @@
 import React from 'react'
-import { Redirect, Router, Route, IndexRoute } from 'react-router'
+import { Redirect, Router, Route, IndexRoute, applyRouterMiddleware } from 'react-router'
+import useScroll from 'react-router-scroll'
 import About from '../components/about/About'
 import App from './App'
 import Contact from '../components/contact/Contact'
@@ -12,7 +13,7 @@ const Routes = ({
   history
 }) => {
   return (
-    <Router history={history}>
+    <Router history={history} render={applyRouterMiddleware(useScroll())}>
       <Route path='/' component={App}>
         <IndexRoute component={ProjectsContainer} sectionName='projects' />
         <Redirect from='projects' to='/' />

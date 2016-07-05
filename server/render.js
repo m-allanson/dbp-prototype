@@ -15,7 +15,7 @@ function renderFullPage (html, initialState, env) {
     <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>DbP tech prototype</title>
+      <title>Pascal Barry - Senior Designer</title>
       ${cssLink}
     </head>
     <body style="margin: 0;">
