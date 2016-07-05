@@ -10,7 +10,7 @@ const initialState = {
       credits: 'The project included an international team of designers and was led by the Design Studio for Film in LA.',
       url: 'http://imglobalfilm.com',
       vimeoIds: [
-        '172933813',
+        '172933813'
       ],
       images: [
         '/static/images/img-1.jpg',

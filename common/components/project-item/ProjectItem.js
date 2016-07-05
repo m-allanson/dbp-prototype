@@ -32,15 +32,15 @@ const ProjectItem = ({
         {credits(project.credits, project.url)}
       </div>
       <ul className='ProjectItem-mediaList'>
-        {project.vimeoIds.map( id => (
+        {project.vimeoIds.map(id => (
           <li key={id} className='ProjectItem-video'>
             <iframe
               className='ProjectItem-videoObject'
               src={`https://player.vimeo.com/video/${id}?color=ffffff&title=0&byline=0&portrait=0`}
-              frameborder="0"
+              frameBorder='0'
               webkitallowfullscreen
               mozallowfullscreen
-              allowfullscreen>
+              allowFullscreen>
             </iframe>
           </li>
         ))}
