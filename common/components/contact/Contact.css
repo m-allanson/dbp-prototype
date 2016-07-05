@@ -3,10 +3,10 @@
 .Contact-text {
   color: var(--color-black);
   font-family: var(--font-family-title);
-  font-size: 32px;
+  font-size: 26px;
   font-weight: initial;
   letter-spacing: 0;
-  line-height: 40px;
+  line-height: 34px;
   margin: 48px 0;
   text-align: center;
   word-wrap: break-word;

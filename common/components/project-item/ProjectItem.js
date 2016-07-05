@@ -12,7 +12,7 @@ const credits = (credits, url) => {
         <div className='ProjectItem-credits'>
           {credits}
         </div>
-        <a className='ProjectItem-url' href={projectUrl.href}>{projectUrl.hostname}</a>
+        <a className='ProjectItem-url' target='_blank' href={projectUrl.href}>{projectUrl.hostname}</a>
       </div>
     )
   }
