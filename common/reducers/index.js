@@ -157,7 +157,7 @@ const initialState = {
       title: 'Cephalonia',
       slug: 'cephalonia-typeface',
       content: 'Cephalonia is an all caps geometric sans-serif that draws its inspiration from classical greek engravings. Its unique crossbars in the letters O, E, F and D are the most notable examples of this greek influence. Cephalonia combines the simplicity and elegance of the most famous geometric sans-serifs while adding original embellishments that make it something new and exciting. The end result is a typeface that can evoke a classic feeling while simultaneously holding an edgy contemporary feel.',
-      credits: 'Cephalonia is available to purchase from youworkforthem in 4 weights. A complete font of uppercase and lowercase is coming soon!',
+      credits: 'Cephalonia is available to purchase from youworkforthem in 3 weights. A complete font of uppercase and lowercase is coming soon!',
       url: 'https://youworkforthem.com',
       vimeoIds: [],
       images: [
