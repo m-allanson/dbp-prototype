@@ -5,11 +5,13 @@
 }
 
 .ProjectItem-title {
+  color: var(--color-black);
   font-family: var(--font-family-title);
-  font-size: 48px;
-  line-height: 56px;
+  font-size: 38px;
+  font-weight: initial;
+  line-height: 44px;
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
 
 .ProjectItem-content {
@@ -19,6 +21,7 @@
 }
 
 .ProjectItem-description {
+  color: var(--color-black);
   font-family: var(--font-family-sans-book);
   font-size: 16px;
   line-height: 24px;
@@ -29,7 +32,7 @@
   border-bottom: 1px solid var(--color-black);
   display: block;
   height: 1px;
-  margin: 32px auto 0;
+  margin-top: 32px;
   width: 60px;
 }
 
@@ -85,6 +88,12 @@
 }
 
 @media (--medium) {
+
+  .ProjectItem-title {
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+  }
 
   .ProjectItem-content {
     align-items: baseline;

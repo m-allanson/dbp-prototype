@@ -12,6 +12,10 @@
   padding: 0;
 }
 
+.ProjectList-item:first-child {
+  padding-top: 4px;
+}
+
 .ProjectList-link {
   color: var(--color-black);
   font-family: var(--font-family-serif-italic);

@@ -10,8 +10,9 @@
   color: var(--color-black);
   font-family: var(--font-family-title);
   font-size: 38px;
+  font-weight: initial;
   letter-spacing: 0;
-  line-height: 48px;
+  line-height: 44px;
   margin-top: 32px;
   text-align: center;
 }
