@@ -72,11 +72,28 @@
   background: transparent url("/static/images/circle-fill.svg") no-repeat;
 }
 
-.ProjectItem-imageList {
+.ProjectItem-mediaList {
   list-style-type: none;
   margin: 0;
   padding-left: 0;
   text-align: center;
+}
+
+.ProjectItem-video {
+  margin-top: 16px;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.ProjectItem-videoObject {
+  border: none;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
 }
 
 .ProjectItem-image {

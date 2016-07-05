@@ -9,6 +9,9 @@ const initialState = {
       content: 'IM Global are a worldwide distributer and producer of film and TV. Part of a rebrand, the brief was to explore brand themes through an initial detailed sketch and exploration phase of typography and graphic concepts. A reference to a globe had to be included while pushing beyond the obvious circular design of their old brand. The work involved producing dozens of high fidelity designs along with concepts that were used to test motion graphic ideas and develop the animated ident.',
       credits: 'The project included an international team of designers and was led by the Design Studio for Film in LA.',
       url: 'http://imglobalfilm.com',
+      vimeoIds: [
+        '172933813',
+      ],
       images: [
         '/static/images/img-1.jpg',
         '/static/images/img-2.jpg',
@@ -25,6 +28,7 @@ const initialState = {
       content: 'As a new agency in a crowded marketplace, Move were keen to find an identity to help them stand out. Through branding workshops we identified their refreshingly personable and honest approach to recruitment. I worked on the branding strategy and concepts, as well as the website design and produced the hand-lettered logo.',
       credits: 'Joe Lovelock, Studio Lovelock, Creative Director. Illustration by Rosie Lovelock. Development by Martin Buckner.',
       url: 'http://wearemove.com',
+      vimeoIds: [],
       images: [
         '/static/images/move-1.jpg',
         '/static/images/move-2.jpg',
@@ -41,6 +45,7 @@ const initialState = {
       content: 'Brand identity for a new independent TV production company, producing Nigel Slater’s new cooking shows. Working from a brief for simplicity and understated sophistication, we created a new diacritical mark with the O. The mark references the sloe berry in an abstract minimal form and serves as a standalone graphic device.',
       credits: 'In collaboration with Studio Lovelock.',
       url: 'http://studiolovelock.com',
+      vimeoIds: [],
       images: [
         '/static/images/sloe-1.jpg',
         '/static/images/sloe-2.jpg',
@@ -58,6 +63,7 @@ const initialState = {
       content: 'This responsive web design project also involved developing the Cookie Studio brand. A distinctive animation studio based in East London, the brief was centred around showcasing the energy and creativity the studio has to offer. A significant part of the process involved looking the brand tone of voice and defining their offering clearly through a new showreel and selected projects.',
       credits: 'Joe Lovelock, Studio Lovelock, Creative Director. Development by Martin Buckner.',
       url: 'http://cookiestudio.tv',
+      vimeoIds: [],
       images: [
         '/static/images/cookie-1.jpg',
         '/static/images/cookie-2.jpg',
@@ -72,6 +78,7 @@ const initialState = {
       content: 'LeapFrog are an ethical investor making a huge social impact in emerging markets. As part of a comprehensive rebrand, work included redesigning their site to reflect their new identity, designing brand guidelines and print design of marketing materials.',
       credits: 'Joe Lovelock, Studio Lovelock, Creative Director. Additional design from Richard Simic. Development by Martin Buckner.',
       url: 'http://leapfroginvest.com',
+      vimeoIds: [],
       images: [
         '/static/images/leapfrog-1.jpg',
         '/static/images/leapfrog-2.jpg',
@@ -86,6 +93,7 @@ const initialState = {
       content: 'Tina Hillier is a portrait and reportage photographer. Her work has appeared in the National Portrait Gallery and clients include FT Weekend Magazine, Monocle, Random House, Saturday Telegraph Magazine & Sunday Times Magazine. Along with a responsive web design an understated identity was created focusing on stylish and modern typography.',
       credits: 'Development by Stirtingale.',
       url: 'http://tinahillier.com',
+      vimeoIds: [],
       images: [
         '/static/images/tina-1.jpg',
         '/static/images/tina-2.jpg',
@@ -100,6 +108,7 @@ const initialState = {
       content: 'Design and print management of a 120-page festival programme in Spanish and A1 poster for the Feria Internacional del Libro de Guadalajara. The brief was to evolve an existing festival identity to appeal to both Spanish and UK audiences, developing a colourful palette inspired by Mexican art and design while still using a European design aesthetic.',
       credits: 'Part of the year of cultural exchange between UK and Mexico, the British Council led the production of materials for this event. Print by Fara Printers.',
       url: 'https://www.britishcouncil.org',
+      vimeoIds: [],
       images: [
         '/static/images/fil-1.jpg',
         '/static/images/fil-2.jpg',
@@ -114,6 +123,9 @@ const initialState = {
       title: 'South Asian Literature Festival',
       slug: 'south-asian-literature-festival',
       content: 'After creating the festival brand, I was responsible for all the design for the 4 years the festival ran. This included programmes, flyers, large-format posters, web design and merchandise. Below is a collection of images from two festival programmes.',
+      credits: false,
+      url: false,
+      vimeoIds: [],
       images: [
         '/static/images/salf-1.jpg',
         '/static/images/salf-2.jpg',
@@ -128,6 +140,9 @@ const initialState = {
       title: 'The Synthesis of Movement',
       slug: 'the-synthesis-of-movement',
       content: 'A collaboration with photographer David Newman, the project aimed to capture movement through the static medium of photography. Professional dancers were auditioned and chosed on their ability to improvise to music. Work involved assisting on multiple shoots, and designing the exhibition poster that featured custom type design.',
+      credits: false,
+      url: false,
+      vimeoIds: [],
       images: [
         '/static/images/tsom-1.jpg',
         '/static/images/tsom-2.jpg',
@@ -144,6 +159,7 @@ const initialState = {
       content: 'Cephalonia is an all caps geometric sans-serif that draws its inspiration from classical greek engravings. Its unique crossbars in the letters O, E, F and D are the most notable examples of this greek influence. Cephalonia combines the simplicity and elegance of the most famous geometric sans-serifs while adding original embellishments that make it something new and exciting. The end result is a typeface that can evoke a classic feeling while simultaneously holding an edgy contemporary feel.',
       credits: 'Cephalonia is available to purchase from youworkforthem in 4 weights. A complete font of uppercase and lowercase is coming soon!',
       url: 'https://youworkforthem.com',
+      vimeoIds: [],
       images: [
         '/static/images/Cephalonia-1.jpg',
         '/static/images/Cephalonia-2.jpg',
@@ -163,6 +179,7 @@ const initialState = {
       content: 'A mono-weight, bifurcated serif typeface in all caps. Based off of an old classic French biscuit logo. This distinctive vintage display typeface can also evoke edgier sentiments when set in a moodier context, as well as making for a playful option when set in a soft colour palette.',
       credits: 'Lu Lu is available to buy in two weights from myfonts.',
       url: 'https://myfonts.com',
+      vimeoIds: [],
       images: [
         '/static/images/Lu-Lu-1.jpg',
         '/static/images/Lu-Lu-2.jpg',
@@ -178,6 +195,9 @@ const initialState = {
       title: 'Miscellaneous Lettering',
       slug: 'miscellaneous-lettering',
       content: 'A selection of work including personal projects, pro bono and client work. Techniques range from sketches and traditional calligraphic techniques to digital lettering.',
+      credits: false,
+      url: false,
+      vimeoIds: [],
       images: [
         '/static/images/misc-1.jpg',
         '/static/images/misc-2.jpg',
