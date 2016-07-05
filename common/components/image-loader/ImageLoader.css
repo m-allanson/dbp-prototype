@@ -1,7 +1,12 @@
-/** @define ImageLoader */
+/** @define ImageLoader
+ *
+ * 1. We don't know the image height before it's loaded. Take a guess at a
+ * reasonable minimum so the placeholder is displayed.
+ */
 
 .ImageLoader {
   background-color: color(var(--color-white) lightness(-20%));
+  min-height: 150px; /* 1 */
 }
 
 .ImageLoader--projects {
@@ -22,7 +27,7 @@
 
 .ImageLoader-image {
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: opacity 1s;
 }
 
 .ImageLoader-image.is-loaded {
