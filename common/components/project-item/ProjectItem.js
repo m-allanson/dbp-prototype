@@ -39,11 +39,11 @@ const ProjectItem = ({
           </li>
         ))}
       </ul>
+      <span className='ProjectItem-hr'></span>
       <nav className='ProjectItem-nav'>
         {project.previousProject &&
           <Link to={`/projects/${project.previousProject.slug}`} className='ProjectItem-navLink ProjectItem-navLink--previous'>Previous</Link>
         }
-        <span className='ProjectItem-navHr'></span>
         {project.nextProject &&
           <Link to={`/projects/${project.nextProject.slug}`} className='ProjectItem-navLink ProjectItem-navLink--next'>Next</Link>
         }
