@@ -2,6 +2,7 @@ import React from 'react'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import Header from '../header/Header'
 import Footer from '../footer/Footer'
+import Headroom from 'react-headroom'
 
 const Chrome = ({
   children
@@ -11,9 +12,11 @@ const Chrome = ({
 
   return (
     <div className={className}>
-      <div className='Chrome-header'>
-        <Header sectionName={sectionName} />
-      </div>
+      <Headroom>
+        <div className='Chrome-header'>
+          <Header sectionName={sectionName} />
+        </div>
+      </Headroom>
       <ReactCSSTransitionGroup
         transitionName={{
           enter: 'Chrome-transitionEnter',
