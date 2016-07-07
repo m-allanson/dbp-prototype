@@ -1,6 +1,7 @@
 import React from 'react'
 import urlParser from 'url-parse'
 import { Link } from 'react-router'
+import ImageLoader from '../image-loader/ImageLoader'
 
 const credits = (credits, url) => {
   const projectUrl = urlParser(url)
@@ -11,7 +12,7 @@ const credits = (credits, url) => {
         <div className='ProjectItem-credits'>
           {credits}
         </div>
-        <a className='ProjectItem-url' href={projectUrl.href}>{projectUrl.hostname}</a>
+        <a className='ProjectItem-url' target='_blank' href={projectUrl.href}>{projectUrl.hostname}</a>
       </div>
     )
   }
@@ -31,18 +32,30 @@ const ProjectItem = ({
         </div>
         {credits(project.credits, project.url)}
       </div>
-      <ul className='ProjectItem-imageList'>
+      <ul className='ProjectItem-mediaList'>
+        {project.vimeoIds.map(id => (
+          <li key={id} className='ProjectItem-video'>
+            <iframe
+              className='ProjectItem-videoObject'
+              src={`https://player.vimeo.com/video/${id}?color=ffffff&title=0&byline=0&portrait=0`}
+              frameBorder='0'
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowFullscreen>
+            </iframe>
+          </li>
+        ))}
         {project.images.map(image => (
           <li key={image} className='ProjectItem-image'>
-            <img className='ProjectItem-imageItem' src={image} />
+            <ImageLoader className='ProjectItem-imageItem' section='projects' src={image} />
           </li>
         ))}
       </ul>
+      <span className='ProjectItem-hr'></span>
       <nav className='ProjectItem-nav'>
         {project.previousProject &&
           <Link to={`/projects/${project.previousProject.slug}`} className='ProjectItem-navLink ProjectItem-navLink--previous'>Previous</Link>
         }
-        <span className='ProjectItem-navHr'></span>
         {project.nextProject &&
           <Link to={`/projects/${project.nextProject.slug}`} className='ProjectItem-navLink ProjectItem-navLink--next'>Next</Link>
         }

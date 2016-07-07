@@ -13,7 +13,7 @@ export default () => (
         src='static/images/pascal.jpg'
       />
     </picture>
-    <h1 className='About-title'>A senior designer working across branding, digital, print & UX</h1>
+    <h1 className='About-title'>A senior designer working across branding, digital & print</h1>
     <ul className='About-statement'>
       <li className='About-icon About-icon--first'></li>
       <li className='About-statementCopy'>I have clear ideas and strong values that inform a thorough process, ensuring design interacts with and facilitates business objectives.</li>

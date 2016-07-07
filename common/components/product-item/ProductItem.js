@@ -1,4 +1,5 @@
 import React from 'react'
+import ImageLoader from '../image-loader/ImageLoader'
 
 const ProductItem = ({
   product
@@ -16,7 +17,7 @@ const ProductItem = ({
       <ul className='ProductItem-imageList'>
         {images.map(image => (
           <li key={image} className='ProductItem-image'>
-            <img className='ProductItem-imageItem' src={image} />
+            <ImageLoader className='ProductItem-imageItem' section='shop' src={image} />
           </li>
         ))}
       </ul>

@@ -1,0 +1,21 @@
+{
+  "name": "designbypascal-portfolio",
+  "description": "Heroku run settings",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}

@@ -4,7 +4,7 @@ import _map from 'lodash/map'
 
 const Projects = ({
   categories,
-  selectedCategory,
+  categoryStatuses,
   onClickHandler
 }) => {
   return (
@@ -13,7 +13,7 @@ const Projects = ({
         <Category
           key={cat.id}
           category={cat}
-          isSelected={selectedCategory === cat.id}
+          isSelected={categoryStatuses[cat.id]}
           onCategoryClick={onClickHandler}
         />
       ))}
@@ -23,7 +23,7 @@ const Projects = ({
 
 Projects.propTypes = {
   categories: React.PropTypes.objectOf(React.PropTypes.object).isRequired,
-  selectedCategory: React.PropTypes.number,
+  categoryStatuses: React.PropTypes.object,
   onClickHandler: React.PropTypes.func.isRequired
 }
 
