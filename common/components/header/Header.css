@@ -76,7 +76,7 @@
 .Header-navLink {
   font-family: var(--font-family-sans-book);
   font-size: 11px;
-  font-weight: 200;
+  font-weight: 300;
   letter-spacing: 2.2px;
   line-height: 19px;
   margin: 4px;
@@ -98,14 +98,14 @@
   height: 1px;
   left: 0;
   position: absolute;
-  transform: scaleX(0);
+  transform: scaleX(0) translate3d(0, 0, 0);
   transition: all 0.3s ease-in-out 0s;
   visibility: hidden;
   width: 100%;
 }
 
 .Header-navLink:hover::before {
-  transform: scaleX(1);
+  transform: scaleX(1) translate3d(0, 0, 0);
   visibility: visible;
 }
 
