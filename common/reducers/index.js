@@ -58,7 +58,7 @@ const initialState = {
       id: 4,
       title: 'Cookie Studio',
       slug: 'cookie-studio',
-      content: 'This responsive web design project also involved developing the Cookie Studio brand. A distinctive animation studio based in East London, the brief was centred around showcasing the energy and creativity the studio has to offer. Part of the process involved looking the brand tone of voice and defining their offering clearly through a new showreel and selected projects.',
+      content: 'This responsive web design project also involved developing the Cookie Studio brand. A distinctive animation studio based in East London, the brief was centred around showcasing the energy and creativity the studio has to offer. Part of the process involved looking at the brand tone of voice and defining their offering clearly through a new showreel and selected projects.',
       credits: 'Joe Lovelock, Studio Lovelock, Creative Director. Development by Martin Buckner.',
       url: 'http://cookiestudio.tv',
       vimeoIds: [
@@ -176,7 +176,7 @@ const initialState = {
       id: 11,
       title: 'Lu Lu',
       slug: 'lu-lu',
-      content: 'A mono-weight, bifurcated serif typeface in all caps. Based off of an old classic French biscuit logo. This distinctive vintage display typeface can also evoke edgier sentiments when set in a moodier context, as well as making for a playful option when set in a soft colour palette.',
+      content: 'A mono-weight, bifurcated serif typeface in all caps. Based on an old classic French biscuit logo. This distinctive vintage display typeface can also evoke edgier sentiments when set in a moodier context, as well as making for a playful option when set in a soft colour palette.',
       credits: 'Lu Lu is available to buy in two weights from myfonts.',
       url: 'https://myfonts.com',
       vimeoIds: [],
