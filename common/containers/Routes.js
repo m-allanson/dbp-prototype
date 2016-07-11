@@ -9,11 +9,24 @@ import ProductsContainer from '../containers/ProductsContainer'
 import ProjectItemContainer from '../containers/ProjectItemContainer'
 import ProjectsContainer from '../containers/ProjectsContainer'
 
+const isBrowser = typeof window !== 'undefined'
+const isProduction = process.env.NODE_ENV === 'production'
+const ReactGA = isBrowser ? require('react-ga') : undefined
+
+if (isBrowser && isProduction) { ReactGA.initialize('UA-39572854-2') }
+
+const logPageView = () => {
+  if (isBrowser && isProduction) {
+    ReactGA.set({ page: window.location.pathname })
+    ReactGA.pageview(window.location.pathname)
+  }
+}
+
 const Routes = ({
   history
 }) => {
   return (
-    <Router history={history} render={applyRouterMiddleware(useScroll())}>
+    <Router history={history} render={applyRouterMiddleware(useScroll())} onUpdate={logPageView}>
       <Route path='/' component={App}>
         <IndexRoute component={ProjectsContainer} sectionName='projects' />
         <Redirect from='projects' to='/' />

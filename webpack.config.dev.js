@@ -33,7 +33,9 @@ module.exports = {
     ]
   },
   postcss: prodConfig.postcss,
-  plugins: [],
+  plugins: [
+    new webpack.EnvironmentPlugin('NODE_ENV')
+  ],
   devServer: {
     inline: true,
     historyApiFallback: true,
