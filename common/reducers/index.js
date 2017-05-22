@@ -40,7 +40,7 @@ const initialState = {
       id: 3,
       title: 'Sloe Films',
       slug: 'sloe-films',
-      content: 'Brand identity for a new independent TV production company, producing Nigel Slater’s new cooking shows. Working from a brief for simplicity and understated sophistication, we created a new diacritical mark with the O. The mark references the sloe berry in an abstract minimal form and serves as a standalone graphic device.',
+      content: 'An identity for a new independent TV production company, producing Nigel Slater’s new cooking shows. Working from a brief for simplicity and understated sophistication, we created a new diacritical mark with the O. The mark references the sloe berry in an abstract minimal form and serves as a standalone graphic device.',
       credits: 'In collaboration with Studio Lovelock.',
       url: 'http://studiolovelock.com',
       vimeoIds: [],
@@ -223,7 +223,7 @@ const initialState = {
   categories: {
     1: {
       id: 1,
-      name: 'Brand'
+      name: 'Identity'
     },
     2: {
       id: 2,
