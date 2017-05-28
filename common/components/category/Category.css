@@ -29,3 +29,10 @@
 .Category-title:hover {
   cursor: pointer;
 }
+
+@media (--large) {
+
+  .Category-title {
+    font-size: 64px;
+  }
+}
