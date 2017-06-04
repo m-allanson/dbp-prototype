@@ -305,7 +305,7 @@ const initialState = {
     1: {
       id: 1,
       title: 'Cephalonia Typeface',
-      price: '$30',
+      price: '£40',
       content: 'Cephalonia is an all caps geometric sans-serif that draws its inspiration from classical greek engravings. Its unique crossbars in the letters O, E, F and D are the most notable examples of this greek influence.',
       heroImage: '/static/images/Cephalonia-1.jpg',
       slug: 'cephalonia-typeface',
@@ -314,17 +314,15 @@ const initialState = {
         '/static/images/Cephalonia-3.jpg',
         '/static/images/Cephalonia-4.jpg',
         '/static/images/Cephalonia-5.jpg',
-        '/static/images/Cephalonia-6.jpg',
-        '/static/images/Cephalonia-7.jpg',
-        '/static/images/Cephalonia-8.jpg'
+        '/static/images/Cephalonia-6.jpg'
       ],
       buyText: 'buy cephalonia | ',
-      buyUrl: 'https://www.youworkforthem.com/font/T4519/cephalonia'
+      buyUrl: 'https://www.myfonts.com/fonts/design-by-pascal/cephalonia/'
     },
     2: {
       id: 2,
       title: 'Lu Lu Typeface',
-      price: '$45',
+      price: '£13.99',
       content: 'A mono-weight, bifurcated serif typeface in all caps. Based off of an old classic French biscuit logo. This distinctive vintage display typeface can also evoke edgier sentiments when set in a moodier context, as well as making for a playful option when set in a soft colour palette.',
       heroImage: '/static/images/Lu-Lu-1.jpg',
       slug: 'lulu-typeface',
