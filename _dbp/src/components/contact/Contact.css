@@ -1,0 +1,77 @@
+/** @define Contact */
+
+.Contact-text {
+  color: var(--color-black);
+  font-family: var(--font-family-title);
+  font-size: 26px;
+  font-weight: initial;
+  letter-spacing: 0;
+  line-height: 34px;
+  margin: 48px 0;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.Contact-hr {
+  border-bottom: 4px solid var(--color-black);
+  display: block;
+  margin: 0 auto;
+  width: 32px;
+}
+
+.Contact-link {
+  color: var(--color-black);
+  text-decoration: none;
+}
+
+.Contact-link--credit {
+  color: var(--color-black);
+  opacity: 0.7;
+  position: relative;
+  text-decoration: none;
+  transition: opacity 0.3s ease-in;
+}
+
+.Contact-link--credit::before {
+  background-color: var(--color-black);
+  bottom: -2px;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in 0s;
+  visibility: hidden;
+  width: 100%;
+}
+
+.Contact-link--credit:hover::before {
+  transform: scaleX(1);
+  visibility: visible;
+}
+
+.Contact-link--credit:hover {
+  opacity: 1;
+}
+
+.Contact-link--credit:hover {
+  border-bottom: none;
+}
+
+.Contact-credits {
+  color: var(--color-black);
+  font-family: var(--font-family-sans-book);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 16px;
+  text-align: center;
+}
+
+@media (--medium) {
+
+  .Contact-text {
+    font-size: 48px;
+    line-height: 60px;
+  }
+}

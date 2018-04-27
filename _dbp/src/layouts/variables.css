@@ -1,0 +1,37 @@
+@custom-media --medium (width >= 640px);
+@custom-media --large (width >= 960px);
+@custom-media --xlarge (width >= 1200px);
+
+/* stylelint-disable rule-properties-order */
+
+:root {
+  /* Colours */
+
+  --color-black: #1c1c1a;
+  --color-white: #fff;
+  --color-projects-cream: #fff4e0;
+  --color-about-blue: #d0e9f2;
+  --color-shop-red: #ffecec;
+  --color-contact-purple: #dee2f1;
+
+  /* Typography */
+
+  --font-family-serif: "PlantinMTPro-Light", serif;
+  --font-family-serif-italic: "PlantinMTPro-LightItalic", serif;
+  --font-family-sans-book: "p22-underground-n4", "p22-underground", sans-serif;
+  --font-family-sans-demi: "p22-underground-n6", "p22-underground", sans-serif;
+  --font-family-title: "GTSectra-DisplayBold", serif;
+
+  --font-weight-normal: 400;
+
+  /* Dimensions */
+
+  --site-width-medium: 640px;
+  --site-width-large: 960px;
+
+  /* Transitions */
+
+  --transition-time: 0.4s;
+}
+
+/* stylelint-enable */

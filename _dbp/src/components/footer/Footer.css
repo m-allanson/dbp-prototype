@@ -1,0 +1,35 @@
+/** @define Footer */
+
+@import '../../layouts/variables.css';
+
+.Footer-hr {
+  border-bottom: 4px solid var(--color-black);
+  display: block;
+  margin: 0 auto;
+  width: 32px;
+}
+
+.Footer-list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 20px 0 0 0;
+}
+
+.Footer-listItem {
+  color: var(--color-black);
+  font-family: var(--font-family-sans-book);
+  font-size: 11px;
+  letter-spacing: 0.2px;
+  line-height: 13px;
+  margin: 0 auto;
+}
+
+.Footer-emailLink {
+  color: inherit;
+}
+
+.Footer-emailLink:hover {
+  text-decoration: none;
+}

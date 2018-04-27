@@ -1,0 +1,38 @@
+/** @define Category */
+
+.Category {
+  counter-increment: project;
+  padding-top: 48px;
+  position: relative;
+}
+
+.Category::before {
+  color: var(--color-black);
+  content: counter(project, decimal-leading-zero);
+  counter-increment: li;
+  font-family: var(--font-family-sans-book);
+  font-size: 12px;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 32px;
+}
+
+.Category-title {
+  color: var(--color-black);
+  font-family: var(--font-family-title);
+  font-size: 48px;
+  font-weight: initial;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+.Category-title:hover {
+  cursor: pointer;
+}
+
+@media (--large) {
+
+  .Category-title {
+    font-size: 64px;
+  }
+}
