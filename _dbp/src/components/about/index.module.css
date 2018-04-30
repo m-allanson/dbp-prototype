@@ -1,12 +1,12 @@
-/** @define About */
+@import url("../../layouts/customProperties.module.css");
 
-.About-image {
+.image {
   display: block;
   margin: 16px auto 0;
   width: 100%;
 }
 
-.About-title {
+.title {
   color: var(--color-black);
   font-family: var(--font-family-title);
   font-size: 38px;
@@ -17,18 +17,18 @@
   text-align: center;
 }
 
-.About-statement {
+.statement {
   list-style-type: none;
   margin: 48px auto 0;
   max-width: 600px;
   padding: 0;
 }
 
-.About-statement:last-child {
+.statement:last-child {
   margin-bottom: 32px;
 }
 
-.About-icon {
+.icon {
   display: block;
   height: 22px;
   margin: 0 auto;
@@ -36,26 +36,30 @@
   width: 26px;
 }
 
-.About-icon--first {
+.iconFirst {
+  composes: icon;
   background: transparent url("/static/images/about-bullet-a.svg") no-repeat;
   width: 21px;
 }
 
-.About-icon--second {
+.iconSecond {
+  composes: icon;
   background: transparent url("/static/images/about-bullet-b.svg") no-repeat;
   width: 21px;
 }
 
-.About-icon--third {
+.iconThird {
+  composes: icon;
   background: transparent url("/static/images/about-bullet-c.svg") no-repeat;
   width: 20px;
 }
 
-.About-icon--fourth {
+.iconFourth {
+  composes: icon;
   background: transparent url("/static/images/about-bullet-d.svg") no-repeat;
 }
 
-.About-statementCopy {
+.statementCopy {
   color: var(--color-black);
   font-family: var(--font-family-sans-book);
   font-size: 16px;
@@ -64,7 +68,7 @@
   text-align: center;
 }
 
-.About-statementHeader {
+.statementHeader {
   color: var(--color-black);
   font-family: var(--font-family-sans-book);
   font-size: 16px;
@@ -74,20 +78,20 @@
   text-align: center;
 }
 
-.About-statement:last-child {
+.statement:last-child {
   margin-top: 0;
 }
 
 @media (--medium) {
 
-  .About-title {
+  .title {
     font-size: 48px;
     line-height: 60px;
     margin: 48px auto 0;
     max-width: 960px;
   }
 
-  .About-image {
+  .image {
     margin-top: 32px;
   }
 }

@@ -1,14 +1,14 @@
 import React from 'react'
 
-import './Footer.css'
+import styles from './index.module.css'
 
 export default () => {
   const year = new Date().getFullYear()
   return (
-    <div className='Footer'>
-      <span className='Footer-hr' />
-      <ul className='Footer-list'>
-        <li className='Footer-listItem'>&copy; {year} Pascal Barry</li>
+    <div>
+      <span className={styles.hr} />
+      <ul className={styles.list}>
+        <li className={styles.listItem}>&copy; {year} Pascal Barry</li>
       </ul>
     </div>
   )

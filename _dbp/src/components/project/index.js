@@ -4,16 +4,18 @@ import urlParser from 'url-parse'
 // import { Link } from 'react-router'
 // import ImageLoader from '../image-loader'
 
+import styles from './index.module.css'
+
 const renderCredits = (credits, url) => {
   const projectUrl = urlParser(url)
   if (credits && url) {
     return (
-      <div className='Project-contentInner'>
-        <span className='Project-descriptionBorder' />
-        <div className='Project-credits'>
+      <div className={styles.contentInner}>
+        <span className={styles.descriptionBorder} />
+        <div className={styles.credits}>
           {credits}
         </div>
-        <a className='Project-url' target='_blank' href={projectUrl.href}>{projectUrl.hostname}</a>
+        <a className={styles.url} target='_blank' href={projectUrl.href}>{projectUrl.hostname}</a>
       </div>
     )
   }
@@ -28,21 +30,21 @@ const Project = ({
   images
 }) => {
   return (
-    <div className='Project'>
-      <h1 className='Project-title'>{title}</h1>
-      <div className='Project-content'>
-        <div className='Project-contentInner'>
-          <div className='Project-description'>
+    <div className={styles.root}>
+      <h1 className={styles.title}>{title}</h1>
+      <div className={styles.content}>
+        <div className={styles.contentInner}>
+          <div className={styles.description}>
             {content}
           </div>
         </div>
         {renderCredits(credits, url)}
       </div>
-      <ul className='Project-mediaList'>
+      <ul className={styles.mediaList}>
         {vimeoIds.map(id => (
-          <li key={id} className='Project-video'>
+          <li key={id} className={styles.video}>
             <iframe
-              className='Project-videoObject'
+              className={styles.videoObject}
               src={`https://player.vimeo.com/video/${id}?color=ffffff&title=0&byline=0&portrait=0`}
               frameBorder='0'
               webkitallowfullscreen
@@ -52,19 +54,19 @@ const Project = ({
           </li>
         ))}
         {images.map(image => (
-          <li key={image} className='Project-image'>
+          <li key={image} className={styles.image}>
             {image}
-            {/* <ImageLoader className='Project-imageItem' section='projects' src={image} /> */}
+            {/* <ImageLoader className={styles.imageItem} section='projects' src={image} /> */}
           </li>
         ))}
       </ul>
-      <span className='Project-hr'></span>
-      {/* <nav className='Project-nav'>
+      <span className={styles.hr}></span>
+      {/* <nav className={styles.nav}>
         {previousProject &&
-          <Link to={`/projects/${previousslug}`} className='Project-navLink Project-navLink--previous'>Previous</Link>
+          <Link to={`/projects/${previousslug}`} className={styles.navLink}Project-navLinkPrevious'>Previous</Link>
         }
         {nextProject &&
-          <Link to={`/projects/${nextslug}`} className='Project-navLink Project-navLink--next'>Next</Link>
+          <Link to={`/projects/${nextslug}`} className={styles.navLink}Project-navLinkNext'>Next</Link>
         }
       </nav> */}
     </div>

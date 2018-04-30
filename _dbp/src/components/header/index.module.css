@@ -1,11 +1,11 @@
-/** @define Header
+/**
  *
  * 1. Reposition logo to sit inline and inbetween the other nav links
  */
 
-@import '../../layouts/variables.css';
+@import '../../layouts/customProperties.module.css';
 
-.Header {
+.root {
   align-items: center;
   background-color: var(--color-black);
   display: flex;
@@ -13,25 +13,25 @@
   justify-content: center;
 }
 
-.Header-title {
+.title {
   margin: 0;
   text-align: center;
 }
 
-.Header-logo {
+.logo {
   transition: fill var(--transition-time) linear;
 }
 
 /* Nav
   ========================================================================== */
 
-.Header-nav {
+.nav {
   max-width: 432px;
   padding: 0 16px;
   width: 100%;
 }
 
-.Header-navList {
+.navList {
   align-items: center;
   display: flex;
   flex-flow: row wrap;
@@ -41,41 +41,49 @@
   padding: 0;
 }
 
-.Header-navListItem {
+.navListItem {
   flex: 0 1 auto;
 }
 
-.Header-navListItem--prime {
+.navListItemPrime {
+  composes: navListItem;
   flex: 0 100%;
   margin-bottom: 32px;
   order: 1;
 }
 
-.Header-navListItem--beginning { order: 2; }
-.Header-navListItem--end { order: 3; }
+.navListItemBeginning {
+  composes: navListItem;
+  order: 2;
+}
+
+.navListItemEnd {
+  composes: navListItem;
+  order: 3;
+}
 
 @media (--large) { /* 1 */
 
-  .Header-nav {
+  .nav {
     margin: 0 64px;
     max-width: 960px;
     padding: 0;
   }
 
-  .Header-navListItem--prime {
+  .navListItemPrime {
     flex: 0 1 auto;
     margin-bottom: 0;
     order: 2;
   }
 
-  .Header-navListItem--beginning { order: 1; }
-  .Header-navListItem--end { order: 3; }
+  .navListItemBeginning { order: 1; }
+  .navListItemEnd { order: 3; }
 }
 
 /* Nav links
   ========================================================================== */
 
-.Header-navLink {
+.navLink {
   font-family: var(--font-family-sans-book);
   font-size: 11px;
   font-weight: 300;
@@ -89,11 +97,12 @@
   transition: color var(--transition-time) linear;
 }
 
-.Header-navLink.is-active {
+.navLinkActive {
+  composes: navLink;
   border-bottom: 1px solid currentColor;
 }
 
-.Header-navLink::before {
+.navLink::before {
   background-color: currentColor;
   bottom: -1px;
   content: "";
@@ -106,14 +115,14 @@
   width: 100%;
 }
 
-.Header-navLink:hover::before {
+.navLink:hover::before {
   transform: scaleX(1) translate3d(0, 0, 0);
   visibility: visible;
 }
 
 @media (--medium) {
 
-  .Header-navLink {
+  .navLink {
     font-size: 13px;
     margin: 0;
   }
@@ -122,17 +131,22 @@
 /* Colour modifiers
   ========================================================================== */
 
-.Header--home .Header-logo { fill: hotpink; }
-.Header--home .Header-navLink { color: hotpink; }
+.home { composes: root; }
+.home .logo { fill: hotpink; }
+.home .navLink { color: hotpink; }
 
-.Header--projects .Header-logo { fill: var(--color-projects-cream); }
-.Header--projects .Header-navLink { color: var(--color-projects-cream); }
+.projects { composes: root; }
+.projects .logo { fill: var(--color-projects-cream); }
+.projects .navLink { color: var(--color-projects-cream); }
 
-.Header--about .Header-logo { fill: var(--color-about-blue); }
-.Header--about .Header-navLink { color: var(--color-about-blue); }
+.about { composes: root; }
+.about .logo { fill: var(--color-about-blue); }
+.about .navLink { color: var(--color-about-blue); }
 
-.Header--shop .Header-logo { fill: var(--color-shop-red); }
-.Header--shop .Header-navLink { color: var(--color-shop-red); }
+.shop { composes: root; }
+.shop .logo { fill: var(--color-shop-red); }
+.shop .navLink { color: var(--color-shop-red); }
 
-.Header--contact .Header-logo { fill: var(--color-contact-purple); }
-.Header--contact .Header-navLink { color: var(--color-contact-purple); }
+.contact { composes: root; }
+.contact .logo { fill: var(--color-contact-purple); }
+.contact .navLink { color: var(--color-contact-purple); }

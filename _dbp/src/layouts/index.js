@@ -7,7 +7,17 @@ import Footer from '../components/footer'
 import Headroom from 'react-headroom'
 
 import './index.css'
-import './layout.css'
+import styles from './index.module.css'
+
+class TransitionHandler extends React.Component {
+  shouldComponentUpdate () {
+    return this.props.location.pathname === window.location.pathname
+  }
+
+  render () {
+    return this.props.children
+  }
+}
 
 class TemplateWrapper extends Component {
   getSectionName () {
@@ -21,7 +31,7 @@ class TemplateWrapper extends Component {
   }
   render () {
     const sectionName = this.getSectionName()
-    const className = `Chrome Chrome--${sectionName}`
+    const className = styles[sectionName]
     return (
       <div>
         <Helmet
@@ -33,28 +43,31 @@ class TemplateWrapper extends Component {
         />
         <div className={className}>
           <Headroom>
-            <div className='Chrome-header'>
+            <div className={styles.header}>
               <Header sectionName={sectionName} />
             </div>
           </Headroom>
           <TransitionGroup>
             <CSSTransition
               classNames={{
-                enter: 'Chrome-transitionEnter',
-                enterActive: 'is-enterActive',
-                exit: 'Chrome-transitionLeave',
-                exitActive: 'is-leaveActive'
+                enter: styles.transitionEnter,
+                enterActive: styles.isEnterActive,
+                exit: styles.transitionLeave,
+                exitActive: styles.isLeaveActive
               }}
               timeout={{enter: 200, exit: 200}}
+              key={this.props.location.pathname}
             >
-              <div className='Chrome-contentWrap' key={this.props.location.pathname}>
-                <div className='Chrome-content'>
-                  {this.props.children()}
+              <TransitionHandler location={this.props.location}>
+                <div className={styles.contentWrap}>
+                  <div className={styles.content}>
+                    {this.props.children()}
+                  </div>
+                  <div className={styles.footer}>
+                    <Footer />
+                  </div>
                 </div>
-                <div className='Chrome-footer'>
-                  <Footer />
-                </div>
-              </div>
+              </TransitionHandler>
             </CSSTransition>
           </TransitionGroup>
         </div>

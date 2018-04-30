@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
+import styles from './index.module.css'
+
 const Category = ({ projects, category, isSelected, onCategoryClick }) => {
   const onClick = () => {
     onCategoryClick(category)
@@ -13,15 +15,15 @@ const Category = ({ projects, category, isSelected, onCategoryClick }) => {
   }
 
   return (
-    <li className="Category">
-      <h1 className="Category-Title" onClick={onClick}>
+    <li className={styles.root}>
+      <h1 className={styles.title} onClick={onClick}>
         {" "}
         {category}{" "}
       </h1>
-      <ul className="ProjectList" style={style}>
+      <ul className={styles.list} style={style}>
         {projects.map(project => (
-          <li key={project.slug} className="ProjectList-item">
-            <Link to={`/projects/${project.slug}`} className="ProjectList-link">
+          <li key={project.slug} className={styles.listItem}>
+            <Link to={`/projects/${project.slug}`} className={styles.listLink}>
               {project.title}
             </Link>
           </li>

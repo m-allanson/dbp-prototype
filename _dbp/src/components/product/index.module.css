@@ -1,11 +1,11 @@
-/** @define Product */
+@import '../../layouts/customProperties.module.css';
 
-.Product {
+.root {
   padding: 25px 0 0;
   text-align: center;
 }
 
-.Product-title {
+.title {
   color: var(--color-black);
   font-family: var(--font-family-title);
   font-size: 38px;
@@ -14,11 +14,11 @@
   margin: 0 0 32px;
 }
 
-.Product-wrapper {
+.wrapper {
   border-bottom: 2px solid var(--color-black);
 }
 
-.Product-description {
+.description {
   color: var(--color-black);
   font-family: var(--font-family-sans-book);
   font-size: 16px;
@@ -28,22 +28,22 @@
   padding-bottom: 28px;
 }
 
-.Product-imageList {
+.imageList {
   list-style-type: none;
   margin: 0;
   padding-left: 0;
   text-align: center;
 }
 
-.Product-image {
+.image {
   margin-top: 16px;
 }
 
-.Product-imageItem {
+.imageItem {
   width: 100%;
 }
 
-.Product-price {
+.price {
   border: 1px solid var(--color-black);
   color: var(--color-black);
   display: inline-block;
@@ -61,12 +61,12 @@
 
 @media (--medium) {
 
-  .Product-title {
+  .title {
     font-size: 48px;
     line-height: 56px;
   }
 
-  .Product-price::after {
+  .price::after {
     background: var(--color-black);
     content: "";
     height: 0;
@@ -78,13 +78,13 @@
     z-index: -1;
   }
 
-  .Product-price:hover,
-  .Product-price:active {
+  .price:hover,
+  .price:active {
     color: var(--color-shop-red);
   }
 
-  .Product-price:hover::after,
-  .Product-price:active::after {
+  .price:hover::after,
+  .price:active::after {
     height: 100%;
   }
 }

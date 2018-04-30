@@ -1,4 +1,4 @@
-/** @define Chrome
+/**
  *
  * 1. During content transitions, some child elements of .Chrome are set to
  * position absolute. This rule ensures that .Chrome's background colour is
@@ -6,71 +6,73 @@
  * transition.
  */
 
-@import './variables.css';
+@import './customProperties.module.css';
 
 :root {
   --Chrome-header-height: 128px;
   --Chrome-transition-time: calc(var(--transition-time) / 2);
 }
 
-.Chrome {
+.root {
   min-height: 100%; /* 1 */
   position: relative;
   transition: background-color var(--transition-time) linear;
   z-index: 0;
 }
 
-.Chrome-header {
+.header {
   height: var(--Chrome-header-height);
 }
 
-.Chrome-contentWrap {
+.contentWrap {
   display: flex;
   flex-direction: column;
-  min-height: calc(100% - var(--Chrome-header-height));
+  min-height: calc(100vh - var(--Chrome-header-height));
   width: 100%;
 }
 
-.Chrome-content {
+.content {
   flex: 1;
   margin: 0 auto;
   width: calc(100% - 32px);
 }
 
-.Chrome-footer {
+.footer {
   margin: 32px 16px 20px 16px;
 }
 
 /* Colour modifiers
   ========================================================================== */
 
-.Chrome--home { background-color: hotpink; }
-.Chrome--projects { background-color: var(--color-projects-cream); }
-.Chrome--about { background-color: var(--color-about-blue); }
-.Chrome--shop { background-color: var(--color-shop-red); }
-.Chrome--contact { background-color: var(--color-contact-purple); }
+.home { composes: root; background-color: hotpink; }
+.projects { composes: root; background-color: var(--color-projects-cream); }
+.about { composes: root; background-color: var(--color-about-blue); }
+.shop { composes: root; background-color: var(--color-shop-red); }
+.contact { composes: root; background-color: var(--color-contact-purple); }
 
 /* Content transitions
   ========================================================================== */
 
-.Chrome-transitionEnter {
+.transitionEnter {
   opacity: 0.01;
   position: absolute;
   top: var(--Chrome-header-height);
 }
 
-.Chrome-transitionEnter.is-enterActive {
+.isEnterActive {
+  composes: transitionEnter;
   opacity: 1;
   transition: opacity var(--Chrome-transition-time) ease-in;
 }
 
-.Chrome-transitionLeave {
+.transitionLeave {
   opacity: 1;
   position: absolute;
   top: var(--Chrome-header-height);
 }
 
-.Chrome-transitionLeave.is-leaveActive {
+.isLeaveActive {
+  composes: transitionLeave;
   opacity: 0.01;
   transition: opacity var(--Chrome-transition-time)  ease-out;
 }
@@ -80,21 +82,21 @@
 
 @media (--medium) {
 
-  .Chrome-content {
+  .content {
     width: calc(100% - 64px);
   }
 }
 
 @media (--large) {
 
-  .Chrome-content {
+  .content {
     width: calc(100% - 128px);
   }
 }
 
 @media (--xlarge) {
 
-  .Chrome-content {
+  .content {
     max-width: 1200px;
   }
 }

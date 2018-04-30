@@ -1,0 +1,83 @@
+@import '../../layouts/customProperties.module.css';
+
+.root {
+  counter-increment: project;
+  padding-top: 48px;
+  position: relative;
+}
+
+.root::before {
+  color: var(--color-black);
+  content: counter(project, decimal-leading-zero);
+  counter-increment: li;
+  font-family: var(--font-family-sans-book);
+  font-size: 12px;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 32px;
+}
+
+.title {
+  color: var(--color-black);
+  font-family: var(--font-family-title);
+  font-size: 48px;
+  font-weight: initial;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+.title:hover {
+  cursor: pointer;
+}
+
+@media (--large) {
+
+  .title {
+    font-size: 64px;
+  }
+}
+
+.list {
+  list-style-type: none;
+  margin-top: 5px;
+  overflow: hidden;
+  padding: 0;
+  transition: max-height 0.8s;
+}
+
+.listItem {
+  padding: 0;
+}
+
+.listItem:first-child {
+  padding-top: 4px;
+}
+
+.listLink {
+  color: var(--color-black);
+  font-family: var(--font-family-serif-italic);
+  font-size: 22px;
+  line-height: 32px;
+  opacity: 1;
+  position: relative;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.listLink::before {
+  background-color: var(--color-black);
+  bottom: -2px;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+  visibility: hidden;
+  width: 100%;
+}
+
+.listLink:hover::before {
+  transform: scaleX(1);
+  visibility: visible;
+}

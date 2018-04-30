@@ -22,7 +22,13 @@ class IndexPage extends Component {
       return obj
     }, {})
     return (
-      <div>
+      <ol style={{
+        counterReset: 'project',
+        listStyleType: 'none',
+        marginTop: 0,
+        padding: 0,
+        textAlign: 'center'
+      }}>
         {Object.keys(cats).map(key => (
           <Category
             key={key}
@@ -32,7 +38,7 @@ class IndexPage extends Component {
             onCategoryClick={this.handleClick}
           />
         ))}
-      </div>
+      </ol>
     )
   }
 }

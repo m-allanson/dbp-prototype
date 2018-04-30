@@ -2,25 +2,20 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
-import './Header.css'
-
-const linkClass = (linkSection, currentSection) => {
-  const activeClass = linkSection === currentSection ? ' is-active' : ''
-  return `Header-navLink${activeClass}`
-}
+import styles from './index.module.css'
 
 const Header = ({
   sectionName
 }) => {
-  const className = `Header Header--${sectionName}`
+  const className = styles[sectionName]
   return (
     <div className={className}>
-      <nav className='Header-nav'>
-        <ul className='Header-navList'>
-          <li className='Header-navListItem Header-navListItem--prime'>
-            <h1 className='Header-title'>
+      <nav className={styles.nav}>
+        <ul className={styles.navList}>
+          <li className={styles.navListItemPrime}>
+            <h1 className={styles.title}>
               <Link to='/'>
-                <svg className='Header-logo' width='165px' height='24px' viewBox='0 0 165 24'>
+                <svg className={styles.logo} width='165px' height='24px' viewBox='0 0 165 24'>
                   <title>Design by Pascal</title>
                   <path d='M5.8658502,0.554666667 C11.0028947,0.554666667 14.7063765,4.25 14.7063765,8.9 C14.7063765,13.5493333 11.0028947,17.2453333 5.8658502,17.2453333 L0.251174089,17.2453333 L0.13159919,17.1266667 L0.13159919,0.674 L0.251174089,0.554666667 L5.8658502,0.554666667 L5.8658502,0.554666667 Z M2.5204251,14.8606667 L5.8658502,14.8606667 C9.44975709,14.8606667 11.9581579,12.238 11.9581579,8.9 C11.9581579,5.562 9.44975709,2.93866667 5.8658502,2.93866667 L2.5204251,2.93866667 L2.5204251,14.8606667 L2.5204251,14.8606667 Z' id='Fill-1'></path>
                   <path d='M27.1528543,16.0533333 C26.0773482,16.768 24.4046356,17.6026667 22.6130162,17.6026667 C19.1486842,17.6026667 16.4011336,14.8606667 16.4011336,11.5466667 C16.4011336,8.304 18.6703846,5.68133333 22.1353846,5.68133333 C25.121417,5.68133333 27.1528543,8.304 27.1528543,11.5226667 C27.1528543,11.642 27.1528543,11.8566667 27.0332794,12.1193333 L26.7941296,12.238 L18.8380567,12.238 C19.1486842,14.0266667 20.582247,15.338 22.6130162,15.338 C24.1661538,15.338 25.8381984,14.6226667 27.0332794,13.43 L27.1528543,13.5493333 L27.1528543,16.0533333 L27.1528543,16.0533333 Z M24.7633603,10.3306667 C24.6437854,9.01866667 23.4493725,7.946 22.1353846,7.946 C20.4626721,7.946 19.2682591,9.01866667 18.933583,10.3306667 L24.7633603,10.3306667 L24.7633603,10.3306667 Z' id='Fill-2'></path>
@@ -40,17 +35,17 @@ const Header = ({
               </Link>
             </h1>
           </li>
-          <li className='Header-navListItem Header-navListItem--beginning'>
-            <Link to='/' className={linkClass('projects', sectionName)}>Projects</Link>
+          <li className={styles.navListItemBeginning}>
+            <Link to='/' exact className={styles.navLink} activeClassName={styles.navLinkActive}>Projects</Link>
           </li>
-          <li className='Header-navListItem Header-navListItem--beginning'>
-            <Link to='/about' className={linkClass('about', sectionName)}>About</Link>
+          <li className={styles.navListItemBeginning}>
+            <Link to='/about' className={styles.navLink} activeClassName={styles.navLinkActive}>About</Link>
           </li>
-          <li className='Header-navListItem Header-navListItem--end'>
-            <Link to='/shop' className={linkClass('shop', sectionName)}>Shop</Link>
+          <li className={styles.navListItemEnd}>
+            <Link to='/shop' className={styles.navLink} activeClassName={styles.navLinkActive}>Shop</Link>
           </li>
-          <li className='Header-navListItem Header-navListItem--end'>
-            <Link to='/contact' className={linkClass('contact', sectionName)}>Contact</Link>
+          <li className={styles.navListItemEnd}>
+            <Link to='/contact' className={styles.navLink} activeClassName={styles.navLinkActive}>Contact</Link>
           </li>
         </ul>
       </nav>

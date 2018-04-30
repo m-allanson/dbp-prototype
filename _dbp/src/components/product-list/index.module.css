@@ -1,0 +1,56 @@
+@import '../../layouts/customProperties.module.css';
+
+.root {
+  list-style-type: none;
+  margin: 0;
+  padding: 32px 0 0 0;
+}
+
+.item {
+  margin-top: 32px;
+  text-align: center;
+}
+
+.item:first-child {
+  margin-top: 0;
+}
+
+.itemLink {
+  display: block;
+  text-decoration: none;
+}
+
+.itemImage {
+  width: 288px;
+}
+
+.itemName {
+  color: var(--color-black);
+  font-family: var(--font-family-sans-demi);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  margin: 16px 0 0 0;
+}
+
+.itemPrice {
+  color: var(--color-black);
+  font-family: var(--font-family-sans-book);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0;
+}
+
+@media (--medium) {
+
+  .root {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .item {
+    margin: 0 16px;
+  }
+}
